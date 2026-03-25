@@ -1,19 +1,19 @@
 # Daily Coach Report
 
-- Generated: 2026-03-25T12:17:41.100941+11:00
-- Conclusion: 恢复偏弱，今天不适合高强度，优先恢复。
+- Generated: 2026-03-25T12:28:41.441797+11:00
+- Conclusion: 恢复尚可，适合常规训练，不建议激进加码。
 
 ## Recovery
-- date: 2026-03-26 00:00:00
-- weight: None
-- resting_hr: None
-- hrv: None
+- date: 2026-03-25 00:00:00
+- weight: 61.4
+- resting_hr: 46.0
+- hrv: 71.0
 - hrv_sdnn: None
 - readiness: None
-- sleep_secs: None
-- sleep_hours: None
-- sleep_score: None
-- sleep_quality: None
+- sleep_secs: 24060.0
+- sleep_hours: 6.68
+- sleep_score: 85.0
+- sleep_quality: 2.0
 - avg_sleeping_hr: None
 - spo2: None
 - fatigue: None
@@ -24,9 +24,10 @@
 - injury: None
 
 ## Training State
-- ctl: 9.305254
-- atl: 16.745905
-- ramp_rate: 1.9006553
+- date: 2026-03-25 00:00:00
+- ctl: 9.529467
+- atl: 19.31749
+- ramp_rate: 1.9464521
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
