@@ -3,10 +3,10 @@ name: Intervals Auto Coach
 on:
   workflow_dispatch:
   schedule:
-    # Two daily runs in UTC. This avoids DST headaches while still catching
-    # morning recovery and later-day activity updates for Australia/Sydney.
-    - cron: "00 23 * * *"
-    - cron: "30 08 * * *"
+    - cron: "30 8 * * *"
+      timezone: "Australia/Sydney"
+    - cron: "0 23 * * *"
+      timezone: "Australia/Sydney"
 
 permissions:
   contents: write
