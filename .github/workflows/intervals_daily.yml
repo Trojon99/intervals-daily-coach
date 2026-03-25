@@ -1,16 +1,18 @@
-name: Intervals Daily Coach Data
+name: Intervals Auto Coach
 
 on:
-  workflow_dispatch:
+  push:
+    branches: [ "main" ]
   schedule:
-    # UTC 21:15，通常对应 Sydney 早晨
-    - cron: "15 21 * * *"
+    # Sydney 早上大致对应 UTC 前一日晚间；这里设两次，减少时区/夏令时麻烦
+    - cron: "00 23 * * *"
+    - cron: "00 09 * * *"
 
 permissions:
   contents: write
 
 concurrency:
-  group: intervals-daily-coach
+  group: intervals-auto-coach
   cancel-in-progress: true
 
 jobs:
@@ -18,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -26,21 +28,21 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
+      - name: Install packages
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run fetch script
+      - name: Run pipeline
         env:
           INTERVALS_API_KEY: ${{ secrets.INTERVALS_API_KEY }}
         run: |
-          python scripts/fetch_intervals_daily.py
+          python scripts/fetch_intervals_auto.py
 
-      - name: Commit updated data
+      - name: Commit outputs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/
-          git diff --cached --quiet || git commit -m "Update daily coach data"
+          git diff --cached --quiet || git commit -m "Auto update coach data"
           git push
