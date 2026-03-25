@@ -18,6 +18,9 @@ DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 
 RUN_TYPES = {"Run", "VirtualRun", "TrailRun", "TreadmillRun", "Treadmill", "VirtualRideRun"}
+RIDE_TYPES = {"Ride", "VirtualRide", "MountainBikeRide", "GravelRide", "EBikeRide"}
+PRIMARY_TRAINING_TYPES = RUN_TYPES | RIDE_TYPES | {"Workout"}
+NON_PRIMARY_TYPES = {"Walk", "Hike", "Breathwork", "Yoga", "Meditation"}
 
 
 def require_env(name: str) -> str:
@@ -61,6 +64,32 @@ def pick(row, *names):
         if name in row.index and pd.notna(row[name]):
             return safe(row[name])
     return None
+
+
+def to_float(value):
+    if value is None:
+        return None
+    try:
+        if pd.isna(value):
+            return None
+    except Exception:
+        pass
+    try:
+        return float(value)
+    except Exception:
+        return None
+
+
+def iso_date_only(value):
+    if value is None:
+        return None
+    try:
+        ts = pd.to_datetime(value, errors="coerce")
+        if pd.isna(ts):
+            return None
+        return ts.date().isoformat()
+    except Exception:
+        return None
 
 
 def load_data():
@@ -149,10 +178,47 @@ def normalize_wellness(df: pd.DataFrame, today_date: datetime.date) -> pd.DataFr
     return df
 
 
+def summarize_recovery_trends(df: pd.DataFrame, today_date):
+    if df.empty:
+        return {}
+    start_date = today_date - timedelta(days=6)
+    recent = df[df["date"].dt.date >= start_date].copy()
+    if recent.empty:
+        return {}
+
+    out = {
+        "window_start": start_date.isoformat(),
+        "window_end": today_date.isoformat(),
+        "days_with_recovery_data": int(len(recent)),
+    }
+
+    if "sleepSecs" in recent.columns:
+        sleep_hours = recent["sleepSecs"] / 3600
+        non_missing = sleep_hours.dropna()
+        out["avg_sleep_hours"] = round(float(non_missing.mean()), 2) if not non_missing.empty else None
+        out["min_sleep_hours"] = round(float(non_missing.min()), 2) if not non_missing.empty else None
+
+    for src, dst in [
+        ("sleepScore", "avg_sleep_score"),
+        ("hrv", "avg_hrv"),
+        ("restingHR", "avg_resting_hr"),
+        ("avgSleepingHR", "avg_sleeping_hr"),
+    ]:
+        if src in recent.columns:
+            s = recent[src].dropna()
+            out[dst] = round(float(s.mean()), 2) if not s.empty else None
+
+    if "sleepScore" in recent.columns:
+        s = recent["sleepScore"].dropna()
+        out["low_sleep_score_days"] = int((s < 70).sum()) if not s.empty else 0
+
+    return out
+
+
 def prepare_wellness(df: pd.DataFrame, today_date):
     df = normalize_wellness(df, today_date)
     if df.empty:
-        return {}, {}, {}, pd.DataFrame()
+        return {}, {}, {}, pd.DataFrame(), {}
 
     latest_state = df.iloc[-1]
 
@@ -207,44 +273,16 @@ def prepare_wellness(df: pd.DataFrame, today_date):
         if "atl" in latest_state.index and pd.notna(latest_state["atl"]) and "ctl" in latest_state.index and pd.notna(latest_state["ctl"]) and float(latest_state["ctl"]) != 0 else None,
     }
 
-    recent_7d = summarize_recovery_trends(recovery_df, today_date)
-    return recovery, training_state, recent_7d, recovery_df
-
-
-def summarize_recovery_trends(df: pd.DataFrame, today_date):
-    if df.empty:
-        return {}
-    start_date = today_date - timedelta(days=6)
-    recent = df[df["date"].dt.date >= start_date].copy()
-    if recent.empty:
-        return {}
-
-    out = {
-        "window_start": start_date.isoformat(),
-        "window_end": today_date.isoformat(),
-        "days_with_recovery_data": int(len(recent)),
+    recovery_trend = summarize_recovery_trends(recovery_df, today_date)
+    data_status = {
+        "today_date": today_date.isoformat(),
+        "recovery_date": iso_date_only(recovery.get("date")),
+        "training_state_date": iso_date_only(training_state.get("date")),
+        "recovery_is_fresh": iso_date_only(recovery.get("date")) == today_date.isoformat(),
+        "training_state_is_fresh": iso_date_only(training_state.get("date")) == today_date.isoformat(),
     }
 
-    if "sleepSecs" in recent.columns:
-        sleep_hours = recent["sleepSecs"] / 3600
-        out["avg_sleep_hours"] = round(float(sleep_hours.dropna().mean()), 2) if sleep_hours.dropna().size else None
-        out["min_sleep_hours"] = round(float(sleep_hours.dropna().min()), 2) if sleep_hours.dropna().size else None
-
-    for src, dst in [
-        ("sleepScore", "avg_sleep_score"),
-        ("hrv", "avg_hrv"),
-        ("restingHR", "avg_resting_hr"),
-        ("avgSleepingHR", "avg_sleeping_hr"),
-    ]:
-        if src in recent.columns:
-            s = recent[src].dropna()
-            out[dst] = round(float(s.mean()), 2) if not s.empty else None
-
-    if "sleepScore" in recent.columns:
-        s = recent["sleepScore"].dropna()
-        out["low_sleep_score_days"] = int((s < 70).sum()) if not s.empty else 0
-
-    return out
+    return recovery, training_state, recovery_trend, recovery_df, data_status
 
 
 def normalize_activities(df: pd.DataFrame) -> pd.DataFrame:
@@ -295,7 +333,7 @@ def classify_activity(row) -> dict:
     elif activity_type == "Workout":
         label = "strength_or_workout"
         reason.append("非跑步活动，需要结合主观疲劳解释")
-    elif activity_type in {"Ride", "VirtualRide"}:
+    elif activity_type in RIDE_TYPES:
         label = "ride"
         reason.append("骑行活动，按骑行负荷解释")
     else:
@@ -310,55 +348,39 @@ def classify_activity(row) -> dict:
     }
 
 
-def prepare_activity(df: pd.DataFrame, today_date):
-    df = normalize_activities(df)
-    if df.empty:
-        return {}, {}, pd.DataFrame()
+def choose_primary_activity(candidates: pd.DataFrame):
+    if candidates.empty:
+        return None, {}
 
-    yesterday = today_date - timedelta(days=1)
-    chosen = None
+    work = candidates.copy()
+    work["type_value"] = work["type"].fillna("") if "type" in work.columns else ""
+    work["training_load_num"] = pd.to_numeric(
+        work["icu_training_load"] if "icu_training_load" in work.columns else work.get("training_load"),
+        errors="coerce",
+    ).fillna(-1)
+    work["moving_time_num"] = pd.to_numeric(work["moving_time"] if "moving_time" in work.columns else None, errors="coerce").fillna(-1)
 
-    if "start_date_local" in df.columns:
-        y_df = df[df["start_date_local"].dt.date == yesterday]
-        if not y_df.empty:
-            chosen = y_df.iloc[-1]
+    work["is_primary_type"] = work["type_value"].isin(PRIMARY_TRAINING_TYPES).astype(int)
+    work["is_run_type"] = work["type_value"].isin(RUN_TYPES).astype(int)
+    work["is_non_primary_type"] = work["type_value"].isin(NON_PRIMARY_TYPES).astype(int)
 
-    if chosen is None:
-        chosen = df.iloc[-1]
+    chosen = work.sort_values(
+        ["is_primary_type", "is_run_type", "training_load_num", "moving_time_num", "start_date_local"],
+        ascending=[True, True, True, True, True],
+    ).iloc[-1]
 
-    classification = classify_activity(chosen)
-
-    activity = {
-        "id": pick(chosen, "id"),
-        "start_date_local": safe(chosen.get("start_date_local")),
-        "name": pick(chosen, "name"),
-        "type": pick(chosen, "type"),
-        "moving_time_sec": pick(chosen, "moving_time"),
-        "elapsed_time_sec": pick(chosen, "elapsed_time"),
-        "distance_m": pick(chosen, "distance"),
-        "distance_km": round(float(chosen["distance"]) / 1000, 2)
-        if "distance" in chosen.index and pd.notna(chosen["distance"]) else None,
-        "average_heartrate": pick(chosen, "average_heartrate"),
-        "max_heartrate": pick(chosen, "max_heartrate"),
-        "average_speed": pick(chosen, "average_speed"),
-        "max_speed": pick(chosen, "max_speed"),
-        "total_elevation_gain": pick(chosen, "total_elevation_gain"),
-        "calories": pick(chosen, "calories"),
-        "average_cadence": pick(chosen, "average_cadence"),
-        "pace": pick(chosen, "pace"),
-        "threshold_pace": pick(chosen, "threshold_pace"),
-        "icu_training_load": pick(chosen, "icu_training_load", "training_load"),
-        "icu_intensity": pick(chosen, "icu_intensity"),
-        "icu_fitness": pick(chosen, "icu_fitness"),
-        "icu_fatigue": pick(chosen, "icu_fatigue"),
-        "icu_eftp": pick(chosen, "icu_eftp"),
-        "icu_average_watts": pick(chosen, "icu_average_watts", "average_watts"),
-        "icu_normalized_watts": pick(chosen, "icu_normalized_watts", "normalized_watts"),
-        "classification": classification,
+    meta = {
+        "selection_mode": "primary_activity_of_day",
+        "candidate_count": int(len(work)),
+        "candidate_types": sorted([str(x) for x in work["type_value"].dropna().unique().tolist()]),
+        "selected_type": safe(chosen.get("type")),
+        "selected_training_load": to_float(chosen.get("training_load_num")),
+        "selected_moving_time_sec": to_float(chosen.get("moving_time_num")),
+        "selection_rule": (
+            "先选主训练类型（Run/Workout/Ride），再优先 Run，之后按训练负荷、时长、开始时间排序。"
+        ),
     }
-
-    recent_7d = summarize_activity_trends(df, today_date)
-    return activity, recent_7d, df
+    return chosen, meta
 
 
 def summarize_activity_trends(df: pd.DataFrame, today_date):
@@ -390,8 +412,71 @@ def summarize_activity_trends(df: pd.DataFrame, today_date):
     return out
 
 
-def build_health_signals(recovery, training_state, recovery_trend, activity):
+def prepare_activity(df: pd.DataFrame, today_date):
+    df = normalize_activities(df)
+    if df.empty:
+        return {}, {}, {}, pd.DataFrame()
+
+    yesterday = today_date - timedelta(days=1)
+    chosen = None
+    selection_meta = {}
+
+    if "start_date_local" in df.columns:
+        y_df = df[df["start_date_local"].dt.date == yesterday].copy()
+        if not y_df.empty:
+            chosen, selection_meta = choose_primary_activity(y_df)
+            selection_meta["target_date"] = yesterday.isoformat()
+
+    if chosen is None:
+        chosen = df.iloc[-1]
+        selection_meta = {
+            "selection_mode": "latest_activity_fallback",
+            "candidate_count": 1,
+            "target_date": yesterday.isoformat(),
+            "selection_rule": "昨天没有活动，回退到最近一条活动。",
+        }
+
+    classification = classify_activity(chosen)
+
+    activity = {
+        "id": pick(chosen, "id"),
+        "start_date_local": safe(chosen.get("start_date_local")),
+        "name": pick(chosen, "name"),
+        "type": pick(chosen, "type"),
+        "moving_time_sec": pick(chosen, "moving_time"),
+        "elapsed_time_sec": pick(chosen, "elapsed_time"),
+        "distance_m": pick(chosen, "distance"),
+        "distance_km": round(float(chosen["distance"]) / 1000, 2)
+        if "distance" in chosen.index and pd.notna(chosen["distance"]) else None,
+        "average_heartrate": pick(chosen, "average_heartrate"),
+        "max_heartrate": pick(chosen, "max_heartrate"),
+        "average_speed": pick(chosen, "average_speed"),
+        "max_speed": pick(chosen, "max_speed"),
+        "total_elevation_gain": pick(chosen, "total_elevation_gain"),
+        "calories": pick(chosen, "calories"),
+        "average_cadence": pick(chosen, "average_cadence"),
+        "pace": pick(chosen, "pace"),
+        "threshold_pace": pick(chosen, "threshold_pace"),
+        "icu_training_load": pick(chosen, "icu_training_load", "training_load"),
+        "icu_intensity": pick(chosen, "icu_intensity"),
+        "icu_fitness": pick(chosen, "icu_fitness"),
+        "icu_fatigue": pick(chosen, "icu_fatigue"),
+        "icu_eftp": pick(chosen, "icu_eftp"),
+        "icu_average_watts": pick(chosen, "icu_average_watts", "average_watts"),
+        "icu_normalized_watts": pick(chosen, "icu_normalized_watts", "normalized_watts"),
+        "selection_meta": selection_meta,
+        "classification": classification,
+    }
+
+    recent_7d = summarize_activity_trends(df, today_date)
+    return activity, recent_7d, selection_meta, df
+
+
+def build_health_signals(recovery, training_state, recovery_trend, activity, data_status):
     signals = []
+
+    if not data_status.get("recovery_is_fresh"):
+        signals.append("今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据")
 
     sleep_hours = recovery.get("sleep_hours")
     if sleep_hours is not None and sleep_hours < 6:
@@ -429,7 +514,7 @@ def build_health_signals(recovery, training_state, recovery_trend, activity):
 
     cls = activity.get("classification", {}).get("label")
     if cls == "moderate_to_hard_run":
-        signals.append("昨天并非恢复跑，今天不宜机械加码")
+        signals.append("昨天主训练并非恢复跑，今天不宜机械加码")
 
     return signals
 
@@ -452,10 +537,10 @@ def build_conclusion_and_suggestion(recovery, training_state, recovery_trend, ac
             score += 2
         elif sleep_score >= 75:
             score += 1
-        elif sleep_score < 65:
-            score -= 1
         elif sleep_score < 55:
             score -= 2
+        elif sleep_score < 65:
+            score -= 1
 
     hrv = recovery.get("hrv")
     avg_hrv = recovery_trend.get("avg_hrv")
@@ -495,8 +580,6 @@ def build_conclusion_and_suggestion(recovery, training_state, recovery_trend, ac
     activity_class = activity.get("classification", {}).get("label")
     if activity_class == "moderate_to_hard_run":
         score -= 1
-    elif activity_class == "recovery_run":
-        score += 0
 
     recent_load = activity_trend.get("total_training_load")
     if recent_load is not None and recent_load >= 240:
@@ -518,7 +601,7 @@ def build_conclusion_and_suggestion(recovery, training_state, recovery_trend, ac
     return conclusion, suggestion, score
 
 
-def build_report(now, conclusion, suggestion, recovery, training_state, recovery_trend, activity, activity_trend, signals):
+def build_report(now, conclusion, suggestion, recovery, training_state, recovery_trend, activity, activity_trend, signals, data_status):
     lines = [
         "# Daily Coach Report",
         "",
@@ -526,8 +609,12 @@ def build_report(now, conclusion, suggestion, recovery, training_state, recovery
         f"- Conclusion: {conclusion}",
         f"- Today suggestion: {suggestion}",
         "",
-        "## Recovery",
+        "## Data Status",
     ]
+    for k, v in data_status.items():
+        lines.append(f"- {k}: {v}")
+
+    lines += ["", "## Recovery"]
     for k, v in recovery.items():
         lines.append(f"- {k}: {v}")
 
@@ -539,7 +626,7 @@ def build_report(now, conclusion, suggestion, recovery, training_state, recovery
     for k, v in training_state.items():
         lines.append(f"- {k}: {v}")
 
-    lines += ["", "## Yesterday Activity"]
+    lines += ["", "## Yesterday Primary Activity"]
     for k, v in activity.items():
         lines.append(f"- {k}: {v}")
 
@@ -559,8 +646,8 @@ def build_report(now, conclusion, suggestion, recovery, training_state, recovery
 
 def main():
     wellness_df, activities_df, now = load_data()
-    recovery, training_state, recovery_trend, _ = prepare_wellness(wellness_df, now.date())
-    activity, activity_trend, _ = prepare_activity(activities_df, now.date())
+    recovery, training_state, recovery_trend, _, data_status = prepare_wellness(wellness_df, now.date())
+    activity, activity_trend, _, _ = prepare_activity(activities_df, now.date())
 
     conclusion, suggestion, score = build_conclusion_and_suggestion(
         recovery,
@@ -569,12 +656,13 @@ def main():
         activity,
         activity_trend,
     )
-    signals = build_health_signals(recovery, training_state, recovery_trend, activity)
+    signals = build_health_signals(recovery, training_state, recovery_trend, activity, data_status)
 
     payload = {
         "generated_at": now.isoformat(),
         "timezone": "Australia/Sydney",
         "source": "Intervals.icu API",
+        "data_status": data_status,
         "conclusion": conclusion,
         "today_training_suggestion": suggestion,
         "internal_score": score,
@@ -609,10 +697,11 @@ def main():
         activity,
         activity_trend,
         signals,
+        data_status,
     )
     (DATA_DIR / "daily_report.md").write_text(report_md, encoding="utf-8")
 
-    print("Auto pipeline v2 finished.")
+    print("Auto pipeline v3 finished.")
 
 
 if __name__ == "__main__":
