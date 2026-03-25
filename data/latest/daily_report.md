@@ -1,7 +1,8 @@
 # Daily Coach Report
 
-- Generated: 2026-03-25T12:28:41.441797+11:00
-- Conclusion: 恢复尚可，适合常规训练，不建议激进加码。
+- Generated: 2026-03-25T12:44:17.406420+11:00
+- Conclusion: 恢复尚可，今天适合常规有氧或中等训练，不建议激进加码。
+- Today suggestion: 以轻松跑或常规有氧为主。只有在主观状态也不错时，才考虑中等质量训练。
 
 ## Recovery
 - date: 2026-03-25 00:00:00
@@ -23,6 +24,18 @@
 - motivation: None
 - injury: None
 
+## 7-Day Recovery Trend
+- window_start: 2026-03-19
+- window_end: 2026-03-25
+- days_with_recovery_data: 7
+- avg_sleep_hours: 7.3
+- min_sleep_hours: 5.97
+- avg_sleep_score: 84.29
+- avg_hrv: 71.86
+- avg_resting_hr: 44.71
+- avg_sleeping_hr: None
+- low_sleep_score_days: 0
+
 ## Training State
 - date: 2026-03-25 00:00:00
 - ctl: 9.529467
@@ -32,6 +45,7 @@
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
+- atl_ctl_ratio: 2.03
 
 ## Yesterday Activity
 - id: i134358513
@@ -48,9 +62,26 @@
 - max_speed: 3.583
 - total_elevation_gain: 174.0
 - calories: 614.0
+- average_cadence: 82.72722
+- pace: 3.0084484
+- threshold_pace: 3.6630037
 - icu_training_load: 49.0
+- icu_intensity: 72.5433
 - icu_fitness: 9.759081
 - icu_fatigue: 22.28398
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
+- classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.82, 'reason': '整体更像常规有氧，而不是恢复跑', 'distance_km': 10.01, 'duration_min': 55.4}
+
+## 7-Day Activity Trend
+- window_start: 2026-03-19
+- window_end: 2026-03-25
+- activity_count: 3
+- total_training_load: 141.0
+- avg_training_load: 47.0
+- run_count: 3
+- run_distance_km: 27.51
+
+## Signals To Watch
+- ATL/CTL 偏高，近期负荷堆积需要留意
