@@ -1,12 +1,12 @@
 # Daily Coach Report
 
-- Generated: 2026-03-26T09:17:58.992825+11:00
+- Generated: 2026-03-26T09:33:39.423683+11:00
 - Conclusion: 恢复尚可，今天适合常规有氧或中等训练，不建议激进加码。
 - Today suggestion: 以轻松跑或常规有氧为主。只有在主观状态也不错时，才考虑中等质量训练。
 
 ## Recovery
 - date: 2026-03-26 00:00:00
-- weight: None
+- weight: 61.4
 - resting_hr: 44.0
 - hrv: 75.0
 - hrv_sdnn: None
