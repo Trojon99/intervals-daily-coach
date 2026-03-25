@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-26T09:17:58.992825+11:00",
+  "generated_at": "2026-03-26T09:33:39.423683+11:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "conclusion": "恢复尚可，今天适合常规有氧或中等训练，不建议激进加码。",
@@ -7,7 +7,7 @@
   "internal_score": 2,
   "recovery": {
     "date": "2026-03-26 00:00:00",
-    "weight": null,
+    "weight": 61.4,
     "resting_hr": 44.0,
     "hrv": 75.0,
     "hrv_sdnn": null,
