@@ -1,12 +1,12 @@
 # Daily Coach Report
 
-- Generated: 2026-03-25T12:44:17.406420+11:00
+- Generated: 2026-03-25T20:54:11.495936+11:00
 - Conclusion: 恢复尚可，今天适合常规有氧或中等训练，不建议激进加码。
 - Today suggestion: 以轻松跑或常规有氧为主。只有在主观状态也不错时，才考虑中等质量训练。
 
 ## Recovery
 - date: 2026-03-25 00:00:00
-- weight: 61.4
+- weight: 58.0
 - resting_hr: 46.0
 - hrv: 71.0
 - hrv_sdnn: None
@@ -38,14 +38,14 @@
 
 ## Training State
 - date: 2026-03-25 00:00:00
-- ctl: 9.529467
-- atl: 19.31749
-- ramp_rate: 1.9464521
-- ctl_load: 0.0
-- atl_load: 0.0
+- ctl: 10.376486
+- atl: 24.109884
+- ramp_rate: 2.7934713
+- ctl_load: 36.0
+- atl_load: 36.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 2.03
+- atl_ctl_ratio: 2.32
 
 ## Yesterday Activity
 - id: i134358513
@@ -77,11 +77,11 @@
 ## 7-Day Activity Trend
 - window_start: 2026-03-19
 - window_end: 2026-03-25
-- activity_count: 3
-- total_training_load: 141.0
-- avg_training_load: 47.0
-- run_count: 3
-- run_distance_km: 27.51
+- activity_count: 5
+- total_training_load: 177.0
+- avg_training_load: 35.4
+- run_count: 4
+- run_distance_km: 33.92
 
 ## Signals To Watch
 - ATL/CTL 偏高，近期负荷堆积需要留意
