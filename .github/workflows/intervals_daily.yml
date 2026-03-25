@@ -6,7 +6,7 @@ on:
     # Two daily runs in UTC. This avoids DST headaches while still catching
     # morning recovery and later-day activity updates for Australia/Sydney.
     - cron: "00 23 * * *"
-    - cron: "00 09 * * *"
+    - cron: "30 08 * * *"
 
 permissions:
   contents: write
