@@ -1,8 +1,15 @@
 # Daily Coach Report
 
-- Generated: 2026-03-26T09:33:39.423683+11:00
+- Generated: 2026-03-26T09:56:51.976148+11:00
 - Conclusion: 恢复尚可，今天适合常规有氧或中等训练，不建议激进加码。
 - Today suggestion: 以轻松跑或常规有氧为主。只有在主观状态也不错时，才考虑中等质量训练。
+
+## Data Status
+- today_date: 2026-03-26
+- recovery_date: 2026-03-26
+- training_state_date: 2026-03-26
+- recovery_is_fresh: True
+- training_state_is_fresh: True
 
 ## Recovery
 - date: 2026-03-26 00:00:00
@@ -47,32 +54,33 @@
 - run_eftp: None
 - atl_ctl_ratio: 2.06
 
-## Yesterday Activity
-- id: i134622746
-- start_date_local: 2026-03-25 17:59:05
-- name: 🌥️ 午后行走
-- type: Walk
-- moving_time_sec: 1208
-- elapsed_time_sec: 1319
-- distance_m: 1395.26
-- distance_km: 1.4
-- average_heartrate: 107.0
-- max_heartrate: 127.0
-- average_speed: 1.146
-- max_speed: 1.624
-- total_elevation_gain: 8.0
-- calories: 77.0
-- average_cadence: 54.877934
-- pace: 1.1550165
-- threshold_pace: None
-- icu_training_load: 7.0
-- icu_intensity: 45.20836
+## Yesterday Primary Activity
+- id: i134620756
+- start_date_local: 2026-03-25 17:22:06
+- name: 🌥️ 午后跑步
+- type: Run
+- moving_time_sec: 2043
+- elapsed_time_sec: 2078
+- distance_m: 6409.38
+- distance_km: 6.41
+- average_heartrate: 156.0
+- max_heartrate: 194.0
+- average_speed: 3.132
+- max_speed: 3.956
+- total_elevation_gain: 127.0
+- calories: 396.0
+- average_cadence: 84.35
+- pace: 3.1372392
+- threshold_pace: 3.6630037
+- icu_training_load: 29.0
+- icu_intensity: 71.450226
 - icu_fitness: 10.376486
 - icu_fatigue: 24.109884
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- classification: {'label': 'other_activity', 'speed_vs_threshold_ratio': None, 'reason': '非核心跑步类型，暂按其他活动处理', 'distance_km': 1.4, 'duration_min': 20.1}
+- selection_meta: {'selection_mode': 'primary_activity_of_day', 'candidate_count': 2, 'candidate_types': ['Run', 'Walk'], 'selected_type': 'Run', 'selected_training_load': 29.0, 'selected_moving_time_sec': 2043.0, 'selection_rule': '先选主训练类型（Run/Workout/Ride），再优先 Run，之后按训练负荷、时长、开始时间排序。', 'target_date': '2026-03-25'}
+- classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.855, 'reason': '整体更像常规有氧，而不是恢复跑', 'distance_km': 6.41, 'duration_min': 34.0}
 
 ## 7-Day Activity Trend
 - window_start: 2026-03-20
