@@ -1,10 +1,10 @@
 name: Intervals Auto Coach
 
 on:
-  push:
-    branches: [ "main" ]
+  workflow_dispatch:
   schedule:
-    # Sydney 早上大致对应 UTC 前一日晚间；这里设两次，减少时区/夏令时麻烦
+    # Two daily runs in UTC. This avoids DST headaches while still catching
+    # morning recovery and later-day activity updates for Australia/Sydney.
     - cron: "00 23 * * *"
     - cron: "00 09 * * *"
 

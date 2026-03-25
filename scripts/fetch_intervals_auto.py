@@ -93,7 +93,7 @@ def load_data():
         "ctlLoad",
         "atlLoad",
         "Ride_eftp",
-        "Run_eftp"
+        "Run_eftp",
     ])
 
     wellness_url = f"{BASE_URL}/athlete/0/wellness.csv"
@@ -119,49 +119,87 @@ def load_data():
     (DATA_DIR / "wellness.csv").write_text(wellness_text, encoding="utf-8")
     (DATA_DIR / "activities.csv").write_text(activities_text, encoding="utf-8")
 
-    return read_csv_text(wellness_text), read_csv_text(activities_text), now
+    wellness_df = read_csv_text(wellness_text)
+    activities_df = read_csv_text(activities_text)
+
+    (DATA_DIR / "wellness_columns.json").write_text(
+        json.dumps(list(wellness_df.columns), ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    (DATA_DIR / "activities_columns.json").write_text(
+        json.dumps(list(activities_df.columns), ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+    return wellness_df, activities_df, now
 
 
-def prepare_wellness(df: pd.DataFrame):
+def prepare_wellness(df: pd.DataFrame, today_date):
     if df.empty:
         return {}, {}
 
     if "date" in df.columns:
+        df = df.copy()
         df["date"] = pd.to_datetime(df["date"], errors="coerce")
+        df = df[df["date"].notna()]
+        df = df[df["date"].dt.date <= today_date]
         df = df.sort_values("date")
 
-    latest = df.iloc[-1]
+    if df.empty:
+        return {}, {}
+
+    # Training-state metrics can live on a placeholder row for today/tomorrow.
+    # Recovery metrics should come from the most recent row that actually has
+    # recovery data, not simply the last row in the file.
+    latest_state = df.iloc[-1]
+
+    recovery_fields = [
+        "restingHR",
+        "hrv",
+        "sleepSecs",
+        "sleepScore",
+        "sleepQuality",
+        "avgSleepingHR",
+        "spO2",
+        "readiness",
+        "fatigue",
+        "soreness",
+        "stress",
+    ]
+    recovery_df = df.dropna(subset=recovery_fields, how="all")
+    latest_recovery = recovery_df.iloc[-1] if not recovery_df.empty else latest_state
 
     recovery = {
-        "date": safe(latest.get("date")),
-        "weight": pick(latest, "weight"),
-        "resting_hr": pick(latest, "restingHR"),
-        "hrv": pick(latest, "hrv"),
-        "hrv_sdnn": pick(latest, "hrvSDNN"),
-        "readiness": pick(latest, "readiness"),
-        "sleep_secs": pick(latest, "sleepSecs"),
-        "sleep_hours": round(float(latest["sleepSecs"]) / 3600, 2)
-        if "sleepSecs" in latest.index and pd.notna(latest["sleepSecs"]) else None,
-        "sleep_score": pick(latest, "sleepScore"),
-        "sleep_quality": pick(latest, "sleepQuality"),
-        "avg_sleeping_hr": pick(latest, "avgSleepingHR"),
-        "spo2": pick(latest, "spO2"),
-        "fatigue": pick(latest, "fatigue"),
-        "soreness": pick(latest, "soreness"),
-        "stress": pick(latest, "stress"),
-        "mood": pick(latest, "mood"),
-        "motivation": pick(latest, "motivation"),
-        "injury": pick(latest, "injury"),
+        "date": safe(latest_recovery.get("date")),
+        "weight": pick(latest_recovery, "weight"),
+        "resting_hr": pick(latest_recovery, "restingHR"),
+        "hrv": pick(latest_recovery, "hrv"),
+        "hrv_sdnn": pick(latest_recovery, "hrvSDNN"),
+        "readiness": pick(latest_recovery, "readiness"),
+        "sleep_secs": pick(latest_recovery, "sleepSecs"),
+        "sleep_hours": round(float(latest_recovery["sleepSecs"]) / 3600, 2)
+        if "sleepSecs" in latest_recovery.index and pd.notna(latest_recovery["sleepSecs"]) else None,
+        "sleep_score": pick(latest_recovery, "sleepScore"),
+        "sleep_quality": pick(latest_recovery, "sleepQuality"),
+        "avg_sleeping_hr": pick(latest_recovery, "avgSleepingHR"),
+        "spo2": pick(latest_recovery, "spO2"),
+        "fatigue": pick(latest_recovery, "fatigue"),
+        "soreness": pick(latest_recovery, "soreness"),
+        "stress": pick(latest_recovery, "stress"),
+        "mood": pick(latest_recovery, "mood"),
+        "motivation": pick(latest_recovery, "motivation"),
+        "injury": pick(latest_recovery, "injury"),
     }
 
     training_state = {
-        "ctl": pick(latest, "ctl"),
-        "atl": pick(latest, "atl"),
-        "ramp_rate": pick(latest, "rampRate"),
-        "ctl_load": pick(latest, "ctlLoad"),
-        "atl_load": pick(latest, "atlLoad"),
-        "ride_eftp": pick(latest, "Ride_eftp"),
-        "run_eftp": pick(latest, "Run_eftp"),
+        "date": safe(latest_state.get("date")),
+        "ctl": pick(latest_state, "ctl"),
+        "atl": pick(latest_state, "atl"),
+        "ramp_rate": pick(latest_state, "rampRate"),
+        "ctl_load": pick(latest_state, "ctlLoad"),
+        "atl_load": pick(latest_state, "atlLoad"),
+        "ride_eftp": pick(latest_state, "Ride_eftp"),
+        "run_eftp": pick(latest_state, "Run_eftp"),
     }
 
     return recovery, training_state
@@ -171,6 +209,7 @@ def prepare_activity(df: pd.DataFrame, today_date):
     if df.empty:
         return {}
 
+    df = df.copy()
     if "start_date_local" in df.columns:
         df["start_date_local"] = pd.to_datetime(df["start_date_local"], errors="coerce")
         df = df.sort_values("start_date_local")
@@ -238,10 +277,8 @@ def build_conclusion(recovery, training_state, activity):
     if hrv is not None and hrv > 0:
         score += 1
 
-    fatigue = recovery.get("fatigue")
-    soreness = recovery.get("soreness")
-    stress = recovery.get("stress")
-    for x in [fatigue, soreness, stress]:
+    for metric_name in ["fatigue", "soreness", "stress"]:
+        x = recovery.get(metric_name)
         if x is not None:
             try:
                 if float(x) >= 7:
@@ -267,8 +304,6 @@ def build_conclusion(recovery, training_state, activity):
         try:
             if float(load) >= 70:
                 score -= 1
-            elif float(load) <= 25:
-                score += 0
         except Exception:
             pass
 
@@ -283,7 +318,7 @@ def build_conclusion(recovery, training_state, activity):
 
 def build_report(now, recovery, training_state, activity, conclusion):
     lines = [
-        f"# Daily Coach Report",
+        "# Daily Coach Report",
         "",
         f"- Generated: {now.isoformat()}",
         f"- Conclusion: {conclusion}",
@@ -306,7 +341,7 @@ def build_report(now, recovery, training_state, activity, conclusion):
 
 def main():
     wellness_df, activities_df, now = load_data()
-    recovery, training_state = prepare_wellness(wellness_df)
+    recovery, training_state = prepare_wellness(wellness_df, now.date())
     activity = prepare_activity(activities_df, now.date())
 
     conclusion = build_conclusion(recovery, training_state, activity)
@@ -325,8 +360,8 @@ def main():
             "yesterday_activity",
             "training_state",
             "today_training_suggestion",
-            "health_signals_to_watch"
-        ]
+            "health_signals_to_watch",
+        ],
     }
 
     (DATA_DIR / "daily_coach_input.json").write_text(
