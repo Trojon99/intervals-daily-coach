@@ -1,6 +1,6 @@
 # Daily Coach Report
 
-- Generated: 2026-03-26T11:03:29.477178+11:00
+- Generated: 2026-03-26T11:18:16.315439+11:00
 - Conclusion: 恢复尚可，今天适合常规有氧或中等训练，不建议激进加码。
 - Today suggestion: 以轻松跑或常规有氧为主。只有在主观状态也不错时，才考虑中等质量训练。
 
@@ -10,6 +10,10 @@
 - training_state_date: 2026-03-26
 - recovery_is_fresh: True
 - training_state_is_fresh: True
+
+## State Assessment
+- overall_state: load_accumulation
+- reason: 短期负荷明显高于底盘
 
 ## Recovery
 - date: 2026-03-26 00:00:00
@@ -79,8 +83,12 @@
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'primary_activity_of_day', 'candidate_count': 2, 'candidate_types': ['Run', 'Walk'], 'selected_type': 'Run', 'selected_training_load': 29.0, 'selected_moving_time_sec': 2043.0, 'selection_rule': '先选主训练类型（Run/Workout/Ride），再优先 Run，之后按训练负荷、时长、开始时间排序。', 'target_date': '2026-03-25'}
+- selection_meta: {'selection_mode': 'primary_activity_of_day', 'candidate_count': 2, 'candidate_types': ['Run', 'Walk'], 'pool_count': 1, 'pool_types': ['Run'], 'selected_type': 'Run', 'selected_training_load': 29.0, 'selected_moving_time_sec': 2043.0, 'selection_rule': '先限定为主训练类型（Run/Workout/Ride）；若存在主训练，则在主训练中按训练负荷、时长、距离、类型优先级、开始时间排序。', 'target_date': '2026-03-25'}
 - classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.855, 'reason': '整体更像常规有氧，而不是恢复跑', 'distance_km': 6.41, 'duration_min': 34.0}
+
+## Training-Recovery Match
+- status: matched_but_load_accumulated
+- reason: 昨天主训练不重，但短期负荷仍偏高，更像负荷积累而不是单日恢复差。
 
 ## 7-Day Activity Trend
 - window_start: 2026-03-20
@@ -89,6 +97,7 @@
 - total_training_load: 177.0
 - avg_training_load: 35.4
 - run_count: 4
+- primary_training_count: 4
 - run_distance_km: 33.92
 
 ## Signals To Watch
