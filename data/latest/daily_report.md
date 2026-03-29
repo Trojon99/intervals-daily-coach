@@ -1,30 +1,30 @@
 # Daily Coach Report
 
-- Generated: 2026-03-30T00:00:37.157145+11:00
-- Conclusion: 恢复较好，今天可以正常训练；是否加码仍要看主观感觉和当天安排。
-- Today suggestion: 优先做正常训练。若中午有重腿力量，下午跑步保持轻松；若下午想做质量跑，中午力量只做上肢或核心。
+- Generated: 2026-03-30T10:15:54.769524+11:00
+- Conclusion: 恢复尚可，今天适合常规有氧或中等训练，不建议激进加码。
+- Today suggestion: 以轻松跑或常规有氧为主。只有在主观状态也不错时，才考虑中等质量训练。
 
 ## Data Status
 - today_date: 2026-03-30
-- recovery_date: 2026-03-29
+- recovery_date: 2026-03-30
 - training_state_date: 2026-03-30
-- recovery_is_fresh: False
+- recovery_is_fresh: True
 - training_state_is_fresh: True
 
 ## State Assessment
-- overall_state: pending_today_recovery_data
-- reason: 今天晨间恢复数据还未完全同步，当前判断可能仍受前一日数据影响。
+- overall_state: load_accumulation
+- reason: 短期负荷偏高
 
 ## Recovery
-- date: 2026-03-29 00:00:00
-- weight: 62.099
-- resting_hr: 41.0
-- hrv: 92.0
+- date: 2026-03-30 00:00:00
+- weight: None
+- resting_hr: 43.0
+- hrv: 73.0
 - hrv_sdnn: None
 - readiness: None
-- sleep_secs: 27840.0
-- sleep_hours: 7.73
-- sleep_score: 88.0
+- sleep_secs: 24540.0
+- sleep_hours: 6.82
+- sleep_score: 86.0
 - sleep_quality: 2.0
 - avg_sleeping_hr: None
 - spo2: None
@@ -38,12 +38,12 @@
 ## 7-Day Recovery Trend
 - window_start: 2026-03-24
 - window_end: 2026-03-30
-- days_with_recovery_data: 6
-- avg_sleep_hours: 7.85
+- days_with_recovery_data: 7
+- avg_sleep_hours: 7.71
 - min_sleep_hours: 6.68
-- avg_sleep_score: 89.0
-- avg_hrv: 77.5
-- avg_resting_hr: 43.5
+- avg_sleep_score: 88.57
+- avg_hrv: 76.86
+- avg_resting_hr: 43.43
 - avg_sleeping_hr: None
 - low_sleep_score_days: 0
 
@@ -87,8 +87,8 @@
 - classification: {'label': 'other_activity', 'speed_vs_threshold_ratio': None, 'reason': '非核心跑步类型，暂按其他活动处理', 'distance_km': None, 'duration_min': 10.0}
 
 ## Training-Recovery Match
-- status: pending_today_recovery_data
-- reason: 今天晨间恢复数据还不够新鲜，训练-恢复匹配判断只能保守解释。
+- status: matched_but_conservative
+- reason: 昨天训练不重，但今天恢复仍偏弱（睡眠低于近7天均值较多），今天应保守安排。
 
 ## 7-Day Activity Trend
 - window_start: 2026-03-24
@@ -101,5 +101,5 @@
 - run_distance_km: 21.42
 
 ## Signals To Watch
-- 今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据
+- 昨晚睡眠明显低于近7天均值
 - ATL/CTL 偏高，近期负荷堆积需要留意
