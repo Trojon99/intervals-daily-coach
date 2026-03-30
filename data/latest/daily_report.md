@@ -1,31 +1,31 @@
 # Daily Coach Report
 
-- Generated: 2026-03-31T00:24:58.488974+11:00
-- Conclusion: 恢复尚可，今天适合常规有氧或中等训练，不建议激进加码。
-- Today suggestion: 以轻松跑或常规有氧为主。只有在主观状态也不错时，才考虑中等质量训练。
+- Generated: 2026-03-31T10:20:52.572503+11:00
+- Conclusion: 恢复偏弱，今天不适合高强度，优先恢复。
+- Today suggestion: 更适合休息、走路、拉伸或非常轻的恢复活动。若有不适或疲劳延续，连续观察。
 
 ## Data Status
 - today_date: 2026-03-31
-- recovery_date: 2026-03-30
+- recovery_date: 2026-03-31
 - training_state_date: 2026-03-31
-- recovery_is_fresh: False
+- recovery_is_fresh: True
 - training_state_is_fresh: True
 
 ## State Assessment
-- overall_state: pending_today_recovery_data
-- reason: 今天晨间恢复数据还未完全同步，当前判断可能仍受前一日数据影响。
+- overall_state: insufficient_recovery
+- reason: 睡眠偏短；短期负荷偏高
 
 ## Recovery
-- date: 2026-03-30 00:00:00
+- date: 2026-03-31 00:00:00
 - weight: None
-- resting_hr: 43.0
-- hrv: 73.0
+- resting_hr: 44.0
+- hrv: 69.0
 - hrv_sdnn: None
 - readiness: None
-- sleep_secs: 24540.0
-- sleep_hours: 6.82
-- sleep_score: 86.0
-- sleep_quality: 2.0
+- sleep_secs: 20640.0
+- sleep_hours: 5.73
+- sleep_score: 74.0
+- sleep_quality: 3.0
 - avg_sleeping_hr: None
 - spo2: None
 - fatigue: None
@@ -38,12 +38,12 @@
 ## 7-Day Recovery Trend
 - window_start: 2026-03-25
 - window_end: 2026-03-31
-- days_with_recovery_data: 6
-- avg_sleep_hours: 7.63
-- min_sleep_hours: 6.68
-- avg_sleep_score: 87.5
-- avg_hrv: 75.83
-- avg_resting_hr: 43.83
+- days_with_recovery_data: 7
+- avg_sleep_hours: 7.36
+- min_sleep_hours: 5.73
+- avg_sleep_score: 85.57
+- avg_hrv: 74.86
+- avg_resting_hr: 43.86
 - avg_sleeping_hr: None
 - low_sleep_score_days: 0
 
@@ -87,8 +87,8 @@
 - classification: {'label': 'other_activity', 'speed_vs_threshold_ratio': None, 'reason': '非核心跑步类型，暂按其他活动处理', 'distance_km': None, 'duration_min': 10.0}
 
 ## Training-Recovery Match
-- status: pending_today_recovery_data
-- reason: 今天晨间恢复数据还不够新鲜，训练-恢复匹配判断只能保守解释。
+- status: matched_but_conservative
+- reason: 昨天训练不重，但今天恢复仍偏弱（睡眠时长偏短），今天应保守安排。
 
 ## 7-Day Activity Trend
 - window_start: 2026-03-25
@@ -101,6 +101,6 @@
 - run_distance_km: 11.41
 
 ## Signals To Watch
-- 今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据
+- 昨晚睡眠时长偏短，优先按恢复不足处理
 - 昨晚睡眠明显低于近7天均值
 - ATL/CTL 偏高，近期负荷堆积需要留意
