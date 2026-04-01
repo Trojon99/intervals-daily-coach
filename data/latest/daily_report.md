@@ -1,6 +1,6 @@
 # Daily Coach Report
 
-- Generated: 2026-04-01T10:17:36.129568+11:00
+- Generated: 2026-04-01T11:20:16.666211+11:00
 - Conclusion: 恢复较好，今天可以正常训练；是否加码仍要看主观感觉和当天安排。
 - Today suggestion: 优先做正常训练。若中午有重腿力量，下午跑步保持轻松；若下午想做质量跑，中午力量只做上肢或核心。
 
@@ -10,10 +10,6 @@
 - training_state_date: 2026-04-01
 - recovery_is_fresh: True
 - training_state_is_fresh: True
-
-## State Assessment
-- overall_state: normal_fluctuation
-- reason: 目前更像正常波动，没有看到明确异常信号。
 
 ## Recovery
 - date: 2026-04-01 00:00:00
@@ -86,10 +82,6 @@
 - selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-03-31', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
 - classification: {'label': 'other_activity', 'speed_vs_threshold_ratio': None, 'reason': '非核心跑步类型，暂按其他活动处理', 'distance_km': None, 'duration_min': 10.0}
 
-## Training-Recovery Match
-- status: matched
-- reason: 昨天训练刺激与今天恢复总体匹配，可以按常规节奏安排。
-
 ## 7-Day Activity Trend
 - window_start: 2026-03-26
 - window_end: 2026-04-01
@@ -97,7 +89,6 @@
 - total_training_load: 19.0
 - avg_training_load: 9.5
 - run_count: 1
-- primary_training_count: 1
 - run_distance_km: 5.0
 
 ## Signals To Watch
