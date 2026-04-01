@@ -18,6 +18,7 @@ concurrency:
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
 
     steps:
       - name: Checkout
@@ -36,6 +37,9 @@ jobs:
       - name: Run pipeline
         env:
           INTERVALS_API_KEY: ${{ secrets.INTERVALS_API_KEY }}
+          MAX_RECOVERY_RETRIES: "2"
+          RETRY_SLEEP_SECONDS: "900"
+          RETRY_IF_NOT_FRESH: "1"
         run: |
           python scripts/fetch_intervals_auto.py
 
