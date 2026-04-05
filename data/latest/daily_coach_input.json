@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-04-05T00:30:14.776439+11:00",
+  "generated_at": "2026-04-05T10:02:18.985468+10:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
     "today_date": "2026-04-05",
-    "recovery_date": "2026-04-04",
+    "recovery_date": "2026-04-05",
     "training_state_date": "2026-04-05",
-    "recovery_is_fresh": false,
+    "recovery_is_fresh": true,
     "training_state_is_fresh": true
   },
-  "conclusion": "恢复较好，今天可以正常训练；是否加码仍要看主观感觉和当天安排。",
-  "today_training_suggestion": "优先做正常训练。若中午有重腿力量，下午跑步保持轻松；若下午想做质量跑，中午力量只做上肢或核心。",
-  "internal_score": 5,
+  "conclusion": "恢复一般，今天更适合轻松有氧或降强度。",
+  "today_training_suggestion": "避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。",
+  "internal_score": -1,
   "recovery": {
-    "date": "2026-04-04 00:00:00",
-    "weight": 58.0,
-    "resting_hr": 42.0,
-    "hrv": 83.0,
+    "date": "2026-04-05 00:00:00",
+    "weight": null,
+    "resting_hr": 41.0,
+    "hrv": 76.0,
     "hrv_sdnn": null,
     "readiness": null,
-    "sleep_secs": 33000.0,
-    "sleep_hours": 9.17,
-    "sleep_score": 94.0,
-    "sleep_quality": 1.0,
+    "sleep_secs": 19080.0,
+    "sleep_hours": 5.3,
+    "sleep_score": 72.0,
+    "sleep_quality": 3.0,
     "avg_sleeping_hr": null,
     "spo2": null,
     "fatigue": null,
@@ -35,12 +35,12 @@
   "recovery_trend_7d": {
     "window_start": "2026-03-30",
     "window_end": "2026-04-05",
-    "days_with_recovery_data": 6,
-    "avg_sleep_hours": 7.3,
-    "min_sleep_hours": 5.73,
-    "avg_sleep_score": 86.0,
-    "avg_hrv": 69.67,
-    "avg_resting_hr": 44.17,
+    "days_with_recovery_data": 7,
+    "avg_sleep_hours": 7.02,
+    "min_sleep_hours": 5.3,
+    "avg_sleep_score": 84.0,
+    "avg_hrv": 70.57,
+    "avg_resting_hr": 43.71,
     "avg_sleeping_hr": null,
     "low_sleep_score_days": 0
   },
@@ -110,7 +110,8 @@
     "run_distance_km": 11.01
   },
   "health_signals_to_watch": [
-    "今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据"
+    "昨晚睡眠时长偏短，优先按恢复不足处理",
+    "昨晚睡眠明显低于近7天均值"
   ],
   "analysis_order": [
     "direct_conclusion",
