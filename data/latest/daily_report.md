@@ -1,14 +1,14 @@
 # Daily Coach Report
 
-- Generated: 2026-04-14T11:10:10.565703+10:00
+- Generated: 2026-04-15T01:21:16.671182+10:00
 - Conclusion: 恢复较好，今天可以正常训练；是否加码仍要看主观感觉和当天安排。
 - Today suggestion: 优先做正常训练。若中午有重腿力量，下午跑步保持轻松；若下午想做质量跑，中午力量只做上肢或核心。
 
 ## Data Status
-- today_date: 2026-04-14
+- today_date: 2026-04-15
 - recovery_date: 2026-04-14
-- training_state_date: 2026-04-14
-- recovery_is_fresh: True
+- training_state_date: 2026-04-15
+- recovery_is_fresh: False
 - training_state_is_fresh: True
 
 ## Recovery
@@ -32,27 +32,27 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-04-08
-- window_end: 2026-04-14
-- days_with_recovery_data: 7
-- avg_sleep_hours: 6.76
+- window_start: 2026-04-09
+- window_end: 2026-04-15
+- days_with_recovery_data: 6
+- avg_sleep_hours: 6.54
 - min_sleep_hours: 5.7
-- avg_sleep_score: 84.0
-- avg_hrv: 75.75
-- avg_resting_hr: 52.0
+- avg_sleep_score: 82.0
+- avg_hrv: 77.33
+- avg_resting_hr: 53.67
 - avg_sleeping_hr: None
 - low_sleep_score_days: 0
 
 ## Training State
-- date: 2026-04-14 00:00:00
-- ctl: 11.410546
-- atl: 14.918642
-- ramp_rate: 0.57255554
+- date: 2026-04-15 00:00:00
+- ctl: 11.142076
+- atl: 12.932641
+- ramp_rate: -0.476161
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 1.31
+- atl_ctl_ratio: 1.16
 
 ## Yesterday Primary Activity
 - id: i139352982
@@ -79,17 +79,17 @@
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'primary_activity_of_day', 'candidate_count': 1, 'candidate_types': ['VirtualRun'], 'selected_type': 'VirtualRun', 'selected_training_load': 23.0, 'selected_moving_time_sec': 1499.0, 'selection_rule': '先选主训练类型（Run/Workout/Ride），再优先 Run，之后按训练负荷、时长、开始时间排序。', 'target_date': '2026-04-13'}
+- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-04-14', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
 - classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.876, 'reason': '整体更像常规有氧，而不是恢复跑；距离虽短但平均心率不低', 'distance_km': 5.0, 'duration_min': 25.0}
 
 ## 7-Day Activity Trend
-- window_start: 2026-04-08
-- window_end: 2026-04-14
-- activity_count: 3
-- total_training_load: 104.0
-- avg_training_load: 34.7
-- run_count: 3
-- run_distance_km: 16.56
+- window_start: 2026-04-09
+- window_end: 2026-04-15
+- activity_count: 2
+- total_training_load: 60.0
+- avg_training_load: 30.0
+- run_count: 2
+- run_distance_km: 10.05
 
 ## Signals To Watch
-- ATL/CTL 偏高，近期负荷堆积需要留意
+- 今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据
