@@ -1,14 +1,14 @@
 # Daily Coach Report
 
-- Generated: 2026-04-15T11:09:02.122010+10:00
-- Conclusion: 恢复较好，今天可以正常训练；是否加码仍要看主观感觉和当天安排。
-- Today suggestion: 优先做正常训练。若中午有重腿力量，下午跑步保持轻松；若下午想做质量跑，中午力量只做上肢或核心。
+- Generated: 2026-04-16T01:16:31.073953+10:00
+- Conclusion: 恢复尚可，今天适合常规有氧或中等训练，不建议激进加码。
+- Today suggestion: 以轻松跑或常规有氧为主。只有在主观状态也不错时，才考虑中等质量训练。
 
 ## Data Status
-- today_date: 2026-04-15
+- today_date: 2026-04-16
 - recovery_date: 2026-04-15
-- training_state_date: 2026-04-15
-- recovery_is_fresh: True
+- training_state_date: 2026-04-16
+- recovery_is_fresh: False
 - training_state_is_fresh: True
 
 ## Recovery
@@ -32,64 +32,66 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-04-09
-- window_end: 2026-04-15
-- days_with_recovery_data: 7
-- avg_sleep_hours: 6.68
-- min_sleep_hours: 5.7
-- avg_sleep_score: 84.0
-- avg_hrv: 80.75
-- avg_resting_hr: 51.71
+- window_start: 2026-04-10
+- window_end: 2026-04-16
+- days_with_recovery_data: 6
+- avg_sleep_hours: 7.01
+- min_sleep_hours: 6.47
+- avg_sleep_score: 88.67
+- avg_hrv: 90.0
+- avg_resting_hr: 52.5
 - avg_sleeping_hr: None
 - low_sleep_score_days: 0
 
 ## Training State
-- date: 2026-04-15 00:00:00
-- ctl: 11.142076
-- atl: 12.932641
-- ramp_rate: -0.476161
+- date: 2026-04-16 00:00:00
+- ctl: 12.120557
+- atl: 17.442654
+- ramp_rate: 0.7756777
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 1.16
+- atl_ctl_ratio: 1.44
 
 ## Yesterday Primary Activity
-- id: i139352982
-- start_date_local: 2026-04-13 16:41:53
-- name: Treadmill Running
-- type: VirtualRun
-- moving_time_sec: 1499
-- elapsed_time_sec: 1501
-- distance_m: 5000.0
-- distance_km: 5.0
-- average_heartrate: 157.0
-- max_heartrate: 167.0
-- average_speed: 3.332
-- max_speed: 3.667
-- total_elevation_gain: None
-- calories: 291.0
-- average_cadence: 82.526665
-- pace: 3.335557
+- id: i139953858
+- start_date_local: 2026-04-15 16:26:39
+- name: 🌞 午后跑步
+- type: Run
+- moving_time_sec: 2108
+- elapsed_time_sec: 2114
+- distance_m: 7009.39
+- distance_km: 7.01
+- average_heartrate: 167.0
+- max_heartrate: 182.0
+- average_speed: 3.321
+- max_speed: 3.76
+- total_elevation_gain: 55.87732
+- calories: 438.0
+- average_cadence: 82.925095
+- pace: 3.3251376
 - threshold_pace: 3.8022814
-- icu_training_load: 23.0
-- icu_intensity: 74.2967
-- icu_fitness: 11.685486
-- icu_fatigue: 17.209623
+- icu_training_load: 46.0
+- icu_intensity: 88.527954
+- icu_fitness: 12.412604
+- icu_fatigue: 20.121235
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-04-14', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
-- classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.876, 'reason': '整体更像常规有氧，而不是恢复跑；距离虽短但平均心率不低', 'distance_km': 5.0, 'duration_min': 25.0}
+- selection_meta: {'selection_mode': 'primary_activity_of_day', 'candidate_count': 2, 'candidate_types': ['Run', 'Walk'], 'selected_type': 'Run', 'selected_training_load': 46.0, 'selected_moving_time_sec': 2108.0, 'selection_rule': '先选主训练类型（Run/Workout/Ride），再优先 Run，之后按训练负荷、时长、开始时间排序。', 'target_date': '2026-04-15'}
+- classification: {'label': 'moderate_to_hard_run', 'speed_vs_threshold_ratio': 0.873, 'reason': '心率/负荷/配速至少一项偏高，不应视作恢复跑', 'distance_km': 7.01, 'duration_min': 35.1}
 
 ## 7-Day Activity Trend
-- window_start: 2026-04-09
-- window_end: 2026-04-15
-- activity_count: 2
-- total_training_load: 60.0
-- avg_training_load: 30.0
-- run_count: 2
-- run_distance_km: 10.05
+- window_start: 2026-04-10
+- window_end: 2026-04-16
+- activity_count: 4
+- total_training_load: 114.0
+- avg_training_load: 28.5
+- run_count: 3
+- run_distance_km: 17.06
 
 ## Signals To Watch
-- No strong warning signal from the available data.
+- 今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据
+- ATL/CTL 偏高，近期负荷堆积需要留意
+- 昨天主训练并非恢复跑，今天不宜机械加码
