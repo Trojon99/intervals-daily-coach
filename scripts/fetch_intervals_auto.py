@@ -1,5 +1,6 @@
 import json
 import os
+import shutil
 from io import StringIO
 from pathlib import Path
 from datetime import datetime, timedelta
@@ -13,14 +14,29 @@ BASE_URL = "https://intervals.icu/api/v1"
 AUTH_USER = "API_KEY"
 TZ = ZoneInfo("Australia/Sydney")
 
-DATA_DIR = Path("data/latest")
-DATA_DIR.mkdir(parents=True, exist_ok=True)
+LATEST_DIR = Path("data/latest")
+STAGING_DIR = Path("data/staging")
+STATUS_DIR = Path("data/status")
+READY_DIR = Path("data/ready")
+ARCHIVE_ROOT = Path("data/archive")
+
+for _path in [LATEST_DIR, STAGING_DIR, STATUS_DIR, READY_DIR, ARCHIVE_ROOT]:
+    _path.mkdir(parents=True, exist_ok=True)
 
 
 RUN_TYPES = {"Run", "VirtualRun", "TrailRun", "TreadmillRun", "Treadmill", "VirtualRideRun"}
 RIDE_TYPES = {"Ride", "VirtualRide", "MountainBikeRide", "GravelRide", "EBikeRide"}
 PRIMARY_TRAINING_TYPES = RUN_TYPES | RIDE_TYPES | {"Workout"}
 NON_PRIMARY_TYPES = {"Walk", "Hike", "Breathwork", "Yoga", "Meditation"}
+
+
+JSON_NAME = "daily_coach_input.json"
+REPORT_NAME = "daily_report.md"
+STATUS_NAME = "today_status.json"
+LAST_CANDIDATE_JSON_NAME = "last_candidate.json"
+LAST_CANDIDATE_REPORT_NAME = "last_candidate.md"
+READY_JSON_NAME = "latest_ready.json"
+READY_REPORT_NAME = "latest_ready.md"
 
 
 def require_env(name: str) -> str:
@@ -92,6 +108,48 @@ def iso_date_only(value):
         return None
 
 
+def generated_at_is_today(generated_at: str | None, today_iso: str) -> bool:
+    if not generated_at:
+        return False
+    try:
+        dt = datetime.fromisoformat(generated_at)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=TZ)
+        return dt.astimezone(TZ).date().isoformat() == today_iso
+    except Exception:
+        return False
+
+
+def ensure_parent(path: Path) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+
+
+def write_json(path: Path, payload: dict):
+    ensure_parent(path)
+    path.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2, default=str) + "\n",
+        encoding="utf-8",
+    )
+
+
+def copy_file(src: Path, dst: Path):
+    ensure_parent(dst)
+    shutil.copy2(src, dst)
+
+
+def latest_ready(data_status: dict, generated_at: str | None) -> bool:
+    today = data_status.get("today_date")
+    if not today:
+        return False
+    return (
+        data_status.get("recovery_date") == today
+        and data_status.get("training_state_date") == today
+        and data_status.get("recovery_is_fresh") is True
+        and data_status.get("training_state_is_fresh") is True
+        and generated_at_is_today(generated_at, today)
+    )
+
+
 def load_data():
     now = datetime.now(TZ)
     today = now.date()
@@ -148,17 +206,17 @@ def load_data():
         },
     )
 
-    (DATA_DIR / "wellness.csv").write_text(wellness_text, encoding="utf-8")
-    (DATA_DIR / "activities.csv").write_text(activities_text, encoding="utf-8")
+    (LATEST_DIR / "wellness.csv").write_text(wellness_text, encoding="utf-8")
+    (LATEST_DIR / "activities.csv").write_text(activities_text, encoding="utf-8")
 
     wellness_df = read_csv_text(wellness_text)
     activities_df = read_csv_text(activities_text)
 
-    (DATA_DIR / "wellness_columns.json").write_text(
+    (LATEST_DIR / "wellness_columns.json").write_text(
         json.dumps(list(wellness_df.columns), ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
-    (DATA_DIR / "activities_columns.json").write_text(
+    (LATEST_DIR / "activities_columns.json").write_text(
         json.dumps(list(activities_df.columns), ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
@@ -697,12 +755,55 @@ def build_payload_and_report(now: datetime):
     return payload, report_md, data_status
 
 
-def write_outputs(payload: dict, report_md: str):
-    (DATA_DIR / "daily_coach_input.json").write_text(
-        json.dumps(payload, ensure_ascii=False, indent=2, default=str),
-        encoding="utf-8",
-    )
-    (DATA_DIR / "daily_report.md").write_text(report_md, encoding="utf-8")
+def write_candidate_outputs(payload: dict, report_md: str):
+    write_json(STAGING_DIR / JSON_NAME, payload)
+    ensure_parent(STAGING_DIR / REPORT_NAME)
+    (STAGING_DIR / REPORT_NAME).write_text(report_md, encoding="utf-8")
+
+    write_json(STATUS_DIR / LAST_CANDIDATE_JSON_NAME, payload)
+    ensure_parent(STATUS_DIR / LAST_CANDIDATE_REPORT_NAME)
+    (STATUS_DIR / LAST_CANDIDATE_REPORT_NAME).write_text(report_md, encoding="utf-8")
+
+
+
+def write_status(payload: dict, published_latest: bool):
+    data_status = payload.get("data_status", {})
+    status_payload = {
+        "checked_at": payload.get("generated_at"),
+        "timezone": payload.get("timezone"),
+        "ready": latest_ready(data_status, payload.get("generated_at")),
+        "published_latest": published_latest,
+        "data_status": data_status,
+    }
+    write_json(STATUS_DIR / STATUS_NAME, status_payload)
+
+
+
+def publish_latest_if_ready(payload: dict, report_md: str) -> bool:
+    data_status = payload.get("data_status", {})
+    is_ready = latest_ready(data_status, payload.get("generated_at"))
+    if not is_ready:
+        print("Candidate data is not fully fresh. Skip publishing latest.")
+        return False
+
+    write_json(LATEST_DIR / JSON_NAME, payload)
+    ensure_parent(LATEST_DIR / REPORT_NAME)
+    (LATEST_DIR / REPORT_NAME).write_text(report_md, encoding="utf-8")
+
+    write_json(READY_DIR / READY_JSON_NAME, payload)
+    ensure_parent(READY_DIR / READY_REPORT_NAME)
+    (READY_DIR / READY_REPORT_NAME).write_text(report_md, encoding="utf-8")
+
+    today = data_status.get("today_date")
+    if today:
+        archive_dir = ARCHIVE_ROOT / today
+        archive_dir.mkdir(parents=True, exist_ok=True)
+        write_json(archive_dir / JSON_NAME, payload)
+        (archive_dir / REPORT_NAME).write_text(report_md, encoding="utf-8")
+
+    print("Published fully fresh latest outputs.")
+    return True
+
 
 
 def strtobool_env(name: str, default: str = "1") -> bool:
@@ -710,22 +811,21 @@ def strtobool_env(name: str, default: str = "1") -> bool:
     return value in {"1", "true", "yes", "y", "on"}
 
 
+
 def main():
-    max_retries = int(os.getenv("MAX_RECOVERY_RETRIES", "2"))
+    max_retries = int(os.getenv("MAX_RECOVERY_RETRIES", "5"))
     retry_sleep_seconds = int(os.getenv("RETRY_SLEEP_SECONDS", "900"))
     retry_if_not_fresh = strtobool_env("RETRY_IF_NOT_FRESH", "1")
 
     attempt = 0
     last_payload = None
     last_report_md = None
-    last_status = None
 
     while True:
         now = datetime.now(TZ)
         payload, report_md, data_status = build_payload_and_report(now)
         last_payload = payload
         last_report_md = report_md
-        last_status = data_status
 
         recovery_fresh = bool(data_status.get("recovery_is_fresh"))
         training_fresh = bool(data_status.get("training_state_is_fresh"))
@@ -738,15 +838,15 @@ def main():
         )
 
         if not retry_if_not_fresh:
-            print("Retry disabled. Writing current outputs immediately.")
+            print("Retry disabled. Stop polling and process current candidate.")
             break
 
         if recovery_fresh and training_fresh:
-            print("Today's data is fresh. No retry needed.")
+            print("Today's data is fully fresh. Stop polling.")
             break
 
         if attempt >= max_retries:
-            print("Reached retry limit. Writing latest available outputs.")
+            print("Reached retry limit. Keep candidate only; do not overwrite latest unless ready.")
             break
 
         attempt += 1
@@ -757,7 +857,9 @@ def main():
         import time
         time.sleep(retry_sleep_seconds)
 
-    write_outputs(last_payload, last_report_md)
+    write_candidate_outputs(last_payload, last_report_md)
+    published_latest = publish_latest_if_ready(last_payload, last_report_md)
+    write_status(last_payload, published_latest)
     print("Auto pipeline finished.")
 
 
