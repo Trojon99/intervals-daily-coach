@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T08:04:20.801646+10:00",
+  "generated_at": "2026-04-19T09:52:22.677891+10:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
@@ -16,13 +16,13 @@
     "date": "2026-04-19 00:00:00",
     "weight": null,
     "resting_hr": 45.0,
-    "hrv": null,
+    "hrv": 78.0,
     "hrv_sdnn": null,
     "readiness": null,
-    "sleep_secs": null,
-    "sleep_hours": null,
-    "sleep_score": null,
-    "sleep_quality": null,
+    "sleep_secs": 24900.0,
+    "sleep_hours": 6.92,
+    "sleep_score": 83.0,
+    "sleep_quality": 2.0,
     "avg_sleeping_hr": null,
     "spo2": null,
     "fatigue": null,
@@ -36,10 +36,10 @@
     "window_start": "2026-04-13",
     "window_end": "2026-04-19",
     "days_with_recovery_data": 7,
-    "avg_sleep_hours": 7.62,
+    "avg_sleep_hours": 7.5,
     "min_sleep_hours": 6.77,
-    "avg_sleep_score": 89.6,
-    "avg_hrv": 89.0,
+    "avg_sleep_score": 88.5,
+    "avg_hrv": 87.17,
     "avg_resting_hr": 43.29,
     "avg_sleeping_hr": null,
     "low_sleep_score_days": 0
@@ -110,6 +110,7 @@
     "run_distance_km": 19.74
   },
   "health_signals_to_watch": [
+    "HRV 低于近7天均值，恢复可能偏弱",
     "ATL/CTL 偏高，近期负荷堆积需要留意"
   ],
   "analysis_order": [
