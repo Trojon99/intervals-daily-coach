@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T01:16:53.746748+10:00",
+  "generated_at": "2026-04-19T08:04:20.801646+10:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
@@ -9,13 +9,13 @@
     "recovery_is_fresh": true,
     "training_state_is_fresh": true
   },
-  "conclusion": "恢复偏弱，今天不适合高强度，优先恢复。",
-  "today_training_suggestion": "更适合休息、走路、拉伸或非常轻的恢复活动。若有不适或疲劳延续，连续观察。",
-  "internal_score": -2,
+  "conclusion": "恢复一般，今天更适合轻松有氧或降强度。",
+  "today_training_suggestion": "避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。",
+  "internal_score": -1,
   "recovery": {
     "date": "2026-04-19 00:00:00",
     "weight": null,
-    "resting_hr": 50.0,
+    "resting_hr": 45.0,
     "hrv": null,
     "hrv_sdnn": null,
     "readiness": null,
@@ -40,7 +40,7 @@
     "min_sleep_hours": 6.77,
     "avg_sleep_score": 89.6,
     "avg_hrv": 89.0,
-    "avg_resting_hr": 44.0,
+    "avg_resting_hr": 43.29,
     "avg_sleeping_hr": null,
     "low_sleep_score_days": 0
   },
@@ -110,7 +110,6 @@
     "run_distance_km": 19.74
   },
   "health_signals_to_watch": [
-    "静息心率高于近7天均值，需留意疲劳或压力",
     "ATL/CTL 偏高，近期负荷堆积需要留意"
   ],
   "analysis_order": [
