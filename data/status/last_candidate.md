@@ -1,6 +1,6 @@
 # Daily Coach Report
 
-- Generated: 2026-04-20T08:04:53.151308+10:00
+- Generated: 2026-04-20T09:54:32.746947+10:00
 - Conclusion: 恢复偏弱，今天不适合高强度，优先恢复。
 - Today suggestion: 更适合休息、走路、拉伸或非常轻的恢复活动。若有不适或疲劳延续，连续观察。
 
@@ -15,13 +15,13 @@
 - date: 2026-04-20 00:00:00
 - weight: None
 - resting_hr: 45.0
-- hrv: None
+- hrv: 67.0
 - hrv_sdnn: None
 - readiness: None
-- sleep_secs: None
-- sleep_hours: None
-- sleep_score: None
-- sleep_quality: None
+- sleep_secs: 26100.0
+- sleep_hours: 7.25
+- sleep_score: 84.0
+- sleep_quality: 2.0
 - avg_sleeping_hr: None
 - spo2: None
 - fatigue: None
@@ -35,10 +35,10 @@
 - window_start: 2026-04-14
 - window_end: 2026-04-20
 - days_with_recovery_data: 7
-- avg_sleep_hours: 7.5
+- avg_sleep_hours: 7.46
 - min_sleep_hours: 6.77
-- avg_sleep_score: 88.5
-- avg_hrv: 87.17
+- avg_sleep_score: 87.86
+- avg_hrv: 84.29
 - avg_resting_hr: 42.43
 - avg_sleeping_hr: None
 - low_sleep_score_days: 0
@@ -92,5 +92,6 @@
 - run_distance_km: 25.75
 
 ## Signals To Watch
+- HRV 低于近7天均值，恢复可能偏弱
 - ATL/CTL 偏高，近期负荷堆积需要留意
 - 昨天主训练并非恢复跑，今天不宜机械加码
