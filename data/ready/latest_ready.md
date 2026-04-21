@@ -1,27 +1,27 @@
 # Daily Coach Report
 
-- Generated: 2026-04-21T10:00:03.536170+10:00
-- Conclusion: 恢复偏弱，今天不适合高强度，优先恢复。
-- Today suggestion: 更适合休息、走路、拉伸或非常轻的恢复活动。若有不适或疲劳延续，连续观察。
+- Generated: 2026-04-22T08:25:21.793251+10:00
+- Conclusion: 恢复尚可，今天适合常规有氧或中等训练，不建议激进加码。
+- Today suggestion: 以轻松跑或常规有氧为主。只有在主观状态也不错时，才考虑中等质量训练。
 
 ## Data Status
-- today_date: 2026-04-21
-- recovery_date: 2026-04-21
-- training_state_date: 2026-04-21
+- today_date: 2026-04-22
+- recovery_date: 2026-04-22
+- training_state_date: 2026-04-22
 - recovery_is_fresh: True
 - training_state_is_fresh: True
 
 ## Recovery
-- date: 2026-04-21 00:00:00
+- date: 2026-04-22 00:00:00
 - weight: None
-- resting_hr: 44.0
-- hrv: 73.0
+- resting_hr: 41.0
+- hrv: 82.0
 - hrv_sdnn: None
 - readiness: None
-- sleep_secs: 21240.0
-- sleep_hours: 5.9
-- sleep_score: 75.0
-- sleep_quality: 3.0
+- sleep_secs: 25680.0
+- sleep_hours: 7.13
+- sleep_score: 88.0
+- sleep_quality: 2.0
 - avg_sleeping_hr: None
 - spo2: None
 - fatigue: None
@@ -32,68 +32,64 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-04-15
-- window_end: 2026-04-21
+- window_start: 2026-04-16
+- window_end: 2026-04-22
 - days_with_recovery_data: 7
-- avg_sleep_hours: 7.24
+- avg_sleep_hours: 7.25
 - min_sleep_hours: 5.9
-- avg_sleep_score: 85.43
-- avg_hrv: 80.29
-- avg_resting_hr: 42.86
+- avg_sleep_score: 85.14
+- avg_hrv: 79.0
+- avg_resting_hr: 43.0
 - avg_sleeping_hr: None
 - low_sleep_score_days: 0
 
 ## Training State
-- date: 2026-04-21 00:00:00
-- ctl: 13.836406
-- atl: 21.952232
-- ramp_rate: 2.4258595
+- date: 2026-04-22 00:00:00
+- ctl: 13.510859
+- atl: 19.029905
+- ramp_rate: 1.0982542
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 1.59
+- atl_ctl_ratio: 1.41
 
 ## Yesterday Primary Activity
-- id: i141332133
-- start_date_local: 2026-04-20 16:23:06
-- name: Treadmill Running
-- type: VirtualRun
-- moving_time_sec: 1462
-- elapsed_time_sec: 1479
-- distance_m: 5000.0
-- distance_km: 5.0
-- average_heartrate: 157.0
-- max_heartrate: 172.0
-- average_speed: 3.41
-- max_speed: 3.564
+- id: i141333454
+- start_date_local: 2026-04-20 16:50:38
+- name: Indoor Cycling
+- type: VirtualRide
+- moving_time_sec: 296
+- elapsed_time_sec: 296
+- distance_m: None
+- distance_km: None
+- average_heartrate: 136.0
+- max_heartrate: 161.0
+- average_speed: 0.0
+- max_speed: None
 - total_elevation_gain: None
-- calories: 285.0
-- average_cadence: 83.50273
-- pace: 3.4199727
-- threshold_pace: 3.8022814
-- icu_training_load: 26.0
-- icu_intensity: 79.57941
+- calories: 50.0
+- average_cadence: None
+- pace: None
+- threshold_pace: None
+- icu_training_load: 4.0
+- icu_intensity: None
 - icu_fitness: 14.169797
 - icu_fatigue: 25.323326
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'primary_activity_of_day', 'candidate_count': 2, 'candidate_types': ['VirtualRide', 'VirtualRun'], 'selected_type': 'VirtualRun', 'selected_training_load': 26.0, 'selected_moving_time_sec': 1462.0, 'selection_rule': '先选主训练类型（Run/Workout/Ride），再优先 Run，之后按训练负荷、时长、开始时间排序。', 'target_date': '2026-04-20'}
-- classification: {'label': 'moderate_to_hard_run', 'speed_vs_threshold_ratio': 0.897, 'reason': '心率/负荷/配速至少一项偏高，不应视作恢复跑；距离虽短但平均心率不低', 'distance_km': 5.0, 'duration_min': 24.4}
+- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-04-21', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
+- classification: {'label': 'ride', 'speed_vs_threshold_ratio': None, 'reason': '骑行活动，按骑行负荷解释', 'distance_km': None, 'duration_min': 4.9}
 
 ## 7-Day Activity Trend
-- window_start: 2026-04-15
-- window_end: 2026-04-21
-- activity_count: 7
-- total_training_load: 192.0
-- avg_training_load: 27.4
-- run_count: 5
-- run_distance_km: 30.75
+- window_start: 2026-04-16
+- window_end: 2026-04-22
+- activity_count: 5
+- total_training_load: 138.0
+- avg_training_load: 27.6
+- run_count: 4
+- run_distance_km: 23.74
 
 ## Signals To Watch
-- 昨晚睡眠时长偏短，优先按恢复不足处理
-- 昨晚睡眠明显低于近7天均值
-- HRV 低于近7天均值，恢复可能偏弱
 - ATL/CTL 偏高，近期负荷堆积需要留意
-- 昨天主训练并非恢复跑，今天不宜机械加码
