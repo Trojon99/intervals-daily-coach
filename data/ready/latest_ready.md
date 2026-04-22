@@ -1,6 +1,6 @@
 # Daily Coach Report
 
-- Generated: 2026-04-23T00:47:07.601308+10:00
+- Generated: 2026-04-23T08:31:29.148799+10:00
 - Conclusion: 恢复偏弱，今天不适合高强度，优先恢复。
 - Today suggestion: 更适合休息、走路、拉伸或非常轻的恢复活动。若有不适或疲劳延续，连续观察。
 
@@ -14,14 +14,14 @@
 ## Recovery
 - date: 2026-04-23 00:00:00
 - weight: None
-- resting_hr: 52.0
-- hrv: None
+- resting_hr: 44.0
+- hrv: 71.0
 - hrv_sdnn: None
 - readiness: None
-- sleep_secs: None
-- sleep_hours: None
-- sleep_score: None
-- sleep_quality: None
+- sleep_secs: 22380.0
+- sleep_hours: 6.22
+- sleep_score: 77.0
+- sleep_quality: 3.0
 - avg_sleeping_hr: None
 - spo2: None
 - fatigue: None
@@ -35,11 +35,11 @@
 - window_start: 2026-04-17
 - window_end: 2026-04-23
 - days_with_recovery_data: 7
-- avg_sleep_hours: 7.33
+- avg_sleep_hours: 7.17
 - min_sleep_hours: 5.9
-- avg_sleep_score: 86.17
-- avg_hrv: 78.33
-- avg_resting_hr: 44.43
+- avg_sleep_score: 84.86
+- avg_hrv: 77.29
+- avg_resting_hr: 43.29
 - avg_sleeping_hr: None
 - low_sleep_score_days: 0
 
@@ -92,5 +92,6 @@
 - run_distance_km: 26.02
 
 ## Signals To Watch
-- 静息心率高于近7天均值，需留意疲劳或压力
+- 昨晚睡眠明显低于近7天均值
+- HRV 低于近7天均值，恢复可能偏弱
 - ATL/CTL 偏高，近期负荷堆积需要留意
