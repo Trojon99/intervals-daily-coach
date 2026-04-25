@@ -1,6 +1,6 @@
 # Daily Coach Report
 
-- Generated: 2026-04-26T08:06:07.548745+10:00
+- Generated: 2026-04-26T09:55:16.554547+10:00
 - Conclusion: 恢复一般，今天更适合轻松有氧或降强度。
 - Today suggestion: 避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。
 
