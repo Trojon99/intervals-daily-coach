@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-04-28T10:07:57.208539+10:00",
+  "generated_at": "2026-04-29T08:38:19.167104+10:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
-    "today_date": "2026-04-28",
-    "recovery_date": "2026-04-28",
-    "training_state_date": "2026-04-28",
+    "today_date": "2026-04-29",
+    "recovery_date": "2026-04-29",
+    "training_state_date": "2026-04-29",
     "recovery_is_fresh": true,
     "training_state_is_fresh": true
   },
-  "conclusion": "恢复较好，今天可以正常训练；是否加码仍要看主观感觉和当天安排。",
-  "today_training_suggestion": "优先做正常训练。若中午有重腿力量，下午跑步保持轻松；若下午想做质量跑，中午力量只做上肢或核心。",
-  "internal_score": 4,
+  "conclusion": "恢复一般，今天更适合轻松有氧或降强度。",
+  "today_training_suggestion": "避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。",
+  "internal_score": 0,
   "recovery": {
-    "date": "2026-04-28 00:00:00",
+    "date": "2026-04-29 00:00:00",
     "weight": null,
     "resting_hr": 42.0,
-    "hrv": 77.0,
+    "hrv": 79.0,
     "hrv_sdnn": null,
     "readiness": null,
-    "sleep_secs": 30300.0,
-    "sleep_hours": 8.42,
-    "sleep_score": 93.0,
-    "sleep_quality": 1.0,
+    "sleep_secs": 20903.0,
+    "sleep_hours": 5.81,
+    "sleep_score": 76.0,
+    "sleep_quality": 3.0,
     "avg_sleeping_hr": null,
     "spo2": null,
     "fatigue": null,
@@ -33,27 +33,27 @@
     "injury": null
   },
   "recovery_trend_7d": {
-    "window_start": "2026-04-22",
-    "window_end": "2026-04-28",
+    "window_start": "2026-04-23",
+    "window_end": "2026-04-29",
     "days_with_recovery_data": 7,
-    "avg_sleep_hours": 7.64,
-    "min_sleep_hours": 6.22,
-    "avg_sleep_score": 87.14,
-    "avg_hrv": 74.43,
-    "avg_resting_hr": 43.57,
+    "avg_sleep_hours": 7.45,
+    "min_sleep_hours": 5.81,
+    "avg_sleep_score": 85.43,
+    "avg_hrv": 74.0,
+    "avg_resting_hr": 43.71,
     "avg_sleeping_hr": null,
     "low_sleep_score_days": 0
   },
   "training_state": {
-    "date": "2026-04-28 00:00:00",
-    "ctl": 13.535089,
-    "atl": 14.793072,
-    "ramp_rate": -0.30131721,
+    "date": "2026-04-29 00:00:00",
+    "ctl": 13.216631,
+    "atl": 12.823787,
+    "ramp_rate": -1.0471334,
     "ctl_load": 0.0,
     "atl_load": 0.0,
     "ride_eftp": null,
     "run_eftp": null,
-    "atl_ctl_ratio": 1.09
+    "atl_ctl_ratio": 0.97
   },
   "yesterday_activity": {
     "id": "i143282995",
@@ -81,16 +81,10 @@
     "icu_average_watts": null,
     "icu_normalized_watts": null,
     "selection_meta": {
-      "selection_mode": "primary_activity_of_day",
+      "selection_mode": "latest_activity_fallback",
       "candidate_count": 1,
-      "candidate_types": [
-        "VirtualRun"
-      ],
-      "selected_type": "VirtualRun",
-      "selected_training_load": 23.0,
-      "selected_moving_time_sec": 1639.0,
-      "selection_rule": "先选主训练类型（Run/Workout/Ride），再优先 Run，之后按训练负荷、时长、开始时间排序。",
-      "target_date": "2026-04-27"
+      "target_date": "2026-04-28",
+      "selection_rule": "昨天没有活动，回退到最近一条活动。"
     },
     "classification": {
       "label": "easy_aerobic_run",
@@ -101,15 +95,18 @@
     }
   },
   "activity_trend_7d": {
-    "window_start": "2026-04-22",
-    "window_end": "2026-04-28",
-    "activity_count": 4,
-    "total_training_load": 85.0,
-    "avg_training_load": 21.2,
-    "run_count": 3,
-    "run_distance_km": 16.0
+    "window_start": "2026-04-23",
+    "window_end": "2026-04-29",
+    "activity_count": 2,
+    "total_training_load": 53.0,
+    "avg_training_load": 26.5,
+    "run_count": 2,
+    "run_distance_km": 11.0
   },
-  "health_signals_to_watch": [],
+  "health_signals_to_watch": [
+    "昨晚睡眠时长偏短，优先按恢复不足处理",
+    "昨晚睡眠明显低于近7天均值"
+  ],
   "analysis_order": [
     "direct_conclusion",
     "recovery",
