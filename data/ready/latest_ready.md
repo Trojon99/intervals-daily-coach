@@ -1,27 +1,27 @@
 # Daily Coach Report
 
-- Generated: 2026-05-01T10:07:40.355685+10:00
-- Conclusion: 恢复一般，今天更适合轻松有氧或降强度。
-- Today suggestion: 避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。
+- Generated: 2026-05-02T10:07:10.383856+10:00
+- Conclusion: 恢复尚可，今天适合常规有氧或中等训练，不建议激进加码。
+- Today suggestion: 以轻松跑或常规有氧为主。只有在主观状态也不错时，才考虑中等质量训练。
 
 ## Data Status
-- today_date: 2026-05-01
-- recovery_date: 2026-05-01
-- training_state_date: 2026-05-01
+- today_date: 2026-05-02
+- recovery_date: 2026-05-02
+- training_state_date: 2026-05-02
 - recovery_is_fresh: True
 - training_state_is_fresh: True
 
 ## Recovery
-- date: 2026-05-01 00:00:00
+- date: 2026-05-02 00:00:00
 - weight: None
-- resting_hr: 64.0
-- hrv: None
+- resting_hr: 44.0
+- hrv: 74.0
 - hrv_sdnn: None
 - readiness: None
-- sleep_secs: None
-- sleep_hours: None
-- sleep_score: None
-- sleep_quality: None
+- sleep_secs: 24360.0
+- sleep_hours: 6.77
+- sleep_score: 81.0
+- sleep_quality: 2.0
 - avg_sleeping_hr: None
 - spo2: None
 - fatigue: None
@@ -32,64 +32,64 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-04-25
-- window_end: 2026-05-01
+- window_start: 2026-04-26
+- window_end: 2026-05-02
 - days_with_recovery_data: 7
-- avg_sleep_hours: 7.34
-- min_sleep_hours: 5.8
-- avg_sleep_score: 84.83
-- avg_hrv: 74.83
-- avg_resting_hr: 46.29
+- avg_sleep_hours: 6.49
+- min_sleep_hours: 3.45
+- avg_sleep_score: 79.0
+- avg_hrv: 74.86
+- avg_resting_hr: 45.29
 - avg_sleeping_hr: None
-- low_sleep_score_days: 0
+- low_sleep_score_days: 1
 
 ## Training State
-- date: 2026-05-01 00:00:00
-- ctl: 13.819677
-- atl: 15.753016
-- ramp_rate: -0.48662758
+- date: 2026-05-02 00:00:00
+- ctl: 14.436488
+- atl: 18.387367
+- ramp_rate: 0.46678638
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 1.14
+- atl_ctl_ratio: 1.27
 
 ## Yesterday Primary Activity
-- id: i144271749
-- start_date_local: 2026-04-30 20:42:23
-- name: 跑步机跑步
+- id: i144471949
+- start_date_local: 2026-05-01 16:20:08
+- name: Treadmill Running
 - type: VirtualRun
-- moving_time_sec: 3594
-- elapsed_time_sec: 3594
+- moving_time_sec: 3588
+- elapsed_time_sec: 3599
 - distance_m: 10000.0
 - distance_km: 10.0
-- average_heartrate: None
-- max_heartrate: None
-- average_speed: 2.782
-- max_speed: None
+- average_heartrate: 144.0
+- max_heartrate: 156.0
+- average_speed: 2.778
+- max_speed: 3.21
 - total_elevation_gain: None
-- calories: 616.0
-- average_cadence: None
-- pace: 2.7824152
+- calories: 572.0
+- average_cadence: 83.946785
+- pace: 2.787068
 - threshold_pace: 3.8022814
-- icu_training_load: 53.0
-- icu_intensity: 72.86184
-- icu_fitness: 14.152666
-- icu_fatigue: 18.172129
+- icu_training_load: 41.0
+- icu_intensity: 64.049034
+- icu_fitness: 14.784339
+- icu_fatigue: 21.211023
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'primary_activity_of_day', 'candidate_count': 1, 'candidate_types': ['VirtualRun'], 'selected_type': 'VirtualRun', 'selected_training_load': 53.0, 'selected_moving_time_sec': 3594.0, 'selection_rule': '先选主训练类型（Run/Workout/Ride），再优先 Run，之后按训练负荷、时长、开始时间排序。', 'target_date': '2026-04-30'}
-- classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.732, 'reason': '整体更像常规有氧，而不是恢复跑', 'distance_km': 10.0, 'duration_min': 59.9}
+- selection_meta: {'selection_mode': 'primary_activity_of_day', 'candidate_count': 1, 'candidate_types': ['VirtualRun'], 'selected_type': 'VirtualRun', 'selected_training_load': 41.0, 'selected_moving_time_sec': 3588.0, 'selection_rule': '先选主训练类型（Run/Workout/Ride），再优先 Run，之后按训练负荷、时长、开始时间排序。', 'target_date': '2026-05-01'}
+- classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.731, 'reason': '整体更像常规有氧，而不是恢复跑', 'distance_km': 10.0, 'duration_min': 59.8}
 
 ## 7-Day Activity Trend
-- window_start: 2026-04-25
-- window_end: 2026-05-01
-- activity_count: 2
-- total_training_load: 76.0
-- avg_training_load: 38.0
-- run_count: 2
-- run_distance_km: 15.0
+- window_start: 2026-04-26
+- window_end: 2026-05-02
+- activity_count: 3
+- total_training_load: 117.0
+- avg_training_load: 39.0
+- run_count: 3
+- run_distance_km: 25.0
 
 ## Signals To Watch
-- 静息心率高于近7天均值，需留意疲劳或压力
+- ATL/CTL 偏高，近期负荷堆积需要留意
