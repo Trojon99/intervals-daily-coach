@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-05-03T10:02:11.528135+10:00",
+  "generated_at": "2026-05-04T00:56:22.864019+10:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
-    "today_date": "2026-05-03",
-    "recovery_date": "2026-05-03",
-    "training_state_date": "2026-05-03",
+    "today_date": "2026-05-04",
+    "recovery_date": "2026-05-04",
+    "training_state_date": "2026-05-04",
     "recovery_is_fresh": true,
     "training_state_is_fresh": true
   },
   "conclusion": "恢复一般，今天更适合轻松有氧或降强度。",
   "today_training_suggestion": "避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。",
-  "internal_score": 0,
+  "internal_score": -1,
   "recovery": {
-    "date": "2026-05-03 00:00:00",
+    "date": "2026-05-04 00:00:00",
     "weight": null,
-    "resting_hr": 41.0,
+    "resting_hr": 81.0,
     "hrv": null,
     "hrv_sdnn": null,
     "readiness": null,
@@ -33,27 +33,27 @@
     "injury": null
   },
   "recovery_trend_7d": {
-    "window_start": "2026-04-27",
-    "window_end": "2026-05-03",
+    "window_start": "2026-04-28",
+    "window_end": "2026-05-04",
     "days_with_recovery_data": 7,
-    "avg_sleep_hours": 6.29,
+    "avg_sleep_hours": 6.72,
     "min_sleep_hours": 3.45,
-    "avg_sleep_score": 77.67,
-    "avg_hrv": 75.33,
-    "avg_resting_hr": 44.71,
+    "avg_sleep_score": 78.33,
+    "avg_hrv": 77.83,
+    "avg_resting_hr": 50.14,
     "avg_sleeping_hr": null,
     "low_sleep_score_days": 1
   },
   "training_state": {
-    "date": "2026-05-03 00:00:00",
-    "ctl": 14.096822,
-    "atl": 15.939602,
-    "ramp_rate": 0.45580387,
+    "date": "2026-05-04 00:00:00",
+    "ctl": 13.765147,
+    "atl": 13.817689,
+    "ramp_rate": -0.0960722,
     "ctl_load": 0.0,
     "atl_load": 0.0,
     "ride_eftp": null,
     "run_eftp": null,
-    "atl_ctl_ratio": 1.13
+    "atl_ctl_ratio": 1.0
   },
   "yesterday_activity": {
     "id": "i144471949",
@@ -83,7 +83,7 @@
     "selection_meta": {
       "selection_mode": "latest_activity_fallback",
       "candidate_count": 1,
-      "target_date": "2026-05-02",
+      "target_date": "2026-05-03",
       "selection_rule": "昨天没有活动，回退到最近一条活动。"
     },
     "classification": {
@@ -95,15 +95,17 @@
     }
   },
   "activity_trend_7d": {
-    "window_start": "2026-04-27",
-    "window_end": "2026-05-03",
-    "activity_count": 3,
-    "total_training_load": 117.0,
-    "avg_training_load": 39.0,
-    "run_count": 3,
-    "run_distance_km": 25.0
+    "window_start": "2026-04-28",
+    "window_end": "2026-05-04",
+    "activity_count": 2,
+    "total_training_load": 94.0,
+    "avg_training_load": 47.0,
+    "run_count": 2,
+    "run_distance_km": 20.0
   },
-  "health_signals_to_watch": [],
+  "health_signals_to_watch": [
+    "静息心率高于近7天均值，需留意疲劳或压力"
+  ],
   "analysis_order": [
     "direct_conclusion",
     "recovery",

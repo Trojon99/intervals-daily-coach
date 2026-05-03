@@ -1,20 +1,20 @@
 # Daily Coach Report
 
-- Generated: 2026-05-03T10:02:11.528135+10:00
+- Generated: 2026-05-04T00:56:22.864019+10:00
 - Conclusion: 恢复一般，今天更适合轻松有氧或降强度。
 - Today suggestion: 避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。
 
 ## Data Status
-- today_date: 2026-05-03
-- recovery_date: 2026-05-03
-- training_state_date: 2026-05-03
+- today_date: 2026-05-04
+- recovery_date: 2026-05-04
+- training_state_date: 2026-05-04
 - recovery_is_fresh: True
 - training_state_is_fresh: True
 
 ## Recovery
-- date: 2026-05-03 00:00:00
+- date: 2026-05-04 00:00:00
 - weight: None
-- resting_hr: 41.0
+- resting_hr: 81.0
 - hrv: None
 - hrv_sdnn: None
 - readiness: None
@@ -32,27 +32,27 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-04-27
-- window_end: 2026-05-03
+- window_start: 2026-04-28
+- window_end: 2026-05-04
 - days_with_recovery_data: 7
-- avg_sleep_hours: 6.29
+- avg_sleep_hours: 6.72
 - min_sleep_hours: 3.45
-- avg_sleep_score: 77.67
-- avg_hrv: 75.33
-- avg_resting_hr: 44.71
+- avg_sleep_score: 78.33
+- avg_hrv: 77.83
+- avg_resting_hr: 50.14
 - avg_sleeping_hr: None
 - low_sleep_score_days: 1
 
 ## Training State
-- date: 2026-05-03 00:00:00
-- ctl: 14.096822
-- atl: 15.939602
-- ramp_rate: 0.45580387
+- date: 2026-05-04 00:00:00
+- ctl: 13.765147
+- atl: 13.817689
+- ramp_rate: -0.0960722
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 1.13
+- atl_ctl_ratio: 1.0
 
 ## Yesterday Primary Activity
 - id: i144471949
@@ -79,17 +79,17 @@
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-05-02', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
+- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-05-03', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
 - classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.731, 'reason': '整体更像常规有氧，而不是恢复跑', 'distance_km': 10.0, 'duration_min': 59.8}
 
 ## 7-Day Activity Trend
-- window_start: 2026-04-27
-- window_end: 2026-05-03
-- activity_count: 3
-- total_training_load: 117.0
-- avg_training_load: 39.0
-- run_count: 3
-- run_distance_km: 25.0
+- window_start: 2026-04-28
+- window_end: 2026-05-04
+- activity_count: 2
+- total_training_load: 94.0
+- avg_training_load: 47.0
+- run_count: 2
+- run_distance_km: 20.0
 
 ## Signals To Watch
-- No strong warning signal from the available data.
+- 静息心率高于近7天均值，需留意疲劳或压力
