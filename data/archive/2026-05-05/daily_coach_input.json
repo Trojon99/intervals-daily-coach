@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T08:39:00.943300+10:00",
+  "generated_at": "2026-05-05T10:09:35.693454+10:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
@@ -14,7 +14,7 @@
   "internal_score": 4,
   "recovery": {
     "date": "2026-05-05 00:00:00",
-    "weight": null,
+    "weight": 63.5,
     "resting_hr": 43.0,
     "hrv": 86.0,
     "hrv_sdnn": null,

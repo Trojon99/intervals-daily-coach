@@ -1,6 +1,6 @@
 # Daily Coach Report
 
-- Generated: 2026-05-05T08:39:00.943300+10:00
+- Generated: 2026-05-05T10:09:35.693454+10:00
 - Conclusion: 恢复较好，今天可以正常训练；是否加码仍要看主观感觉和当天安排。
 - Today suggestion: 优先做正常训练。若中午有重腿力量，下午跑步保持轻松；若下午想做质量跑，中午力量只做上肢或核心。
 
@@ -13,7 +13,7 @@
 
 ## Recovery
 - date: 2026-05-05 00:00:00
-- weight: None
+- weight: 63.5
 - resting_hr: 43.0
 - hrv: 86.0
 - hrv_sdnn: None
