@@ -1,27 +1,27 @@
 # Daily Coach Report
 
-- Generated: 2026-05-06T10:05:26.011225+10:00
-- Conclusion: 恢复尚可，今天适合常规有氧或中等训练，不建议激进加码。
-- Today suggestion: 以轻松跑或常规有氧为主。只有在主观状态也不错时，才考虑中等质量训练。
+- Generated: 2026-05-07T08:30:22.039622+10:00
+- Conclusion: 恢复偏弱，今天不适合高强度，优先恢复。
+- Today suggestion: 更适合休息、走路、拉伸或非常轻的恢复活动。若有不适或疲劳延续，连续观察。
 
 ## Data Status
-- today_date: 2026-05-06
-- recovery_date: 2026-05-06
-- training_state_date: 2026-05-06
+- today_date: 2026-05-07
+- recovery_date: 2026-05-07
+- training_state_date: 2026-05-07
 - recovery_is_fresh: True
 - training_state_is_fresh: True
 
 ## Recovery
-- date: 2026-05-06 00:00:00
+- date: 2026-05-07 00:00:00
 - weight: None
 - resting_hr: 43.0
-- hrv: 77.0
+- hrv: 83.0
 - hrv_sdnn: None
 - readiness: None
-- sleep_secs: 26220.0
-- sleep_hours: 7.28
-- sleep_score: 88.0
-- sleep_quality: 2.0
+- sleep_secs: 19920.0
+- sleep_hours: 5.53
+- sleep_score: 74.0
+- sleep_quality: 3.0
 - avg_sleeping_hr: None
 - spo2: None
 - fatigue: None
@@ -32,27 +32,27 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-04-30
-- window_end: 2026-05-06
+- window_start: 2026-05-01
+- window_end: 2026-05-07
 - days_with_recovery_data: 7
-- avg_sleep_hours: 6.84
+- avg_sleep_hours: 6.8
 - min_sleep_hours: 3.45
-- avg_sleep_score: 80.43
-- avg_hrv: 78.86
-- avg_resting_hr: 44.71
+- avg_sleep_score: 80.0
+- avg_hrv: 79.57
+- avg_resting_hr: 44.86
 - avg_sleeping_hr: None
 - low_sleep_score_days: 1
 
 ## Training State
-- date: 2026-05-06 00:00:00
-- ctl: 15.485748
-- atl: 21.571136
-- ramp_rate: 2.2691174
+- date: 2026-05-07 00:00:00
+- ctl: 15.121395
+- atl: 18.699541
+- ramp_rate: 0.968729
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 1.39
+- atl_ctl_ratio: 1.24
 
 ## Yesterday Primary Activity
 - id: i145531797
@@ -79,17 +79,19 @@
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'primary_activity_of_day', 'candidate_count': 1, 'candidate_types': ['VirtualRun'], 'selected_type': 'VirtualRun', 'selected_training_load': 51.0, 'selected_moving_time_sec': 3592.0, 'selection_rule': '先选主训练类型（Run/Workout/Ride），再优先 Run，之后按训练负荷、时长、开始时间排序。', 'target_date': '2026-05-05'}
+- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-05-06', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
 - classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.755, 'reason': '整体更像常规有氧，而不是恢复跑', 'distance_km': 10.33, 'duration_min': 59.9}
 
 ## 7-Day Activity Trend
-- window_start: 2026-04-30
-- window_end: 2026-05-06
-- activity_count: 4
-- total_training_load: 198.0
-- avg_training_load: 49.5
-- run_count: 4
-- run_distance_km: 40.33
+- window_start: 2026-05-01
+- window_end: 2026-05-07
+- activity_count: 3
+- total_training_load: 145.0
+- avg_training_load: 48.3
+- run_count: 3
+- run_distance_km: 30.33
 
 ## Signals To Watch
+- 昨晚睡眠时长偏短，优先按恢复不足处理
+- 昨晚睡眠明显低于近7天均值
 - ATL/CTL 偏高，近期负荷堆积需要留意
