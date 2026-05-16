@@ -1,20 +1,20 @@
 # Daily Coach Report
 
-- Generated: 2026-05-17T01:37:21.474851+10:00
-- Conclusion: 恢复一般，今天更适合轻松有氧或降强度。
-- Today suggestion: 避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。
+- Generated: 2026-05-17T08:28:54.879612+10:00
+- Conclusion: 恢复偏弱，今天不适合高强度，优先恢复。
+- Today suggestion: 更适合休息、走路、拉伸或非常轻的恢复活动。若有不适或疲劳延续，连续观察。
 
 ## Data Status
 - today_date: 2026-05-17
-- recovery_date: 2026-05-15
+- recovery_date: 2026-05-17
 - training_state_date: 2026-05-17
-- recovery_is_fresh: False
+- recovery_is_fresh: True
 - training_state_is_fresh: True
 
 ## Recovery
-- date: 2026-05-15 00:00:00
+- date: 2026-05-17 00:00:00
 - weight: None
-- resting_hr: 65.0
+- resting_hr: 71.0
 - hrv: None
 - hrv_sdnn: None
 - readiness: None
@@ -34,63 +34,64 @@
 ## 7-Day Recovery Trend
 - window_start: 2026-05-11
 - window_end: 2026-05-17
-- days_with_recovery_data: 5
+- days_with_recovery_data: 7
 - avg_sleep_hours: 6.06
 - min_sleep_hours: 5.47
 - avg_sleep_score: 77.5
 - avg_hrv: 87.0
-- avg_resting_hr: 45.6
+- avg_resting_hr: 55.14
 - avg_sleeping_hr: None
 - low_sleep_score_days: 0
 
 ## Training State
 - date: 2026-05-17 00:00:00
-- ctl: 12.537927
-- atl: 6.6614814
-- ramp_rate: -1.5410414
+- ctl: 23.588772
+- atl: 62.16917
+- ramp_rate: 9.509804
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 0.53
+- atl_ctl_ratio: 2.64
 
 ## Yesterday Primary Activity
-- id: i147760394
-- start_date_local: 2026-05-13 16:53:05
-- name: Treadmill Running
-- type: VirtualRun
-- moving_time_sec: 1519
-- elapsed_time_sec: 1531
-- distance_m: 5000.0
-- distance_km: 5.0
-- average_heartrate: 159.0
-- max_heartrate: 180.0
-- average_speed: 3.265
-- max_speed: 3.546
-- total_elevation_gain: None
-- calories: 309.0
-- average_cadence: 85.698685
-- pace: 3.2916393
+- id: i148873112
+- start_date_local: 2026-05-16 05:59:57
+- name: Katoomba Trail Running
+- type: TrailRun
+- moving_time_sec: 68733
+- elapsed_time_sec: 77968
+- distance_m: 102541.61
+- distance_km: 102.54
+- average_heartrate: 132.0
+- max_heartrate: 175.0
+- average_speed: 1.315
+- max_speed: 3.415
+- total_elevation_gain: 4598.938
+- calories: 7737.0
+- average_cadence: 67.487206
+- pace: 1.4918833
 - threshold_pace: 3.8022814
-- icu_training_load: 29.0
-- icu_intensity: 82.60466
-- icu_fitness: 13.790725
-- icu_fatigue: 11.796118
+- icu_training_load: 481.0
+- icu_intensity: 47.126846
+- icu_fitness: 24.157148
+- icu_fatigue: 71.71618
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-05-16', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
-- classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.859, 'reason': '整体更像常规有氧，而不是恢复跑；距离虽短但平均心率不低', 'distance_km': 5.0, 'duration_min': 25.3}
+- selection_meta: {'selection_mode': 'primary_activity_of_day', 'candidate_count': 1, 'candidate_types': ['TrailRun'], 'selected_type': 'TrailRun', 'selected_training_load': 481.0, 'selected_moving_time_sec': 68733.0, 'selection_rule': '先选主训练类型（Run/Workout/Ride），再优先 Run，之后按训练负荷、时长、开始时间排序。', 'target_date': '2026-05-16'}
+- classification: {'label': 'moderate_to_hard_run', 'speed_vs_threshold_ratio': 0.346, 'reason': '心率/负荷/配速至少一项偏高，不应视作恢复跑', 'distance_km': 102.54, 'duration_min': 1145.5}
 
 ## 7-Day Activity Trend
 - window_start: 2026-05-11
 - window_end: 2026-05-17
-- activity_count: 1
-- total_training_load: 29.0
-- avg_training_load: 29.0
-- run_count: 1
-- run_distance_km: 5.0
+- activity_count: 2
+- total_training_load: 510.0
+- avg_training_load: 255.0
+- run_count: 2
+- run_distance_km: 107.54
 
 ## Signals To Watch
-- 今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据
 - 静息心率高于近7天均值，需留意疲劳或压力
+- ATL/CTL 偏高，近期负荷堆积需要留意
+- 昨天主训练并非恢复跑，今天不宜机械加码
