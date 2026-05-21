@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-21T11:33:54.240486+10:00",
+  "generated_at": "2026-05-22T03:30:40.606350+10:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
-    "today_date": "2026-05-21",
+    "today_date": "2026-05-22",
     "recovery_date": "2026-05-21",
-    "training_state_date": "2026-05-21",
-    "recovery_is_fresh": true,
+    "training_state_date": "2026-05-22",
+    "recovery_is_fresh": false,
     "training_state_is_fresh": true
   },
   "conclusion": "恢复偏弱，今天不适合高强度，优先恢复。",
@@ -33,27 +33,27 @@
     "injury": null
   },
   "recovery_trend_7d": {
-    "window_start": "2026-05-15",
-    "window_end": "2026-05-21",
-    "days_with_recovery_data": 7,
-    "avg_sleep_hours": 7.16,
-    "min_sleep_hours": 5.9,
+    "window_start": "2026-05-16",
+    "window_end": "2026-05-22",
+    "days_with_recovery_data": 6,
+    "avg_sleep_hours": 7.58,
+    "min_sleep_hours": 6.28,
     "avg_sleep_score": 76.0,
-    "avg_hrv": 74.25,
-    "avg_resting_hr": 56.71,
+    "avg_hrv": 73.33,
+    "avg_resting_hr": 59.17,
     "avg_sleeping_hr": null,
     "low_sleep_score_days": 1
   },
   "training_state": {
-    "date": "2026-05-21 00:00:00",
-    "ctl": 21.445885,
-    "atl": 35.10806,
-    "ramp_rate": 7.9796324,
+    "date": "2026-05-22 00:00:00",
+    "ctl": 20.9413,
+    "atl": 30.4344,
+    "ramp_rate": 7.7918854,
     "ctl_load": 0.0,
     "atl_load": 0.0,
     "ride_eftp": null,
     "run_eftp": null,
-    "atl_ctl_ratio": 1.64
+    "atl_ctl_ratio": 1.45
   },
   "yesterday_activity": {
     "id": "i148873112",
@@ -83,7 +83,7 @@
     "selection_meta": {
       "selection_mode": "latest_activity_fallback",
       "candidate_count": 1,
-      "target_date": "2026-05-20",
+      "target_date": "2026-05-21",
       "selection_rule": "昨天没有活动，回退到最近一条活动。"
     },
     "classification": {
@@ -95,8 +95,8 @@
     }
   },
   "activity_trend_7d": {
-    "window_start": "2026-05-15",
-    "window_end": "2026-05-21",
+    "window_start": "2026-05-16",
+    "window_end": "2026-05-22",
     "activity_count": 1,
     "total_training_load": 481.0,
     "avg_training_load": 481.0,
@@ -104,6 +104,7 @@
     "run_distance_km": 102.54
   },
   "health_signals_to_watch": [
+    "今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据",
     "昨晚睡眠明显低于近7天均值",
     "HRV 低于近7天均值，恢复可能偏弱",
     "ATL/CTL 偏高，近期负荷堆积需要留意",
