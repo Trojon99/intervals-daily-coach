@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-26T11:31:22.310716+10:00",
+  "generated_at": "2026-05-27T03:58:31.120895+10:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
-    "today_date": "2026-05-26",
+    "today_date": "2026-05-27",
     "recovery_date": "2026-05-25",
-    "training_state_date": "2026-05-26",
+    "training_state_date": "2026-05-27",
     "recovery_is_fresh": false,
     "training_state_is_fresh": true
   },
@@ -33,27 +33,27 @@
     "injury": null
   },
   "recovery_trend_7d": {
-    "window_start": "2026-05-20",
-    "window_end": "2026-05-26",
-    "days_with_recovery_data": 6,
-    "avg_sleep_hours": 7.67,
+    "window_start": "2026-05-21",
+    "window_end": "2026-05-27",
+    "days_with_recovery_data": 5,
+    "avg_sleep_hours": 7.68,
     "min_sleep_hours": 6.28,
-    "avg_sleep_score": 81.83,
-    "avg_hrv": 67.0,
-    "avg_resting_hr": 44.67,
+    "avg_sleep_score": 79.8,
+    "avg_hrv": 63.0,
+    "avg_resting_hr": 44.8,
     "avg_sleeping_hr": null,
     "low_sleep_score_days": 1
   },
   "training_state": {
-    "date": "2026-05-26 00:00:00",
-    "ctl": 19.554903,
-    "atl": 19.487738,
-    "ramp_rate": -2.9369183,
+    "date": "2026-05-27 00:00:00",
+    "ctl": 19.094809,
+    "atl": 16.89349,
+    "ramp_rate": -2.8678188,
     "ctl_load": 0.0,
     "atl_load": 0.0,
     "ride_eftp": null,
     "run_eftp": null,
-    "atl_ctl_ratio": 1.0
+    "atl_ctl_ratio": 0.88
   },
   "yesterday_activity": {
     "id": "i150952658",
@@ -83,7 +83,7 @@
     "selection_meta": {
       "selection_mode": "latest_activity_fallback",
       "candidate_count": 1,
-      "target_date": "2026-05-25",
+      "target_date": "2026-05-26",
       "selection_rule": "昨天没有活动，回退到最近一条活动。"
     },
     "classification": {
@@ -95,8 +95,8 @@
     }
   },
   "activity_trend_7d": {
-    "window_start": "2026-05-20",
-    "window_end": "2026-05-26",
+    "window_start": "2026-05-21",
+    "window_end": "2026-05-27",
     "activity_count": 1,
     "total_training_load": 23.0,
     "avg_training_load": 23.0,
