@@ -1,8 +1,8 @@
 # Daily Coach Report
 
-- Generated: 2026-05-28T03:23:54.556415+10:00
-- Conclusion: 恢复一般，今天更适合轻松有氧或降强度。
-- Today suggestion: 避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。
+- Generated: 2026-05-28T09:03:36.658061+10:00
+- Conclusion: 恢复尚可，今天适合常规有氧或中等训练，不建议激进加码。
+- Today suggestion: 以轻松跑或常规有氧为主。只有在主观状态也不错时，才考虑中等质量训练。
 
 ## Data Status
 - today_date: 2026-05-28
@@ -14,14 +14,14 @@
 ## Recovery
 - date: 2026-05-28 00:00:00
 - weight: None
-- resting_hr: 48.0
-- hrv: None
+- resting_hr: 46.0
+- hrv: 65.0
 - hrv_sdnn: None
 - readiness: None
-- sleep_secs: None
-- sleep_hours: None
-- sleep_score: None
-- sleep_quality: None
+- sleep_secs: 24000.0
+- sleep_hours: 6.67
+- sleep_score: 79.0
+- sleep_quality: 3.0
 - avg_sleeping_hr: None
 - spo2: None
 - fatigue: None
@@ -35,11 +35,11 @@
 - window_start: 2026-05-22
 - window_end: 2026-05-28
 - days_with_recovery_data: 6
-- avg_sleep_hours: 7.81
-- min_sleep_hours: 6.9
-- avg_sleep_score: 81.6
-- avg_hrv: 66.0
-- avg_resting_hr: 44.5
+- avg_sleep_hours: 7.62
+- min_sleep_hours: 6.67
+- avg_sleep_score: 81.17
+- avg_hrv: 65.8
+- avg_resting_hr: 44.17
 - avg_sleeping_hr: None
 - low_sleep_score_days: 1
 
@@ -92,4 +92,4 @@
 - run_distance_km: 4.01
 
 ## Signals To Watch
-- 静息心率高于近7天均值，需留意疲劳或压力
+- 昨晚睡眠明显低于近7天均值
