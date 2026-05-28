@@ -1,14 +1,14 @@
 # Daily Coach Report
 
-- Generated: 2026-05-28T10:15:03.109176+10:00
+- Generated: 2026-05-29T04:09:24.756013+10:00
 - Conclusion: 恢复尚可，今天适合常规有氧或中等训练，不建议激进加码。
 - Today suggestion: 以轻松跑或常规有氧为主。只有在主观状态也不错时，才考虑中等质量训练。
 
 ## Data Status
-- today_date: 2026-05-28
+- today_date: 2026-05-29
 - recovery_date: 2026-05-28
-- training_state_date: 2026-05-28
-- recovery_is_fresh: True
+- training_state_date: 2026-05-29
+- recovery_is_fresh: False
 - training_state_is_fresh: True
 
 ## Recovery
@@ -32,27 +32,27 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-05-22
-- window_end: 2026-05-28
-- days_with_recovery_data: 6
-- avg_sleep_hours: 7.62
+- window_start: 2026-05-23
+- window_end: 2026-05-29
+- days_with_recovery_data: 5
+- avg_sleep_hours: 7.7
 - min_sleep_hours: 6.67
-- avg_sleep_score: 81.17
-- avg_hrv: 65.8
-- avg_resting_hr: 44.17
+- avg_sleep_score: 81.2
+- avg_hrv: 68.0
+- avg_resting_hr: 44.0
 - avg_sleeping_hr: None
 - low_sleep_score_days: 1
 
 ## Training State
-- date: 2026-05-28 00:00:00
-- ctl: 18.64554
-- atl: 14.644593
-- ramp_rate: -2.8003445
+- date: 2026-05-29 00:00:00
+- ctl: 18.206842
+- atl: 12.695074
+- ramp_rate: -2.734457
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 0.79
+- atl_ctl_ratio: 0.7
 
 ## Yesterday Primary Activity
 - id: i150952658
@@ -79,12 +79,12 @@
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-05-27', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
+- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-05-28', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
 - classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.795, 'reason': '整体更像常规有氧，而不是恢复跑；距离虽短但平均心率不低', 'distance_km': 4.01, 'duration_min': 22.1}
 
 ## 7-Day Activity Trend
-- window_start: 2026-05-22
-- window_end: 2026-05-28
+- window_start: 2026-05-23
+- window_end: 2026-05-29
 - activity_count: 1
 - total_training_load: 23.0
 - avg_training_load: 23.0
@@ -92,4 +92,5 @@
 - run_distance_km: 4.01
 
 ## Signals To Watch
+- 今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据
 - 昨晚睡眠明显低于近7天均值
