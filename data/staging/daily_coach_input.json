@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-31T10:59:53.330606+10:00",
+  "generated_at": "2026-06-01T02:01:49.820381+10:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
-    "today_date": "2026-05-31",
+    "today_date": "2026-06-01",
     "recovery_date": "2026-05-31",
-    "training_state_date": "2026-05-31",
-    "recovery_is_fresh": true,
+    "training_state_date": "2026-06-01",
+    "recovery_is_fresh": false,
     "training_state_is_fresh": true
   },
   "conclusion": "恢复较好，今天可以正常训练；是否加码仍要看主观感觉和当天安排。",
@@ -33,27 +33,27 @@
     "injury": null
   },
   "recovery_trend_7d": {
-    "window_start": "2026-05-25",
-    "window_end": "2026-05-31",
-    "days_with_recovery_data": 6,
+    "window_start": "2026-05-26",
+    "window_end": "2026-06-01",
+    "days_with_recovery_data": 5,
     "avg_sleep_hours": 7.93,
     "min_sleep_hours": 6.67,
-    "avg_sleep_score": 89.5,
+    "avg_sleep_score": 89.6,
     "avg_hrv": 73.4,
-    "avg_resting_hr": 43.17,
+    "avg_resting_hr": 43.0,
     "avg_sleeping_hr": null,
     "low_sleep_score_days": 0
   },
   "training_state": {
-    "date": "2026-05-31 00:00:00",
-    "ctl": 17.360168,
-    "atl": 9.54006,
-    "ramp_rate": -3.148447,
+    "date": "2026-06-01 00:00:00",
+    "ctl": 16.951714,
+    "atl": 8.270067,
+    "ramp_rate": -3.0743694,
     "ctl_load": 0.0,
     "atl_load": 0.0,
     "ride_eftp": null,
     "run_eftp": null,
-    "atl_ctl_ratio": 0.55
+    "atl_ctl_ratio": 0.49
   },
   "yesterday_activity": {
     "id": "i150952658",
@@ -83,7 +83,7 @@
     "selection_meta": {
       "selection_mode": "latest_activity_fallback",
       "candidate_count": 1,
-      "target_date": "2026-05-30",
+      "target_date": "2026-05-31",
       "selection_rule": "昨天没有活动，回退到最近一条活动。"
     },
     "classification": {
@@ -95,7 +95,9 @@
     }
   },
   "activity_trend_7d": {},
-  "health_signals_to_watch": [],
+  "health_signals_to_watch": [
+    "今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据"
+  ],
   "analysis_order": [
     "direct_conclusion",
     "recovery",
