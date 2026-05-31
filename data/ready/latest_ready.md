@@ -1,26 +1,26 @@
 # Daily Coach Report
 
-- Generated: 2026-05-31T10:59:53.330606+10:00
-- Conclusion: 恢复较好，今天可以正常训练；是否加码仍要看主观感觉和当天安排。
-- Today suggestion: 优先做正常训练。若中午有重腿力量，下午跑步保持轻松；若下午想做质量跑，中午力量只做上肢或核心。
+- Generated: 2026-06-01T08:39:54.730518+10:00
+- Conclusion: 恢复尚可，今天适合常规有氧或中等训练，不建议激进加码。
+- Today suggestion: 以轻松跑或常规有氧为主。只有在主观状态也不错时，才考虑中等质量训练。
 
 ## Data Status
-- today_date: 2026-05-31
-- recovery_date: 2026-05-31
-- training_state_date: 2026-05-31
+- today_date: 2026-06-01
+- recovery_date: 2026-06-01
+- training_state_date: 2026-06-01
 - recovery_is_fresh: True
 - training_state_is_fresh: True
 
 ## Recovery
-- date: 2026-05-31 00:00:00
+- date: 2026-06-01 00:00:00
 - weight: None
-- resting_hr: 41.0
-- hrv: 82.0
+- resting_hr: 43.0
+- hrv: 66.0
 - hrv_sdnn: None
 - readiness: None
-- sleep_secs: 34012.0
-- sleep_hours: 9.45
-- sleep_score: 97.0
+- sleep_secs: 28860.0
+- sleep_hours: 8.02
+- sleep_score: 90.0
 - sleep_quality: 1.0
 - avg_sleeping_hr: None
 - spo2: None
@@ -32,27 +32,27 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-05-25
-- window_end: 2026-05-31
+- window_start: 2026-05-26
+- window_end: 2026-06-01
 - days_with_recovery_data: 6
-- avg_sleep_hours: 7.93
+- avg_sleep_hours: 7.94
 - min_sleep_hours: 6.67
-- avg_sleep_score: 89.5
-- avg_hrv: 73.4
-- avg_resting_hr: 43.17
+- avg_sleep_score: 89.67
+- avg_hrv: 72.17
+- avg_resting_hr: 43.0
 - avg_sleeping_hr: None
 - low_sleep_score_days: 0
 
 ## Training State
-- date: 2026-05-31 00:00:00
-- ctl: 17.360168
-- atl: 9.54006
-- ramp_rate: -3.148447
+- date: 2026-06-01 00:00:00
+- ctl: 16.951714
+- atl: 8.270067
+- ramp_rate: -3.0743694
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 0.55
+- atl_ctl_ratio: 0.49
 
 ## Yesterday Primary Activity
 - id: i150952658
@@ -79,10 +79,10 @@
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-05-30', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
+- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-05-31', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
 - classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.795, 'reason': '整体更像常规有氧，而不是恢复跑；距离虽短但平均心率不低', 'distance_km': 4.01, 'duration_min': 22.1}
 
 ## 7-Day Activity Trend
 
 ## Signals To Watch
-- No strong warning signal from the available data.
+- HRV 低于近7天均值，恢复可能偏弱
