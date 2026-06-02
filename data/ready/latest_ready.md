@@ -1,27 +1,27 @@
 # Daily Coach Report
 
-- Generated: 2026-06-02T11:37:10.259431+10:00
-- Conclusion: 恢复尚可，今天适合常规有氧或中等训练，不建议激进加码。
-- Today suggestion: 以轻松跑或常规有氧为主。只有在主观状态也不错时，才考虑中等质量训练。
+- Generated: 2026-06-03T09:20:49.723391+10:00
+- Conclusion: 恢复一般，今天更适合轻松有氧或降强度。
+- Today suggestion: 避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。
 
 ## Data Status
-- today_date: 2026-06-02
-- recovery_date: 2026-06-02
-- training_state_date: 2026-06-02
+- today_date: 2026-06-03
+- recovery_date: 2026-06-03
+- training_state_date: 2026-06-03
 - recovery_is_fresh: True
 - training_state_is_fresh: True
 
 ## Recovery
-- date: 2026-06-02 00:00:00
+- date: 2026-06-03 00:00:00
 - weight: None
-- resting_hr: 44.0
-- hrv: 71.0
+- resting_hr: 43.0
+- hrv: 75.0
 - hrv_sdnn: None
 - readiness: None
-- sleep_secs: 22500.0
-- sleep_hours: 6.25
-- sleep_score: 81.0
-- sleep_quality: 2.0
+- sleep_secs: 21960.0
+- sleep_hours: 6.1
+- sleep_score: 79.0
+- sleep_quality: 3.0
 - avg_sleeping_hr: None
 - spo2: None
 - fatigue: None
@@ -32,27 +32,27 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-05-27
-- window_end: 2026-06-02
+- window_start: 2026-05-28
+- window_end: 2026-06-03
 - days_with_recovery_data: 7
-- avg_sleep_hours: 7.7
-- min_sleep_hours: 6.25
-- avg_sleep_score: 88.43
-- avg_hrv: 72.0
-- avg_resting_hr: 43.14
+- avg_sleep_hours: 7.59
+- min_sleep_hours: 6.1
+- avg_sleep_score: 87.43
+- avg_hrv: 72.43
+- avg_resting_hr: 43.29
 - avg_sleeping_hr: None
 - low_sleep_score_days: 0
 
 ## Training State
-- date: 2026-06-02 00:00:00
-- ctl: 16.552868
-- atl: 7.1691384
-- ramp_rate: -3.0020351
+- date: 2026-06-03 00:00:00
+- ctl: 16.163406
+- atl: 6.2147675
+- ramp_rate: -2.9314022
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 0.43
+- atl_ctl_ratio: 0.38
 
 ## Yesterday Primary Activity
 - id: i150952658
@@ -79,7 +79,7 @@
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-06-01', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
+- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-06-02', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
 - classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.795, 'reason': '整体更像常规有氧，而不是恢复跑；距离虽短但平均心率不低', 'distance_km': 4.01, 'duration_min': 22.1}
 
 ## 7-Day Activity Trend
