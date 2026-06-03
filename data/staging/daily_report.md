@@ -1,14 +1,14 @@
 # Daily Coach Report
 
-- Generated: 2026-06-03T11:48:02.435141+10:00
+- Generated: 2026-06-04T05:15:18.682655+10:00
 - Conclusion: 恢复一般，今天更适合轻松有氧或降强度。
 - Today suggestion: 避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。
 
 ## Data Status
-- today_date: 2026-06-03
+- today_date: 2026-06-04
 - recovery_date: 2026-06-03
-- training_state_date: 2026-06-03
-- recovery_is_fresh: True
+- training_state_date: 2026-06-04
+- recovery_is_fresh: False
 - training_state_is_fresh: True
 
 ## Recovery
@@ -32,27 +32,27 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-05-28
-- window_end: 2026-06-03
-- days_with_recovery_data: 7
-- avg_sleep_hours: 7.59
+- window_start: 2026-05-29
+- window_end: 2026-06-04
+- days_with_recovery_data: 6
+- avg_sleep_hours: 7.74
 - min_sleep_hours: 6.1
-- avg_sleep_score: 87.43
-- avg_hrv: 72.43
-- avg_resting_hr: 43.29
+- avg_sleep_score: 88.83
+- avg_hrv: 73.67
+- avg_resting_hr: 42.83
 - avg_sleeping_hr: None
 - low_sleep_score_days: 0
 
 ## Training State
-- date: 2026-06-03 00:00:00
-- ctl: 16.163406
-- atl: 6.2147675
-- ramp_rate: -2.9314022
+- date: 2026-06-04 00:00:00
+- ctl: 15.783109
+- atl: 5.3874445
+- ramp_rate: -2.8624315
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 0.38
+- atl_ctl_ratio: 0.34
 
 ## Yesterday Primary Activity
 - id: i150952658
@@ -79,10 +79,11 @@
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-06-02', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
+- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-06-03', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
 - classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.795, 'reason': '整体更像常规有氧，而不是恢复跑；距离虽短但平均心率不低', 'distance_km': 4.01, 'duration_min': 22.1}
 
 ## 7-Day Activity Trend
 
 ## Signals To Watch
+- 今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据
 - 昨晚睡眠明显低于近7天均值

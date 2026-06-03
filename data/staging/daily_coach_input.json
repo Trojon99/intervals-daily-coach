@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-03T11:48:02.435141+10:00",
+  "generated_at": "2026-06-04T05:15:18.682655+10:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
-    "today_date": "2026-06-03",
+    "today_date": "2026-06-04",
     "recovery_date": "2026-06-03",
-    "training_state_date": "2026-06-03",
-    "recovery_is_fresh": true,
+    "training_state_date": "2026-06-04",
+    "recovery_is_fresh": false,
     "training_state_is_fresh": true
   },
   "conclusion": "恢复一般，今天更适合轻松有氧或降强度。",
@@ -33,27 +33,27 @@
     "injury": null
   },
   "recovery_trend_7d": {
-    "window_start": "2026-05-28",
-    "window_end": "2026-06-03",
-    "days_with_recovery_data": 7,
-    "avg_sleep_hours": 7.59,
+    "window_start": "2026-05-29",
+    "window_end": "2026-06-04",
+    "days_with_recovery_data": 6,
+    "avg_sleep_hours": 7.74,
     "min_sleep_hours": 6.1,
-    "avg_sleep_score": 87.43,
-    "avg_hrv": 72.43,
-    "avg_resting_hr": 43.29,
+    "avg_sleep_score": 88.83,
+    "avg_hrv": 73.67,
+    "avg_resting_hr": 42.83,
     "avg_sleeping_hr": null,
     "low_sleep_score_days": 0
   },
   "training_state": {
-    "date": "2026-06-03 00:00:00",
-    "ctl": 16.163406,
-    "atl": 6.2147675,
-    "ramp_rate": -2.9314022,
+    "date": "2026-06-04 00:00:00",
+    "ctl": 15.783109,
+    "atl": 5.3874445,
+    "ramp_rate": -2.8624315,
     "ctl_load": 0.0,
     "atl_load": 0.0,
     "ride_eftp": null,
     "run_eftp": null,
-    "atl_ctl_ratio": 0.38
+    "atl_ctl_ratio": 0.34
   },
   "yesterday_activity": {
     "id": "i150952658",
@@ -83,7 +83,7 @@
     "selection_meta": {
       "selection_mode": "latest_activity_fallback",
       "candidate_count": 1,
-      "target_date": "2026-06-02",
+      "target_date": "2026-06-03",
       "selection_rule": "昨天没有活动，回退到最近一条活动。"
     },
     "classification": {
@@ -96,6 +96,7 @@
   },
   "activity_trend_7d": {},
   "health_signals_to_watch": [
+    "今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据",
     "昨晚睡眠明显低于近7天均值"
   ],
   "analysis_order": [
