@@ -1,14 +1,14 @@
 # Daily Coach Report
 
-- Generated: 2026-06-06T10:20:08.937653+10:00
+- Generated: 2026-06-07T01:57:24.318703+10:00
 - Conclusion: 恢复较好，今天可以正常训练；是否加码仍要看主观感觉和当天安排。
 - Today suggestion: 优先做正常训练。若中午有重腿力量，下午跑步保持轻松；若下午想做质量跑，中午力量只做上肢或核心。
 
 ## Data Status
-- today_date: 2026-06-06
+- today_date: 2026-06-07
 - recovery_date: 2026-06-06
-- training_state_date: 2026-06-06
-- recovery_is_fresh: True
+- training_state_date: 2026-06-07
+- recovery_is_fresh: False
 - training_state_is_fresh: True
 
 ## Recovery
@@ -32,27 +32,27 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-05-31
-- window_end: 2026-06-06
-- days_with_recovery_data: 5
-- avg_sleep_hours: 7.77
+- window_start: 2026-06-01
+- window_end: 2026-06-07
+- days_with_recovery_data: 4
+- avg_sleep_hours: 7.36
 - min_sleep_hours: 6.1
-- avg_sleep_score: 88.8
-- avg_hrv: 75.2
-- avg_resting_hr: 42.4
+- avg_sleep_score: 86.75
+- avg_hrv: 73.5
+- avg_resting_hr: 42.75
 - avg_sleeping_hr: None
 - low_sleep_score_days: 0
 
 ## Training State
-- date: 2026-06-06 00:00:00
-- ctl: 14.652051
-- atl: 3.570539
-- ramp_rate: -2.657302
+- date: 2026-06-07 00:00:00
+- ctl: 14.307313
+- atl: 3.0952213
+- ramp_rate: -2.594781
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 0.24
+- atl_ctl_ratio: 0.22
 
 ## Yesterday Primary Activity
 - id: i150952658
@@ -79,10 +79,10 @@
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-06-05', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
+- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-06-06', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
 - classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.795, 'reason': '整体更像常规有氧，而不是恢复跑；距离虽短但平均心率不低', 'distance_km': 4.01, 'duration_min': 22.1}
 
 ## 7-Day Activity Trend
 
 ## Signals To Watch
-- No strong warning signal from the available data.
+- 今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据
