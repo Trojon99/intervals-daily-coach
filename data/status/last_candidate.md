@@ -1,27 +1,27 @@
 # Daily Coach Report
 
-- Generated: 2026-06-07T10:18:10.270075+10:00
-- Conclusion: 恢复偏弱，今天不适合高强度，优先恢复。
-- Today suggestion: 更适合休息、走路、拉伸或非常轻的恢复活动。若有不适或疲劳延续，连续观察。
+- Generated: 2026-06-08T01:53:41.242239+10:00
+- Conclusion: 恢复一般，今天更适合轻松有氧或降强度。
+- Today suggestion: 避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。
 
 ## Data Status
-- today_date: 2026-06-07
-- recovery_date: 2026-06-07
-- training_state_date: 2026-06-07
+- today_date: 2026-06-08
+- recovery_date: 2026-06-08
+- training_state_date: 2026-06-08
 - recovery_is_fresh: True
 - training_state_is_fresh: True
 
 ## Recovery
-- date: 2026-06-07 00:00:00
+- date: 2026-06-08 00:00:00
 - weight: None
-- resting_hr: 44.0
-- hrv: 74.0
+- resting_hr: 60.0
+- hrv: None
 - hrv_sdnn: None
 - readiness: None
-- sleep_secs: 15498.0
-- sleep_hours: 4.3
-- sleep_score: 58.0
-- sleep_quality: 4.0
+- sleep_secs: None
+- sleep_hours: None
+- sleep_score: None
+- sleep_quality: None
 - avg_sleeping_hr: None
 - spo2: None
 - fatigue: None
@@ -32,58 +32,64 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-06-01
-- window_end: 2026-06-07
+- window_start: 2026-06-02
+- window_end: 2026-06-08
 - days_with_recovery_data: 5
-- avg_sleep_hours: 6.75
+- avg_sleep_hours: 6.43
 - min_sleep_hours: 4.3
-- avg_sleep_score: 81.0
-- avg_hrv: 73.6
-- avg_resting_hr: 43.0
+- avg_sleep_score: 78.75
+- avg_hrv: 75.5
+- avg_resting_hr: 46.4
 - avg_sleeping_hr: None
 - low_sleep_score_days: 1
 
 ## Training State
-- date: 2026-06-07 00:00:00
-- ctl: 14.307313
-- atl: 3.0952213
-- ramp_rate: -2.594781
+- date: 2026-06-08 00:00:00
+- ctl: 14.67096
+- atl: 4.6579957
+- ramp_rate: -2.2807531
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 0.22
+- atl_ctl_ratio: 0.32
 
 ## Yesterday Primary Activity
-- id: i150952658
-- start_date_local: 2026-05-24 12:09:23
-- name: Canberra Running
-- type: Run
-- moving_time_sec: 1323
-- elapsed_time_sec: 1328
-- distance_m: 4005.23
-- distance_km: 4.01
-- average_heartrate: 156.0
-- max_heartrate: 175.0
-- average_speed: 3.023
-- max_speed: 4.068
-- total_elevation_gain: 29.90741
-- calories: 269.0
-- average_cadence: 83.15909
-- pace: 3.0273848
-- threshold_pace: 3.8022814
-- icu_training_load: 23.0
-- icu_intensity: 78.99138
-- icu_fitness: 20.508615
-- icu_fatigue: 25.93257
+- id: i154955878
+- start_date_local: 2026-06-07 11:05:56
+- name: Cotter River Hiking
+- type: Hike
+- moving_time_sec: 3527
+- elapsed_time_sec: 5350
+- distance_m: 4098.81
+- distance_km: 4.1
+- average_heartrate: 93.0
+- max_heartrate: 134.0
+- average_speed: 0.766
+- max_speed: 2.725
+- total_elevation_gain: 134.0
+- calories: 305.0
+- average_cadence: 53.045856
+- pace: 1.1621237
+- threshold_pace: None
+- icu_training_load: 14.0
+- icu_intensity: 30.727411
+- icu_fitness: 15.024461
+- icu_fatigue: 5.373301
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-06-06', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
-- classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.795, 'reason': '整体更像常规有氧，而不是恢复跑；距离虽短但平均心率不低', 'distance_km': 4.01, 'duration_min': 22.1}
+- selection_meta: {'selection_mode': 'primary_activity_of_day', 'candidate_count': 1, 'candidate_types': ['Hike'], 'selected_type': 'Hike', 'selected_training_load': 14.0, 'selected_moving_time_sec': 3527.0, 'selection_rule': '先选主训练类型（Run/Workout/Ride），再优先 Run，之后按训练负荷、时长、开始时间排序。', 'target_date': '2026-06-07'}
+- classification: {'label': 'other_activity', 'speed_vs_threshold_ratio': None, 'reason': '非核心跑步类型，暂按其他活动处理', 'distance_km': 4.1, 'duration_min': 58.8}
 
 ## 7-Day Activity Trend
+- window_start: 2026-06-02
+- window_end: 2026-06-08
+- activity_count: 1
+- total_training_load: 14.0
+- avg_training_load: 14.0
+- run_count: 0
+- run_distance_km: 0.0
 
 ## Signals To Watch
-- 昨晚睡眠时长偏短，优先按恢复不足处理
-- 昨晚睡眠明显低于近7天均值
+- 静息心率高于近7天均值，需留意疲劳或压力
