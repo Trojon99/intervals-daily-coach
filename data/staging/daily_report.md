@@ -1,20 +1,20 @@
 # Daily Coach Report
 
-- Generated: 2026-06-11T11:41:18.712191+10:00
+- Generated: 2026-06-12T03:55:11.442555+10:00
 - Conclusion: 恢复一般，今天更适合轻松有氧或降强度。
 - Today suggestion: 避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。
 
 ## Data Status
-- today_date: 2026-06-11
-- recovery_date: 2026-06-11
-- training_state_date: 2026-06-11
+- today_date: 2026-06-12
+- recovery_date: 2026-06-12
+- training_state_date: 2026-06-12
 - recovery_is_fresh: True
 - training_state_is_fresh: True
 
 ## Recovery
-- date: 2026-06-11 00:00:00
+- date: 2026-06-12 00:00:00
 - weight: None
-- resting_hr: 62.0
+- resting_hr: 56.0
 - hrv: None
 - hrv_sdnn: None
 - readiness: None
@@ -32,27 +32,27 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-06-05
-- window_end: 2026-06-11
-- days_with_recovery_data: 6
+- window_start: 2026-06-06
+- window_end: 2026-06-12
+- days_with_recovery_data: 7
 - avg_sleep_hours: 6.76
 - min_sleep_hours: 4.3
 - avg_sleep_score: 80.25
 - avg_hrv: 75.0
-- avg_resting_hr: 45.83
+- avg_resting_hr: 46.86
 - avg_sleeping_hr: None
 - low_sleep_score_days: 1
 
 ## Training State
-- date: 2026-06-11 00:00:00
-- ctl: 13.659585
-- atl: 3.0344002
-- ramp_rate: -2.1235237
+- date: 2026-06-12 00:00:00
+- ctl: 13.338198
+- atl: 2.6304545
+- ramp_rate: -2.0735607
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 0.22
+- atl_ctl_ratio: 0.2
 
 ## Yesterday Primary Activity
 - id: i154955878
@@ -79,12 +79,12 @@
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-06-10', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
+- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-06-11', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
 - classification: {'label': 'other_activity', 'speed_vs_threshold_ratio': None, 'reason': '非核心跑步类型，暂按其他活动处理', 'distance_km': 4.1, 'duration_min': 58.8}
 
 ## 7-Day Activity Trend
-- window_start: 2026-06-05
-- window_end: 2026-06-11
+- window_start: 2026-06-06
+- window_end: 2026-06-12
 - activity_count: 1
 - total_training_load: 14.0
 - avg_training_load: 14.0
