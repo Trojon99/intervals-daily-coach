@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-06-15T11:41:08.805198+10:00",
+  "generated_at": "2026-06-16T03:58:44.301863+10:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
-    "today_date": "2026-06-15",
-    "recovery_date": "2026-06-15",
-    "training_state_date": "2026-06-15",
+    "today_date": "2026-06-16",
+    "recovery_date": "2026-06-16",
+    "training_state_date": "2026-06-16",
     "recovery_is_fresh": true,
     "training_state_is_fresh": true
   },
   "conclusion": "恢复一般，今天更适合轻松有氧或降强度。",
   "today_training_suggestion": "避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。",
-  "internal_score": 0,
+  "internal_score": -1,
   "recovery": {
-    "date": "2026-06-15 00:00:00",
+    "date": "2026-06-16 00:00:00",
     "weight": null,
-    "resting_hr": 46.0,
+    "resting_hr": 55.0,
     "hrv": null,
     "hrv_sdnn": null,
     "readiness": null,
@@ -33,27 +33,27 @@
     "injury": null
   },
   "recovery_trend_7d": {
-    "window_start": "2026-06-09",
-    "window_end": "2026-06-15",
+    "window_start": "2026-06-10",
+    "window_end": "2026-06-16",
     "days_with_recovery_data": 7,
-    "avg_sleep_hours": 6.41,
+    "avg_sleep_hours": 6.74,
     "min_sleep_hours": 4.77,
-    "avg_sleep_score": 77.5,
-    "avg_hrv": 68.25,
-    "avg_resting_hr": 49.57,
+    "avg_sleep_score": 79.0,
+    "avg_hrv": 65.0,
+    "avg_resting_hr": 51.43,
     "avg_sleeping_hr": null,
     "low_sleep_score_days": 1
   },
   "training_state": {
-    "date": "2026-06-15 00:00:00",
-    "ctl": 12.418699,
-    "atl": 1.7135808,
-    "ramp_rate": -2.2522612,
+    "date": "2026-06-16 00:00:00",
+    "ctl": 12.126508,
+    "atl": 1.4854654,
+    "ramp_rate": -2.1992693,
     "ctl_load": 0.0,
     "atl_load": 0.0,
     "ride_eftp": null,
     "run_eftp": null,
-    "atl_ctl_ratio": 0.14
+    "atl_ctl_ratio": 0.12
   },
   "yesterday_activity": {
     "id": "i154955878",
@@ -83,7 +83,7 @@
     "selection_meta": {
       "selection_mode": "latest_activity_fallback",
       "candidate_count": 1,
-      "target_date": "2026-06-14",
+      "target_date": "2026-06-15",
       "selection_rule": "昨天没有活动，回退到最近一条活动。"
     },
     "classification": {
@@ -95,7 +95,9 @@
     }
   },
   "activity_trend_7d": {},
-  "health_signals_to_watch": [],
+  "health_signals_to_watch": [
+    "静息心率高于近7天均值，需留意疲劳或压力"
+  ],
   "analysis_order": [
     "direct_conclusion",
     "recovery",
