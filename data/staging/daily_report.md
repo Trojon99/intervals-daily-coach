@@ -1,6 +1,6 @@
 # Daily Coach Report
 
-- Generated: 2026-06-16T09:23:26.135318+10:00
+- Generated: 2026-06-16T11:47:48.968302+10:00
 - Conclusion: 恢复一般，今天更适合轻松有氧或降强度。
 - Today suggestion: 避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。
 
@@ -14,7 +14,7 @@
 ## Recovery
 - date: 2026-06-16 00:00:00
 - weight: None
-- resting_hr: 53.0
+- resting_hr: 43.0
 - hrv: None
 - hrv_sdnn: None
 - readiness: None
@@ -39,7 +39,7 @@
 - min_sleep_hours: 4.77
 - avg_sleep_score: 79.0
 - avg_hrv: 65.0
-- avg_resting_hr: 51.14
+- avg_resting_hr: 49.71
 - avg_sleeping_hr: None
 - low_sleep_score_days: 1
 
