@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17T09:09:21.835950+10:00",
+  "generated_at": "2026-06-17T11:42:07.733068+10:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
@@ -11,11 +11,11 @@
   },
   "conclusion": "恢复一般，今天更适合轻松有氧或降强度。",
   "today_training_suggestion": "避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。",
-  "internal_score": -1,
+  "internal_score": 0,
   "recovery": {
     "date": "2026-06-17 00:00:00",
     "weight": null,
-    "resting_hr": 56.0,
+    "resting_hr": 45.0,
     "hrv": null,
     "hrv_sdnn": null,
     "readiness": null,
@@ -40,7 +40,7 @@
     "min_sleep_hours": 4.77,
     "avg_sleep_score": 78.25,
     "avg_hrv": 68.5,
-    "avg_resting_hr": 51.57,
+    "avg_resting_hr": 50.0,
     "avg_sleeping_hr": null,
     "low_sleep_score_days": 1
   },
@@ -95,9 +95,7 @@
     }
   },
   "activity_trend_7d": {},
-  "health_signals_to_watch": [
-    "静息心率高于近7天均值，需留意疲劳或压力"
-  ],
+  "health_signals_to_watch": [],
   "analysis_order": [
     "direct_conclusion",
     "recovery",
