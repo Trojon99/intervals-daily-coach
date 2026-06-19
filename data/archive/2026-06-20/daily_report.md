@@ -1,8 +1,8 @@
 # Daily Coach Report
 
-- Generated: 2026-06-20T02:46:51.752596+10:00
-- Conclusion: 恢复偏弱，今天不适合高强度，优先恢复。
-- Today suggestion: 更适合休息、走路、拉伸或非常轻的恢复活动。若有不适或疲劳延续，连续观察。
+- Generated: 2026-06-20T08:36:42.095300+10:00
+- Conclusion: 恢复一般，今天更适合轻松有氧或降强度。
+- Today suggestion: 避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。
 
 ## Data Status
 - today_date: 2026-06-20
@@ -14,7 +14,7 @@
 ## Recovery
 - date: 2026-06-20 00:00:00
 - weight: None
-- resting_hr: 52.0
+- resting_hr: 47.0
 - hrv: None
 - hrv_sdnn: None
 - readiness: None
@@ -39,7 +39,7 @@
 - min_sleep_hours: 6.62
 - avg_sleep_score: 87.4
 - avg_hrv: 74.2
-- avg_resting_hr: 48.29
+- avg_resting_hr: 47.57
 - avg_sleeping_hr: None
 - low_sleep_score_days: 0
 
@@ -92,5 +92,4 @@
 - run_distance_km: 5.01
 
 ## Signals To Watch
-- 静息心率高于近7天均值，需留意疲劳或压力
 - 昨天主训练并非恢复跑，今天不宜机械加码
