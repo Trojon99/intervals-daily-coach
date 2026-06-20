@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20T08:36:42.095300+10:00",
+  "generated_at": "2026-06-20T11:29:48.128500+10:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
@@ -15,7 +15,7 @@
   "recovery": {
     "date": "2026-06-20 00:00:00",
     "weight": null,
-    "resting_hr": 47.0,
+    "resting_hr": 42.0,
     "hrv": null,
     "hrv_sdnn": null,
     "readiness": null,
@@ -40,7 +40,7 @@
     "min_sleep_hours": 6.62,
     "avg_sleep_score": 87.4,
     "avg_hrv": 74.2,
-    "avg_resting_hr": 47.57,
+    "avg_resting_hr": 46.86,
     "avg_sleeping_hr": null,
     "low_sleep_score_days": 0
   },
