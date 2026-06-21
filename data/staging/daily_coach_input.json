@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21T08:48:34.062675+10:00",
+  "generated_at": "2026-06-21T11:40:14.224602+10:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
@@ -9,13 +9,13 @@
     "recovery_is_fresh": true,
     "training_state_is_fresh": true
   },
-  "conclusion": "恢复偏弱，今天不适合高强度，优先恢复。",
-  "today_training_suggestion": "更适合休息、走路、拉伸或非常轻的恢复活动。若有不适或疲劳延续，连续观察。",
-  "internal_score": -2,
+  "conclusion": "恢复一般，今天更适合轻松有氧或降强度。",
+  "today_training_suggestion": "避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。",
+  "internal_score": -1,
   "recovery": {
     "date": "2026-06-21 00:00:00",
     "weight": null,
-    "resting_hr": 49.0,
+    "resting_hr": 45.0,
     "hrv": null,
     "hrv_sdnn": null,
     "readiness": null,
@@ -40,7 +40,7 @@
     "min_sleep_hours": 6.62,
     "avg_sleep_score": 87.17,
     "avg_hrv": 77.0,
-    "avg_resting_hr": 45.29,
+    "avg_resting_hr": 44.71,
     "avg_sleeping_hr": null,
     "low_sleep_score_days": 0
   },
@@ -104,7 +104,6 @@
     "run_distance_km": 5.01
   },
   "health_signals_to_watch": [
-    "静息心率高于近7天均值，需留意疲劳或压力",
     "昨天主训练并非恢复跑，今天不宜机械加码"
   ],
   "analysis_order": [
