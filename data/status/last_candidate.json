@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-29T10:19:33.848896+10:00",
+  "generated_at": "2026-06-30T03:53:25.818340+10:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
-    "today_date": "2026-06-29",
+    "today_date": "2026-06-30",
     "recovery_date": "2026-06-29",
-    "training_state_date": "2026-06-29",
-    "recovery_is_fresh": true,
+    "training_state_date": "2026-06-30",
+    "recovery_is_fresh": false,
     "training_state_is_fresh": true
   },
   "conclusion": "恢复偏弱，今天不适合高强度，优先恢复。",
@@ -33,27 +33,27 @@
     "injury": null
   },
   "recovery_trend_7d": {
-    "window_start": "2026-06-23",
-    "window_end": "2026-06-29",
-    "days_with_recovery_data": 7,
-    "avg_sleep_hours": 7.44,
+    "window_start": "2026-06-24",
+    "window_end": "2026-06-30",
+    "days_with_recovery_data": 6,
+    "avg_sleep_hours": 7.2,
     "min_sleep_hours": 4.83,
-    "avg_sleep_score": 80.83,
-    "avg_hrv": 71.83,
-    "avg_resting_hr": 45.0,
+    "avg_sleep_score": 82.8,
+    "avg_hrv": 75.6,
+    "avg_resting_hr": 44.0,
     "avg_sleeping_hr": null,
     "low_sleep_score_days": 1
   },
   "training_state": {
-    "date": "2026-06-29 00:00:00",
-    "ctl": 9.67635,
-    "atl": 1.2867756,
-    "ramp_rate": -1.7549067,
+    "date": "2026-06-30 00:00:00",
+    "ctl": 9.448682,
+    "atl": 1.1154773,
+    "ramp_rate": -1.7136164,
     "ctl_load": 0.0,
     "atl_load": 0.0,
     "ride_eftp": null,
     "run_eftp": null,
-    "atl_ctl_ratio": 0.13
+    "atl_ctl_ratio": 0.12
   },
   "yesterday_activity": {
     "id": "i158066407",
@@ -83,7 +83,7 @@
     "selection_meta": {
       "selection_mode": "latest_activity_fallback",
       "candidate_count": 1,
-      "target_date": "2026-06-28",
+      "target_date": "2026-06-29",
       "selection_rule": "昨天没有活动，回退到最近一条活动。"
     },
     "classification": {
@@ -96,6 +96,7 @@
   },
   "activity_trend_7d": {},
   "health_signals_to_watch": [
+    "今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据",
     "昨晚睡眠时长偏短，优先按恢复不足处理",
     "昨晚睡眠明显低于近7天均值",
     "静息心率高于近7天均值，需留意疲劳或压力",
