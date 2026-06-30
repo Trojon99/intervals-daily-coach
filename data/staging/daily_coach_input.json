@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-30T11:25:05.706666+10:00",
+  "generated_at": "2026-07-01T02:47:19.984615+10:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
-    "today_date": "2026-06-30",
+    "today_date": "2026-07-01",
     "recovery_date": "2026-06-30",
-    "training_state_date": "2026-06-30",
-    "recovery_is_fresh": true,
+    "training_state_date": "2026-07-01",
+    "recovery_is_fresh": false,
     "training_state_is_fresh": true
   },
   "conclusion": "恢复较好，今天可以正常训练；是否加码仍要看主观感觉和当天安排。",
@@ -33,27 +33,27 @@
     "injury": null
   },
   "recovery_trend_7d": {
-    "window_start": "2026-06-24",
-    "window_end": "2026-06-30",
-    "days_with_recovery_data": 7,
-    "avg_sleep_hours": 7.3,
+    "window_start": "2026-06-25",
+    "window_end": "2026-07-01",
+    "days_with_recovery_data": 6,
+    "avg_sleep_hours": 7.18,
     "min_sleep_hours": 4.83,
-    "avg_sleep_score": 84.83,
-    "avg_hrv": 77.5,
-    "avg_resting_hr": 43.71,
+    "avg_sleep_score": 82.4,
+    "avg_hrv": 78.0,
+    "avg_resting_hr": 43.83,
     "avg_sleeping_hr": null,
     "low_sleep_score_days": 1
   },
   "training_state": {
-    "date": "2026-06-30 00:00:00",
-    "ctl": 9.448682,
-    "atl": 1.1154773,
-    "ramp_rate": -1.7136164,
+    "date": "2026-07-01 00:00:00",
+    "ctl": 9.22637,
+    "atl": 0.96698266,
+    "ramp_rate": -1.6732979,
     "ctl_load": 0.0,
     "atl_load": 0.0,
     "ride_eftp": null,
     "run_eftp": null,
-    "atl_ctl_ratio": 0.12
+    "atl_ctl_ratio": 0.1
   },
   "yesterday_activity": {
     "id": "i158066407",
@@ -83,7 +83,7 @@
     "selection_meta": {
       "selection_mode": "latest_activity_fallback",
       "candidate_count": 1,
-      "target_date": "2026-06-29",
+      "target_date": "2026-06-30",
       "selection_rule": "昨天没有活动，回退到最近一条活动。"
     },
     "classification": {
@@ -96,6 +96,7 @@
   },
   "activity_trend_7d": {},
   "health_signals_to_watch": [
+    "今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据",
     "昨天主训练并非恢复跑，今天不宜机械加码"
   ],
   "analysis_order": [
