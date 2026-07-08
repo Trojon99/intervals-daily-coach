@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-07-09T02:37:43.788030+10:00",
+  "checked_at": "2026-07-09T08:42:51.241184+10:00",
   "timezone": "Australia/Sydney",
-  "ready": false,
-  "published_latest": false,
+  "ready": true,
+  "published_latest": true,
   "data_status": {
     "today_date": "2026-07-09",
-    "recovery_date": "2026-07-08",
+    "recovery_date": "2026-07-09",
     "training_state_date": "2026-07-09",
-    "recovery_is_fresh": false,
+    "recovery_is_fresh": true,
     "training_state_is_fresh": true
   }
 }
