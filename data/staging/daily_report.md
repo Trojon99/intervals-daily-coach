@@ -1,6 +1,6 @@
 # Daily Coach Report
 
-- Generated: 2026-07-11T01:47:19.887028+10:00
+- Generated: 2026-07-11T08:39:11.951115+10:00
 - Conclusion: 恢复偏弱，今天不适合高强度，优先恢复。
 - Today suggestion: 更适合休息、走路、拉伸或非常轻的恢复活动。若有不适或疲劳延续，连续观察。
 
@@ -14,7 +14,7 @@
 ## Recovery
 - date: 2026-07-11 00:00:00
 - weight: None
-- resting_hr: 56.0
+- resting_hr: 50.0
 - hrv: None
 - hrv_sdnn: None
 - readiness: None
@@ -39,7 +39,7 @@
 - min_sleep_hours: 7.33
 - avg_sleep_score: 86.17
 - avg_hrv: 62.17
-- avg_resting_hr: 47.0
+- avg_resting_hr: 46.14
 - avg_sleeping_hr: None
 - low_sleep_score_days: 1
 
