@@ -1,26 +1,26 @@
 # Daily Coach Report
 
-- Generated: 2026-07-23T02:19:04.738479+10:00
-- Conclusion: 恢复偏弱，今天不适合高强度，优先恢复。
-- Today suggestion: 更适合休息、走路、拉伸或非常轻的恢复活动。若有不适或疲劳延续，连续观察。
+- Generated: 2026-07-23T08:40:15.804522+10:00
+- Conclusion: 恢复一般，今天更适合轻松有氧或降强度。
+- Today suggestion: 避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。
 
 ## Data Status
 - today_date: 2026-07-23
-- recovery_date: 2026-07-22
+- recovery_date: 2026-07-23
 - training_state_date: 2026-07-23
-- recovery_is_fresh: False
+- recovery_is_fresh: True
 - training_state_is_fresh: True
 
 ## Recovery
-- date: 2026-07-22 00:00:00
+- date: 2026-07-23 00:00:00
 - weight: None
-- resting_hr: 44.0
-- hrv: 71.0
+- resting_hr: 45.0
+- hrv: 74.0
 - hrv_sdnn: None
 - readiness: None
-- sleep_secs: 21360.0
-- sleep_hours: 5.93
-- sleep_score: 75.0
+- sleep_secs: 23100.0
+- sleep_hours: 6.42
+- sleep_score: 79.0
 - sleep_quality: 3.0
 - avg_sleeping_hr: None
 - spo2: None
@@ -34,12 +34,12 @@
 ## 7-Day Recovery Trend
 - window_start: 2026-07-17
 - window_end: 2026-07-23
-- days_with_recovery_data: 6
-- avg_sleep_hours: 7.41
+- days_with_recovery_data: 7
+- avg_sleep_hours: 7.27
 - min_sleep_hours: 5.93
-- avg_sleep_score: 76.5
-- avg_hrv: 65.5
-- avg_resting_hr: 45.5
+- avg_sleep_score: 76.86
+- avg_hrv: 66.71
+- avg_resting_hr: 45.43
 - avg_sleeping_hr: None
 - low_sleep_score_days: 1
 
@@ -92,7 +92,5 @@
 - run_distance_km: 61.94
 
 ## Signals To Watch
-- 今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据
-- 昨晚睡眠时长偏短，优先按恢复不足处理
 - 昨晚睡眠明显低于近7天均值
 - ATL/CTL 偏高，近期负荷堆积需要留意
