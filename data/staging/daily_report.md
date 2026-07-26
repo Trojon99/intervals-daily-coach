@@ -1,27 +1,27 @@
 # Daily Coach Report
 
-- Generated: 2026-07-26T11:29:21.816122+10:00
-- Conclusion: 恢复一般，今天更适合轻松有氧或降强度。
-- Today suggestion: 避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。
+- Generated: 2026-07-27T01:37:07.882915+10:00
+- Conclusion: 恢复偏弱，今天不适合高强度，优先恢复。
+- Today suggestion: 更适合休息、走路、拉伸或非常轻的恢复活动。若有不适或疲劳延续，连续观察。
 
 ## Data Status
-- today_date: 2026-07-26
-- recovery_date: 2026-07-25
-- training_state_date: 2026-07-26
-- recovery_is_fresh: False
+- today_date: 2026-07-27
+- recovery_date: 2026-07-27
+- training_state_date: 2026-07-27
+- recovery_is_fresh: True
 - training_state_is_fresh: True
 
 ## Recovery
-- date: 2026-07-25 00:00:00
+- date: 2026-07-27 00:00:00
 - weight: None
-- resting_hr: 50.0
-- hrv: 67.0
+- resting_hr: 51.0
+- hrv: None
 - hrv_sdnn: None
 - readiness: None
-- sleep_secs: 29220.0
-- sleep_hours: 8.12
-- sleep_score: 97.0
-- sleep_quality: 1.0
+- sleep_secs: None
+- sleep_hours: None
+- sleep_score: None
+- sleep_quality: None
 - avg_sleeping_hr: None
 - spo2: None
 - fatigue: None
@@ -32,67 +32,65 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-07-20
-- window_end: 2026-07-26
-- days_with_recovery_data: 6
-- avg_sleep_hours: 7.36
+- window_start: 2026-07-21
+- window_end: 2026-07-27
+- days_with_recovery_data: 7
+- avg_sleep_hours: 7.49
 - min_sleep_hours: 5.93
-- avg_sleep_score: 77.8
-- avg_hrv: 68.8
-- avg_resting_hr: 46.67
+- avg_sleep_score: 81.6
+- avg_hrv: 70.8
+- avg_resting_hr: 47.29
 - avg_sleeping_hr: None
 - low_sleep_score_days: 1
 
 ## Training State
-- date: 2026-07-26 00:00:00
-- ctl: 24.77128
-- atl: 45.714134
-- ramp_rate: 3.918087
+- date: 2026-07-27 00:00:00
+- ctl: 25.153393
+- atl: 44.4754
+- ramp_rate: 3.7791233
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 1.85
+- atl_ctl_ratio: 1.77
 
 ## Yesterday Primary Activity
-- id: i169014126
-- start_date_local: 2026-07-25 16:28:36
+- id: i169287783
+- start_date_local: 2026-07-26 17:37:27
 - name: Treadmill Running
 - type: VirtualRun
-- moving_time_sec: 6733
-- elapsed_time_sec: 6755
-- distance_m: 22000.0
-- distance_km: 22.0
-- average_heartrate: 159.0
-- max_heartrate: 170.0
-- average_speed: 3.264
-- max_speed: 3.695
+- moving_time_sec: 3590
+- elapsed_time_sec: 3602
+- distance_m: 9940.0
+- distance_km: 9.94
+- average_heartrate: 140.0
+- max_heartrate: 149.0
+- average_speed: 2.759
+- max_speed: 3.415
 - total_elevation_gain: None
-- calories: 1221.0
-- average_cadence: 85.28052
-- pace: 3.2674885
+- calories: 515.0
+- average_cadence: 84.58285
+- pace: 2.7688022
 - threshold_pace: 3.8022814
-- icu_training_load: 120.0
-- icu_intensity: 79.9763
-- icu_fitness: 25.36815
-- icu_fatigue: 52.734226
+- icu_training_load: 42.0
+- icu_intensity: 64.79841
+- icu_fitness: 25.75947
+- icu_fatigue: 51.305264
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'primary_activity_of_day', 'candidate_count': 1, 'candidate_types': ['VirtualRun'], 'selected_type': 'VirtualRun', 'selected_training_load': 120.0, 'selected_moving_time_sec': 6733.0, 'selection_rule': '先选主训练类型（Run/Workout/Ride），再优先 Run，之后按训练负荷、时长、开始时间排序。', 'target_date': '2026-07-25'}
-- classification: {'label': 'moderate_to_hard_run', 'speed_vs_threshold_ratio': 0.858, 'reason': '心率/负荷/配速至少一项偏高，不应视作恢复跑', 'distance_km': 22.0, 'duration_min': 112.2}
+- selection_meta: {'selection_mode': 'primary_activity_of_day', 'candidate_count': 1, 'candidate_types': ['VirtualRun'], 'selected_type': 'VirtualRun', 'selected_training_load': 42.0, 'selected_moving_time_sec': 3590.0, 'selection_rule': '先选主训练类型（Run/Workout/Ride），再优先 Run，之后按训练负荷、时长、开始时间排序。', 'target_date': '2026-07-26'}
+- classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.726, 'reason': '整体更像常规有氧，而不是恢复跑', 'distance_km': 9.94, 'duration_min': 59.8}
 
 ## 7-Day Activity Trend
-- window_start: 2026-07-20
-- window_end: 2026-07-26
+- window_start: 2026-07-21
+- window_end: 2026-07-27
 - activity_count: 13
-- total_training_load: 324.0
-- avg_training_load: 24.9
+- total_training_load: 323.0
+- avg_training_load: 24.8
 - run_count: 13
-- run_distance_km: 63.13
+- run_distance_km: 63.07
 
 ## Signals To Watch
-- 今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据
 - 静息心率高于近7天均值，需留意疲劳或压力
 - ATL/CTL 偏高，近期负荷堆积需要留意
-- 昨天主训练并非恢复跑，今天不宜机械加码
