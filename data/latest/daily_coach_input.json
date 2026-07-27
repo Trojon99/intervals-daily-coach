@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T08:40:23.232609+10:00",
+  "generated_at": "2026-07-27T10:13:07.674253+10:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
@@ -15,14 +15,14 @@
   "recovery": {
     "date": "2026-07-27 00:00:00",
     "weight": null,
-    "resting_hr": 51.0,
-    "hrv": null,
+    "resting_hr": 46.0,
+    "hrv": 68.0,
     "hrv_sdnn": null,
     "readiness": null,
-    "sleep_secs": null,
-    "sleep_hours": null,
-    "sleep_score": null,
-    "sleep_quality": null,
+    "sleep_secs": 22260.0,
+    "sleep_hours": 6.18,
+    "sleep_score": 75.0,
+    "sleep_quality": 3.0,
     "avg_sleeping_hr": null,
     "spo2": null,
     "fatigue": null,
@@ -36,11 +36,11 @@
     "window_start": "2026-07-21",
     "window_end": "2026-07-27",
     "days_with_recovery_data": 7,
-    "avg_sleep_hours": 7.49,
+    "avg_sleep_hours": 7.27,
     "min_sleep_hours": 5.93,
-    "avg_sleep_score": 81.6,
-    "avg_hrv": 70.8,
-    "avg_resting_hr": 47.29,
+    "avg_sleep_score": 80.5,
+    "avg_hrv": 70.33,
+    "avg_resting_hr": 46.57,
     "avg_sleeping_hr": null,
     "low_sleep_score_days": 1
   },
@@ -110,7 +110,7 @@
     "run_distance_km": 63.07
   },
   "health_signals_to_watch": [
-    "静息心率高于近7天均值，需留意疲劳或压力",
+    "昨晚睡眠明显低于近7天均值",
     "ATL/CTL 偏高，近期负荷堆积需要留意"
   ],
   "analysis_order": [
