@@ -1,8 +1,8 @@
 # Daily Coach Report
 
-- Generated: 2026-07-28T08:40:55.653150+10:00
-- Conclusion: 恢复偏弱，今天不适合高强度，优先恢复。
-- Today suggestion: 更适合休息、走路、拉伸或非常轻的恢复活动。若有不适或疲劳延续，连续观察。
+- Generated: 2026-07-28T10:11:42.516310+10:00
+- Conclusion: 恢复尚可，今天适合常规有氧或中等训练，不建议激进加码。
+- Today suggestion: 以轻松跑或常规有氧为主。只有在主观状态也不错时，才考虑中等质量训练。
 
 ## Data Status
 - today_date: 2026-07-28
@@ -14,14 +14,14 @@
 ## Recovery
 - date: 2026-07-28 00:00:00
 - weight: None
-- resting_hr: 46.0
-- hrv: None
+- resting_hr: 45.0
+- hrv: 75.0
 - hrv_sdnn: None
 - readiness: None
-- sleep_secs: None
-- sleep_hours: None
-- sleep_score: None
-- sleep_quality: None
+- sleep_secs: 28440.0
+- sleep_hours: 7.9
+- sleep_score: 92.0
+- sleep_quality: 1.0
 - avg_sleeping_hr: None
 - spo2: None
 - fatigue: None
@@ -35,11 +35,11 @@
 - window_start: 2026-07-22
 - window_end: 2026-07-28
 - days_with_recovery_data: 7
-- avg_sleep_hours: 6.92
+- avg_sleep_hours: 7.09
 - min_sleep_hours: 5.93
-- avg_sleep_score: 83.2
-- avg_hrv: 69.6
-- avg_resting_hr: 46.71
+- avg_sleep_score: 84.67
+- avg_hrv: 70.5
+- avg_resting_hr: 46.57
 - avg_sleeping_hr: None
 - low_sleep_score_days: 0
 
