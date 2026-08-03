@@ -1,27 +1,27 @@
 # Daily Coach Report
 
-- Generated: 2026-08-03T10:13:21.667897+10:00
-- Conclusion: 恢复尚可，今天适合常规有氧或中等训练，不建议激进加码。
-- Today suggestion: 以轻松跑或常规有氧为主。只有在主观状态也不错时，才考虑中等质量训练。
+- Generated: 2026-08-04T09:39:51.968256+10:00
+- Conclusion: 恢复一般，今天更适合轻松有氧或降强度。
+- Today suggestion: 避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。
 
 ## Data Status
-- today_date: 2026-08-03
-- recovery_date: 2026-08-03
-- training_state_date: 2026-08-03
+- today_date: 2026-08-04
+- recovery_date: 2026-08-04
+- training_state_date: 2026-08-04
 - recovery_is_fresh: True
 - training_state_is_fresh: True
 
 ## Recovery
-- date: 2026-08-03 00:00:00
+- date: 2026-08-04 00:00:00
 - weight: None
-- resting_hr: 44.0
-- hrv: 64.0
+- resting_hr: 47.0
+- hrv: 57.0
 - hrv_sdnn: None
 - readiness: None
-- sleep_secs: 25860.0
-- sleep_hours: 7.18
-- sleep_score: 90.0
-- sleep_quality: 1.0
+- sleep_secs: 27720.0
+- sleep_hours: 7.7
+- sleep_score: 84.0
+- sleep_quality: 2.0
 - avg_sleeping_hr: None
 - spo2: None
 - fatigue: None
@@ -32,66 +32,65 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-07-28
-- window_end: 2026-08-03
+- window_start: 2026-07-29
+- window_end: 2026-08-04
 - days_with_recovery_data: 7
-- avg_sleep_hours: 8.05
+- avg_sleep_hours: 8.02
 - min_sleep_hours: 6.87
-- avg_sleep_score: 85.43
-- avg_hrv: 73.86
-- avg_resting_hr: 43.57
+- avg_sleep_score: 84.29
+- avg_hrv: 71.29
+- avg_resting_hr: 43.86
 - avg_sleeping_hr: None
 - low_sleep_score_days: 1
 
 ## Training State
-- date: 2026-08-03 00:00:00
-- ctl: 23.617754
-- atl: 23.25314
-- ramp_rate: -2.5002995
+- date: 2026-08-04 00:00:00
+- ctl: 23.797258
+- atl: 23.850452
+- ramp_rate: -2.7650547
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 0.98
+- atl_ctl_ratio: 1.0
 
 ## Yesterday Primary Activity
-- id: i171024360
-- start_date_local: 2026-07-31 17:36:50
+- id: i171970859
+- start_date_local: 2026-08-03 18:35:25
 - name: Treadmill Running
 - type: VirtualRun
-- moving_time_sec: 1372
-- elapsed_time_sec: 1373
-- distance_m: 5000.0
-- distance_km: 5.0
-- average_heartrate: 160.0
-- max_heartrate: 180.0
-- average_speed: 3.64
-- max_speed: 3.676
+- moving_time_sec: 2115
+- elapsed_time_sec: 2129
+- distance_m: 6570.0
+- distance_km: 6.57
+- average_heartrate: 149.0
+- max_heartrate: 161.0
+- average_speed: 3.086
+- max_speed: 3.854
 - total_elevation_gain: None
-- calories: 268.0
-- average_cadence: 85.24982
-- pace: 3.6443148
+- calories: 375.0
+- average_cadence: 85.13422
+- pace: 3.106383
 - threshold_pace: 3.8022814
-- icu_training_load: 27.0
-- icu_intensity: 84.169754
-- icu_fitness: 25.366446
-- icu_fatigue: 35.695034
+- icu_training_load: 32.0
+- icu_intensity: 73.57672
+- icu_fitness: 24.370659
+- icu_fatigue: 27.513046
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-08-02', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
-- classification: {'label': 'moderate_to_hard_run', 'speed_vs_threshold_ratio': 0.957, 'reason': '心率/负荷/配速至少一项偏高，不应视作恢复跑；距离虽短但平均心率不低', 'distance_km': 5.0, 'duration_min': 22.9}
+- selection_meta: {'selection_mode': 'primary_activity_of_day', 'candidate_count': 1, 'candidate_types': ['VirtualRun'], 'selected_type': 'VirtualRun', 'selected_training_load': 32.0, 'selected_moving_time_sec': 2115.0, 'selection_rule': '先选主训练类型（Run/Workout/Ride），再优先 Run，之后按训练负荷、时长、开始时间排序。', 'target_date': '2026-08-03'}
+- classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.812, 'reason': '整体更像常规有氧，而不是恢复跑', 'distance_km': 6.57, 'duration_min': 35.2}
 
 ## 7-Day Activity Trend
-- window_start: 2026-07-28
-- window_end: 2026-08-03
+- window_start: 2026-07-29
+- window_end: 2026-08-04
 - activity_count: 2
-- total_training_load: 72.0
-- avg_training_load: 36.0
+- total_training_load: 59.0
+- avg_training_load: 29.5
 - run_count: 2
-- run_distance_km: 14.97
+- run_distance_km: 11.57
 
 ## Signals To Watch
-- 昨晚睡眠明显低于近7天均值
 - HRV 低于近7天均值，恢复可能偏弱
-- 昨天主训练并非恢复跑，今天不宜机械加码
+- 静息心率高于近7天均值，需留意疲劳或压力
