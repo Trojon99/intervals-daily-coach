@@ -1,6 +1,6 @@
 # Daily Coach Report
 
-- Generated: 2026-08-09T09:45:53.223517+10:00
+- Generated: 2026-08-09T23:50:22.346577+10:00
 - Conclusion: 恢复一般，今天更适合轻松有氧或降强度。
 - Today suggestion: 避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。
 
@@ -14,14 +14,14 @@
 ## Recovery
 - date: 2026-08-09 00:00:00
 - weight: None
-- resting_hr: 49.0
-- hrv: None
+- resting_hr: 42.0
+- hrv: 73.0
 - hrv_sdnn: None
 - readiness: None
-- sleep_secs: None
-- sleep_hours: None
-- sleep_score: None
-- sleep_quality: None
+- sleep_secs: 37740.0
+- sleep_hours: 10.48
+- sleep_score: 68.0
+- sleep_quality: 3.0
 - avg_sleeping_hr: None
 - spo2: None
 - fatigue: None
@@ -35,24 +35,24 @@
 - window_start: 2026-08-03
 - window_end: 2026-08-09
 - days_with_recovery_data: 7
-- avg_sleep_hours: 7.21
+- avg_sleep_hours: 7.67
 - min_sleep_hours: 3.08
-- avg_sleep_score: 80.67
-- avg_hrv: 65.33
-- avg_resting_hr: 45.86
+- avg_sleep_score: 78.86
+- avg_hrv: 66.43
+- avg_resting_hr: 44.86
 - avg_sleeping_hr: None
-- low_sleep_score_days: 1
+- low_sleep_score_days: 2
 
 ## Training State
 - date: 2026-08-09 00:00:00
-- ctl: 24.064888
-- atl: 23.610176
-- ramp_rate: -0.12194061
-- ctl_load: 0.0
-- atl_load: 0.0
+- ctl: 27.24121
+- atl: 41.581657
+- ramp_rate: 3.0543823
+- ctl_load: 135.0
+- atl_load: 135.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 0.98
+- atl_ctl_ratio: 1.53
 
 ## Yesterday Primary Activity
 - id: i173640391
@@ -85,11 +85,11 @@
 ## 7-Day Activity Trend
 - window_start: 2026-08-03
 - window_end: 2026-08-09
-- activity_count: 9
-- total_training_load: 166.0
-- avg_training_load: 18.4
-- run_count: 9
-- run_distance_km: 35.33
+- activity_count: 10
+- total_training_load: 301.0
+- avg_training_load: 30.1
+- run_count: 10
+- run_distance_km: 61.33
 
 ## Signals To Watch
-- 静息心率高于近7天均值，需留意疲劳或压力
+- ATL/CTL 偏高，近期负荷堆积需要留意
