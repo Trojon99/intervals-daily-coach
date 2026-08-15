@@ -1,26 +1,26 @@
 # Daily Coach Report
 
-- Generated: 2026-08-15T10:53:09.844552+10:00
-- Conclusion: 恢复较好，今天可以正常训练；是否加码仍要看主观感觉和当天安排。
-- Today suggestion: 优先做正常训练。若中午有重腿力量，下午跑步保持轻松；若下午想做质量跑，中午力量只做上肢或核心。
+- Generated: 2026-08-15T23:30:58.835859+10:00
+- Conclusion: 恢复尚可，今天适合常规有氧或中等训练，不建议激进加码。
+- Today suggestion: 以轻松跑或常规有氧为主。只有在主观状态也不错时，才考虑中等质量训练。
 
 ## Data Status
 - today_date: 2026-08-15
-- recovery_date: 2026-08-14
+- recovery_date: 2026-08-15
 - training_state_date: 2026-08-15
-- recovery_is_fresh: False
+- recovery_is_fresh: True
 - training_state_is_fresh: True
 
 ## Recovery
-- date: 2026-08-14 00:00:00
+- date: 2026-08-15 00:00:00
 - weight: None
-- resting_hr: 42.0
-- hrv: 74.0
+- resting_hr: 43.0
+- hrv: 76.0
 - hrv_sdnn: None
 - readiness: None
-- sleep_secs: 35880.0
-- sleep_hours: 9.97
-- sleep_score: 86.0
+- sleep_secs: 35368.0
+- sleep_hours: 9.82
+- sleep_score: 89.0
 - sleep_quality: 2.0
 - avg_sleeping_hr: None
 - spo2: None
@@ -34,25 +34,25 @@
 ## 7-Day Recovery Trend
 - window_start: 2026-08-09
 - window_end: 2026-08-15
-- days_with_recovery_data: 6
-- avg_sleep_hours: 8.96
+- days_with_recovery_data: 7
+- avg_sleep_hours: 9.08
 - min_sleep_hours: 7.33
-- avg_sleep_score: 85.5
-- avg_hrv: 69.67
-- avg_resting_hr: 44.67
+- avg_sleep_score: 86.0
+- avg_hrv: 70.57
+- avg_resting_hr: 44.43
 - avg_sleeping_hr: None
 - low_sleep_score_days: 1
 
 ## Training State
 - date: 2026-08-15 00:00:00
-- ctl: 26.676973
-- atl: 29.424932
-- ramp_rate: 2.032236
-- ctl_load: 0.0
-- atl_load: 0.0
+- ctl: 29.853296
+- atl: 47.396416
+- ramp_rate: 5.208559
+- ctl_load: 135.0
+- atl_load: 135.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 1.1
+- atl_ctl_ratio: 1.59
 
 ## Yesterday Primary Activity
 - id: i175713204
@@ -85,11 +85,11 @@
 ## 7-Day Activity Trend
 - window_start: 2026-08-09
 - window_end: 2026-08-15
-- activity_count: 5
-- total_training_load: 276.0
-- avg_training_load: 55.2
-- run_count: 5
-- run_distance_km: 57.0
+- activity_count: 6
+- total_training_load: 411.0
+- avg_training_load: 68.5
+- run_count: 6
+- run_distance_km: 85.0
 
 ## Signals To Watch
-- 今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据
+- ATL/CTL 偏高，近期负荷堆积需要留意
