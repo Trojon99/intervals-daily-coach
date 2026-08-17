@@ -1,6 +1,6 @@
 # Daily Coach Report
 
-- Generated: 2026-08-17T09:34:14.562511+10:00
+- Generated: 2026-08-17T23:39:27.249818+10:00
 - Conclusion: 恢复尚可，今天适合常规有氧或中等训练，不建议激进加码。
 - Today suggestion: 以轻松跑或常规有氧为主。只有在主观状态也不错时，才考虑中等质量训练。
 
@@ -45,52 +45,51 @@
 
 ## Training State
 - date: 2026-08-17 00:00:00
-- ctl: 28.465027
-- atl: 35.617332
-- ramp_rate: 1.417717
-- ctl_load: 0.0
-- atl_load: 0.0
+- ctl: 28.959122
+- atl: 38.412895
+- ramp_rate: 1.9118118
+- ctl_load: 21.0
+- atl_load: 21.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 1.25
+- atl_ctl_ratio: 1.33
 
 ## Yesterday Primary Activity
-- id: i176001337
-- start_date_local: 2026-08-15 15:30:12
+- id: i176704909
+- start_date_local: 2026-08-17 18:27:34
 - name: Treadmill Running
 - type: VirtualRun
-- moving_time_sec: 8513
-- elapsed_time_sec: 8568
-- distance_m: 28000.0
-- distance_km: 28.0
-- average_heartrate: 153.0
-- max_heartrate: 167.0
-- average_speed: 3.287
-- max_speed: 3.228
+- moving_time_sec: 1789
+- elapsed_time_sec: 1796
+- distance_m: 5000.0
+- distance_km: 5.0
+- average_heartrate: 137.0
+- max_heartrate: 150.0
+- average_speed: 2.784
+- max_speed: 3.004
 - total_elevation_gain: None
-- calories: 1379.0
-- average_cadence: 88.24031
-- pace: 3.2890873
+- calories: 266.0
+- average_cadence: 81.70447
+- pace: 2.7948575
 - threshold_pace: 3.8022814
-- icu_training_load: 135.0
-- icu_intensity: 75.53519
-- icu_fitness: 29.853296
-- icu_fatigue: 47.396416
+- icu_training_load: 21.0
+- icu_intensity: 64.897606
+- icu_fitness: 28.959122
+- icu_fatigue: 38.412895
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
 - selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-08-16', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
-- classification: {'label': 'moderate_to_hard_run', 'speed_vs_threshold_ratio': 0.864, 'reason': '心率/负荷/配速至少一项偏高，不应视作恢复跑', 'distance_km': 28.0, 'duration_min': 141.9}
+- classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.732, 'reason': '整体更像常规有氧，而不是恢复跑', 'distance_km': 5.0, 'duration_min': 29.8}
 
 ## 7-Day Activity Trend
 - window_start: 2026-08-11
 - window_end: 2026-08-17
-- activity_count: 4
-- total_training_load: 257.0
-- avg_training_load: 64.2
-- run_count: 4
-- run_distance_km: 54.0
+- activity_count: 5
+- total_training_load: 278.0
+- avg_training_load: 55.6
+- run_count: 5
+- run_distance_km: 59.0
 
 ## Signals To Watch
 - ATL/CTL 偏高，近期负荷堆积需要留意
-- 昨天主训练并非恢复跑，今天不宜机械加码
