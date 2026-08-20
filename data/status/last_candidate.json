@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-20T23:47:40.737708+10:00",
+  "generated_at": "2026-08-21T09:15:28.282937+10:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
-    "today_date": "2026-08-20",
+    "today_date": "2026-08-21",
     "recovery_date": "2026-08-20",
-    "training_state_date": "2026-08-20",
-    "recovery_is_fresh": true,
+    "training_state_date": "2026-08-21",
+    "recovery_is_fresh": false,
     "training_state_is_fresh": true
   },
   "conclusion": "恢复偏弱，今天不适合高强度，优先恢复。",
@@ -33,27 +33,27 @@
     "injury": null
   },
   "recovery_trend_7d": {
-    "window_start": "2026-08-14",
-    "window_end": "2026-08-20",
-    "days_with_recovery_data": 7,
-    "avg_sleep_hours": 8.4,
+    "window_start": "2026-08-15",
+    "window_end": "2026-08-21",
+    "days_with_recovery_data": 6,
+    "avg_sleep_hours": 8.14,
     "min_sleep_hours": 7.23,
-    "avg_sleep_score": 86.14,
-    "avg_hrv": 73.43,
-    "avg_resting_hr": 43.71,
+    "avg_sleep_score": 86.17,
+    "avg_hrv": 73.33,
+    "avg_resting_hr": 44.0,
     "avg_sleeping_hr": null,
     "low_sleep_score_days": 0
   },
   "training_state": {
-    "date": "2026-08-20 00:00:00",
-    "ctl": 27.376305,
-    "atl": 27.10087,
-    "ramp_rate": 0.024744034,
+    "date": "2026-08-21 00:00:00",
+    "ctl": 26.732187,
+    "atl": 23.493145,
+    "ramp_rate": -0.587574,
     "ctl_load": 0.0,
     "atl_load": 0.0,
     "ride_eftp": null,
     "run_eftp": null,
-    "atl_ctl_ratio": 0.99
+    "atl_ctl_ratio": 0.88
   },
   "yesterday_activity": {
     "id": "i177471015",
@@ -81,16 +81,10 @@
     "icu_average_watts": null,
     "icu_normalized_watts": null,
     "selection_meta": {
-      "selection_mode": "primary_activity_of_day",
-      "candidate_count": 2,
-      "candidate_types": [
-        "VirtualRun"
-      ],
-      "selected_type": "VirtualRun",
-      "selected_training_load": 10.0,
-      "selected_moving_time_sec": 494.0,
-      "selection_rule": "先选主训练类型（Run/Workout/Ride），再优先 Run，之后按训练负荷、时长、开始时间排序。",
-      "target_date": "2026-08-19"
+      "selection_mode": "latest_activity_fallback",
+      "candidate_count": 1,
+      "target_date": "2026-08-20",
+      "selection_rule": "昨天没有活动，回退到最近一条活动。"
     },
     "classification": {
       "label": "moderate_to_hard_run",
@@ -101,16 +95,16 @@
     }
   },
   "activity_trend_7d": {
-    "window_start": "2026-08-14",
-    "window_end": "2026-08-20",
-    "activity_count": 5,
-    "total_training_load": 200.0,
-    "avg_training_load": 40.0,
-    "run_count": 5,
-    "run_distance_km": 43.0
+    "window_start": "2026-08-15",
+    "window_end": "2026-08-21",
+    "activity_count": 4,
+    "total_training_load": 174.0,
+    "avg_training_load": 43.5,
+    "run_count": 4,
+    "run_distance_km": 37.0
   },
   "health_signals_to_watch": [
-    "昨晚睡眠明显低于近7天均值",
+    "今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据",
     "HRV 低于近7天均值，恢复可能偏弱",
     "静息心率高于近7天均值，需留意疲劳或压力",
     "昨天主训练并非恢复跑，今天不宜机械加码"

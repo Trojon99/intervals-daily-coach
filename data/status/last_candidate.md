@@ -1,14 +1,14 @@
 # Daily Coach Report
 
-- Generated: 2026-08-20T23:47:40.737708+10:00
+- Generated: 2026-08-21T09:15:28.282937+10:00
 - Conclusion: 恢复偏弱，今天不适合高强度，优先恢复。
 - Today suggestion: 更适合休息、走路、拉伸或非常轻的恢复活动。若有不适或疲劳延续，连续观察。
 
 ## Data Status
-- today_date: 2026-08-20
+- today_date: 2026-08-21
 - recovery_date: 2026-08-20
-- training_state_date: 2026-08-20
-- recovery_is_fresh: True
+- training_state_date: 2026-08-21
+- recovery_is_fresh: False
 - training_state_is_fresh: True
 
 ## Recovery
@@ -32,27 +32,27 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-08-14
-- window_end: 2026-08-20
-- days_with_recovery_data: 7
-- avg_sleep_hours: 8.4
+- window_start: 2026-08-15
+- window_end: 2026-08-21
+- days_with_recovery_data: 6
+- avg_sleep_hours: 8.14
 - min_sleep_hours: 7.23
-- avg_sleep_score: 86.14
-- avg_hrv: 73.43
-- avg_resting_hr: 43.71
+- avg_sleep_score: 86.17
+- avg_hrv: 73.33
+- avg_resting_hr: 44.0
 - avg_sleeping_hr: None
 - low_sleep_score_days: 0
 
 ## Training State
-- date: 2026-08-20 00:00:00
-- ctl: 27.376305
-- atl: 27.10087
-- ramp_rate: 0.024744034
+- date: 2026-08-21 00:00:00
+- ctl: 26.732187
+- atl: 23.493145
+- ramp_rate: -0.587574
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 0.99
+- atl_ctl_ratio: 0.88
 
 ## Yesterday Primary Activity
 - id: i177471015
@@ -79,20 +79,20 @@
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'primary_activity_of_day', 'candidate_count': 2, 'candidate_types': ['VirtualRun'], 'selected_type': 'VirtualRun', 'selected_training_load': 10.0, 'selected_moving_time_sec': 494.0, 'selection_rule': '先选主训练类型（Run/Workout/Ride），再优先 Run，之后按训练负荷、时长、开始时间排序。', 'target_date': '2026-08-19'}
+- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-08-20', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
 - classification: {'label': 'moderate_to_hard_run', 'speed_vs_threshold_ratio': 1.053, 'reason': '心率/负荷/配速至少一项偏高，不应视作恢复跑；距离虽短但平均心率不低', 'distance_km': 2.0, 'duration_min': 8.2}
 
 ## 7-Day Activity Trend
-- window_start: 2026-08-14
-- window_end: 2026-08-20
-- activity_count: 5
-- total_training_load: 200.0
-- avg_training_load: 40.0
-- run_count: 5
-- run_distance_km: 43.0
+- window_start: 2026-08-15
+- window_end: 2026-08-21
+- activity_count: 4
+- total_training_load: 174.0
+- avg_training_load: 43.5
+- run_count: 4
+- run_distance_km: 37.0
 
 ## Signals To Watch
-- 昨晚睡眠明显低于近7天均值
+- 今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据
 - HRV 低于近7天均值，恢复可能偏弱
 - 静息心率高于近7天均值，需留意疲劳或压力
 - 昨天主训练并非恢复跑，今天不宜机械加码
