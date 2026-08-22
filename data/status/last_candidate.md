@@ -1,14 +1,14 @@
 # Daily Coach Report
 
-- Generated: 2026-08-22T23:32:13.799921+10:00
+- Generated: 2026-08-23T09:11:48.486212+10:00
 - Conclusion: 恢复尚可，今天适合常规有氧或中等训练，不建议激进加码。
 - Today suggestion: 以轻松跑或常规有氧为主。只有在主观状态也不错时，才考虑中等质量训练。
 
 ## Data Status
-- today_date: 2026-08-22
+- today_date: 2026-08-23
 - recovery_date: 2026-08-22
-- training_state_date: 2026-08-22
-- recovery_is_fresh: True
+- training_state_date: 2026-08-23
+- recovery_is_fresh: False
 - training_state_is_fresh: True
 
 ## Recovery
@@ -32,59 +32,59 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-08-16
-- window_end: 2026-08-22
-- days_with_recovery_data: 7
-- avg_sleep_hours: 7.91
-- min_sleep_hours: 7.23
-- avg_sleep_score: 85.14
-- avg_hrv: 69.29
-- avg_resting_hr: 44.43
+- window_start: 2026-08-17
+- window_end: 2026-08-23
+- days_with_recovery_data: 6
+- avg_sleep_hours: 8.02
+- min_sleep_hours: 7.48
+- avg_sleep_score: 85.33
+- avg_hrv: 69.67
+- avg_resting_hr: 44.33
 - avg_sleeping_hr: None
 - low_sleep_score_days: 0
 
 ## Training State
-- date: 2026-08-22 00:00:00
-- ctl: 28.768843
-- atl: 35.009964
-- ramp_rate: -1.0844536
-- ctl_load: 84.0
-- atl_load: 84.0
+- date: 2026-08-23 00:00:00
+- ctl: 28.09196
+- atl: 30.349363
+- ramp_rate: -1.0589371
+- ctl_load: 0.0
+- atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 1.22
+- atl_ctl_ratio: 1.08
 
 ## Yesterday Primary Activity
-- id: i178144532
-- start_date_local: 2026-08-21 12:29:15
+- id: i178509368
+- start_date_local: 2026-08-22 17:13:34
 - name: Treadmill Running
 - type: VirtualRun
-- moving_time_sec: 2524
-- elapsed_time_sec: 2532
-- distance_m: 7000.0
-- distance_km: 7.0
-- average_heartrate: 140.0
-- max_heartrate: 153.0
-- average_speed: 2.764
-- max_speed: 3.35
+- moving_time_sec: 4467
+- elapsed_time_sec: 4501
+- distance_m: 15000.0
+- distance_km: 15.0
+- average_heartrate: 161.0
+- max_heartrate: 172.0
+- average_speed: 3.351
+- max_speed: 3.667
 - total_elevation_gain: None
-- calories: 382.0
-- average_cadence: 82.23683
-- pace: 2.7733755
+- calories: 857.0
+- average_cadence: 84.53469
+- pace: 3.3579583
 - threshold_pace: 3.8022814
-- icu_training_load: 30.0
-- icu_intensity: 65.32295
-- icu_fitness: 27.438036
-- icu_fatigue: 27.486809
+- icu_training_load: 84.0
+- icu_intensity: 81.97561
+- icu_fitness: 28.768843
+- icu_fatigue: 35.009964
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'primary_activity_of_day', 'candidate_count': 1, 'candidate_types': ['VirtualRun'], 'selected_type': 'VirtualRun', 'selected_training_load': 30.0, 'selected_moving_time_sec': 2524.0, 'selection_rule': '先选主训练类型（Run/Workout/Ride），再优先 Run，之后按训练负荷、时长、开始时间排序。', 'target_date': '2026-08-21'}
-- classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.727, 'reason': '整体更像常规有氧，而不是恢复跑', 'distance_km': 7.0, 'duration_min': 42.1}
+- selection_meta: {'selection_mode': 'primary_activity_of_day', 'candidate_count': 1, 'candidate_types': ['VirtualRun'], 'selected_type': 'VirtualRun', 'selected_training_load': 84.0, 'selected_moving_time_sec': 4467.0, 'selection_rule': '先选主训练类型（Run/Workout/Ride），再优先 Run，之后按训练负荷、时长、开始时间排序。', 'target_date': '2026-08-22'}
+- classification: {'label': 'moderate_to_hard_run', 'speed_vs_threshold_ratio': 0.881, 'reason': '心率/负荷/配速至少一项偏高，不应视作恢复跑', 'distance_km': 15.0, 'duration_min': 74.5}
 
 ## 7-Day Activity Trend
-- window_start: 2026-08-16
-- window_end: 2026-08-22
+- window_start: 2026-08-17
+- window_end: 2026-08-23
 - activity_count: 5
 - total_training_load: 153.0
 - avg_training_load: 30.6
@@ -92,5 +92,6 @@
 - run_distance_km: 31.0
 
 ## Signals To Watch
+- 今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据
 - HRV 低于近7天均值，恢复可能偏弱
-- ATL/CTL 偏高，近期负荷堆积需要留意
+- 昨天主训练并非恢复跑，今天不宜机械加码
