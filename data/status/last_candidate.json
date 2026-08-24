@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T09:36:11.592421+10:00",
+  "generated_at": "2026-08-24T23:52:10.816153+10:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
@@ -11,7 +11,7 @@
   },
   "conclusion": "恢复较好，今天可以正常训练；是否加码仍要看主观感觉和当天安排。",
   "today_training_suggestion": "优先做正常训练。若中午有重腿力量，下午跑步保持轻松；若下午想做质量跑，中午力量只做上肢或核心。",
-  "internal_score": 3,
+  "internal_score": 4,
   "recovery": {
     "date": "2026-08-24 00:00:00",
     "weight": null,
@@ -46,37 +46,37 @@
   },
   "training_state": {
     "date": "2026-08-24 00:00:00",
-    "ctl": 27.431004,
-    "atl": 26.309193,
-    "ramp_rate": -1.5281181,
-    "ctl_load": 0.0,
-    "atl_load": 0.0,
+    "ctl": 27.948627,
+    "atl": 29.237879,
+    "ramp_rate": -1.0104942,
+    "ctl_load": 22.0,
+    "atl_load": 22.0,
     "ride_eftp": null,
     "run_eftp": null,
-    "atl_ctl_ratio": 0.96
+    "atl_ctl_ratio": 1.05
   },
   "yesterday_activity": {
-    "id": "i178509368",
-    "start_date_local": "2026-08-22 17:13:34",
+    "id": "i179243006",
+    "start_date_local": "2026-08-24 18:38:24",
     "name": "Treadmill Running",
     "type": "VirtualRun",
-    "moving_time_sec": 4467,
-    "elapsed_time_sec": 4501,
-    "distance_m": 15000.0,
-    "distance_km": 15.0,
-    "average_heartrate": 161.0,
-    "max_heartrate": 172.0,
-    "average_speed": 3.351,
-    "max_speed": 3.667,
+    "moving_time_sec": 1805,
+    "elapsed_time_sec": 1813,
+    "distance_m": 5000.0,
+    "distance_km": 5.0,
+    "average_heartrate": 140.0,
+    "max_heartrate": 155.0,
+    "average_speed": 2.757,
+    "max_speed": 3.378,
     "total_elevation_gain": null,
-    "calories": 857.0,
-    "average_cadence": 84.53469,
-    "pace": 3.3579583,
+    "calories": 283.0,
+    "average_cadence": 82.66224,
+    "pace": 2.7700832,
     "threshold_pace": 3.8022814,
-    "icu_training_load": 84.0,
-    "icu_intensity": 81.97561,
-    "icu_fitness": 28.768843,
-    "icu_fatigue": 35.009964,
+    "icu_training_load": 22.0,
+    "icu_intensity": 66.11249,
+    "icu_fitness": 27.948627,
+    "icu_fatigue": 29.237879,
     "icu_eftp": null,
     "icu_average_watts": null,
     "icu_normalized_watts": null,
@@ -87,25 +87,23 @@
       "selection_rule": "昨天没有活动，回退到最近一条活动。"
     },
     "classification": {
-      "label": "moderate_to_hard_run",
-      "speed_vs_threshold_ratio": 0.881,
-      "reason": "心率/负荷/配速至少一项偏高，不应视作恢复跑",
-      "distance_km": 15.0,
-      "duration_min": 74.5
+      "label": "easy_aerobic_run",
+      "speed_vs_threshold_ratio": 0.725,
+      "reason": "整体更像常规有氧，而不是恢复跑",
+      "distance_km": 5.0,
+      "duration_min": 30.1
     }
   },
   "activity_trend_7d": {
     "window_start": "2026-08-18",
     "window_end": "2026-08-24",
-    "activity_count": 4,
-    "total_training_load": 132.0,
-    "avg_training_load": 33.0,
-    "run_count": 4,
-    "run_distance_km": 26.0
+    "activity_count": 5,
+    "total_training_load": 154.0,
+    "avg_training_load": 30.8,
+    "run_count": 5,
+    "run_distance_km": 31.0
   },
-  "health_signals_to_watch": [
-    "昨天主训练并非恢复跑，今天不宜机械加码"
-  ],
+  "health_signals_to_watch": [],
   "analysis_order": [
     "direct_conclusion",
     "recovery",
