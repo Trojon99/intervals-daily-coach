@@ -1,6 +1,6 @@
 # Daily Coach Report
 
-- Generated: 2026-08-26T09:39:31.191054+10:00
+- Generated: 2026-08-26T23:55:12.820667+10:00
 - Conclusion: 恢复较好，今天可以正常训练；是否加码仍要看主观感觉和当天安排。
 - Today suggestion: 优先做正常训练。若中午有重腿力量，下午跑步保持轻松；若下午想做质量跑，中午力量只做上肢或核心。
 
@@ -45,51 +45,51 @@
 
 ## Training State
 - date: 2026-08-26 00:00:00
-- ctl: 26.648932
-- atl: 21.971601
-- ramp_rate: -1.3870125
-- ctl_load: 0.0
-- atl_load: 0.0
+- ctl: 27.213612
+- atl: 25.166533
+- ramp_rate: -0.8223324
+- ctl_load: 24.0
+- atl_load: 24.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 0.82
+- atl_ctl_ratio: 0.92
 
 ## Yesterday Primary Activity
-- id: i179243006
-- start_date_local: 2026-08-24 18:38:24
+- id: i179950359
+- start_date_local: 2026-08-26 18:38:37
 - name: Treadmill Running
 - type: VirtualRun
-- moving_time_sec: 1805
-- elapsed_time_sec: 1813
+- moving_time_sec: 1809
+- elapsed_time_sec: 1812
 - distance_m: 5000.0
 - distance_km: 5.0
-- average_heartrate: 140.0
-- max_heartrate: 155.0
-- average_speed: 2.757
-- max_speed: 3.378
+- average_heartrate: 144.0
+- max_heartrate: 163.0
+- average_speed: 2.76
+- max_speed: 3.154
 - total_elevation_gain: None
-- calories: 283.0
-- average_cadence: 82.66224
-- pace: 2.7700832
+- calories: 303.0
+- average_cadence: 83.17238
+- pace: 2.763958
 - threshold_pace: 3.8022814
-- icu_training_load: 22.0
-- icu_intensity: 66.11249
-- icu_fitness: 27.948627
-- icu_fatigue: 29.237879
+- icu_training_load: 24.0
+- icu_intensity: 69.071304
+- icu_fitness: 27.213612
+- icu_fatigue: 25.166533
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
 - selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-08-25', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
-- classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.725, 'reason': '整体更像常规有氧，而不是恢复跑', 'distance_km': 5.0, 'duration_min': 30.1}
+- classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.726, 'reason': '整体更像常规有氧，而不是恢复跑', 'distance_km': 5.0, 'duration_min': 30.1}
 
 ## 7-Day Activity Trend
 - window_start: 2026-08-20
 - window_end: 2026-08-26
-- activity_count: 3
-- total_training_load: 136.0
-- avg_training_load: 45.3
-- run_count: 3
-- run_distance_km: 27.0
+- activity_count: 4
+- total_training_load: 160.0
+- avg_training_load: 40.0
+- run_count: 4
+- run_distance_km: 32.0
 
 ## Signals To Watch
 - No strong warning signal from the available data.
