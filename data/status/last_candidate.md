@@ -1,8 +1,8 @@
 # Daily Coach Report
 
-- Generated: 2026-09-06T09:18:43.199678+10:00
-- Conclusion: 恢复一般，今天更适合轻松有氧或降强度。
-- Today suggestion: 避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。
+- Generated: 2026-09-06T11:00:08.307170+10:00
+- Conclusion: 恢复较好，今天可以正常训练；是否加码仍要看主观感觉和当天安排。
+- Today suggestion: 优先做正常训练。若中午有重腿力量，下午跑步保持轻松；若下午想做质量跑，中午力量只做上肢或核心。
 
 ## Data Status
 - today_date: 2026-09-06
@@ -14,14 +14,14 @@
 ## Recovery
 - date: 2026-09-06 00:00:00
 - weight: None
-- resting_hr: 46.0
-- hrv: None
+- resting_hr: 44.0
+- hrv: 74.0
 - hrv_sdnn: None
 - readiness: None
-- sleep_secs: None
-- sleep_hours: None
-- sleep_score: None
-- sleep_quality: None
+- sleep_secs: 27420.0
+- sleep_hours: 7.62
+- sleep_score: 90.0
+- sleep_quality: 1.0
 - avg_sleeping_hr: None
 - spo2: None
 - fatigue: None
@@ -35,11 +35,11 @@
 - window_start: 2026-08-31
 - window_end: 2026-09-06
 - days_with_recovery_data: 7
-- avg_sleep_hours: 8.29
-- min_sleep_hours: 7.75
-- avg_sleep_score: 88.17
-- avg_hrv: 74.83
-- avg_resting_hr: 44.0
+- avg_sleep_hours: 8.19
+- min_sleep_hours: 7.62
+- avg_sleep_score: 88.43
+- avg_hrv: 74.71
+- avg_resting_hr: 43.71
 - avg_sleeping_hr: None
 - low_sleep_score_days: 0
 
