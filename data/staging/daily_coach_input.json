@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T03:30:49.215730+10:00",
+  "generated_at": "2026-09-18T09:41:00.723026+10:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
@@ -9,20 +9,20 @@
     "recovery_is_fresh": true,
     "training_state_is_fresh": true
   },
-  "conclusion": "恢复一般，今天更适合轻松有氧或降强度。",
-  "today_training_suggestion": "避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。",
-  "internal_score": 0,
+  "conclusion": "恢复较好，今天可以正常训练；是否加码仍要看主观感觉和当天安排。",
+  "today_training_suggestion": "优先做正常训练。若中午有重腿力量，下午跑步保持轻松；若下午想做质量跑，中午力量只做上肢或核心。",
+  "internal_score": 3,
   "recovery": {
     "date": "2026-09-18 00:00:00",
     "weight": null,
-    "resting_hr": 45.0,
-    "hrv": null,
+    "resting_hr": 42.0,
+    "hrv": 87.0,
     "hrv_sdnn": null,
     "readiness": null,
-    "sleep_secs": null,
-    "sleep_hours": null,
-    "sleep_score": null,
-    "sleep_quality": null,
+    "sleep_secs": 23880.0,
+    "sleep_hours": 6.63,
+    "sleep_score": 84.0,
+    "sleep_quality": 2.0,
     "avg_sleeping_hr": null,
     "spo2": null,
     "fatigue": null,
@@ -36,11 +36,11 @@
     "window_start": "2026-09-12",
     "window_end": "2026-09-18",
     "days_with_recovery_data": 7,
-    "avg_sleep_hours": 7.89,
+    "avg_sleep_hours": 7.68,
     "min_sleep_hours": 6.58,
-    "avg_sleep_score": 87.0,
-    "avg_hrv": 81.4,
-    "avg_resting_hr": 43.57,
+    "avg_sleep_score": 86.5,
+    "avg_hrv": 82.33,
+    "avg_resting_hr": 43.14,
     "avg_sleeping_hr": null,
     "low_sleep_score_days": 1
   },
@@ -103,7 +103,9 @@
     "run_count": 2,
     "run_distance_km": 18.0
   },
-  "health_signals_to_watch": [],
+  "health_signals_to_watch": [
+    "昨晚睡眠明显低于近7天均值"
+  ],
   "analysis_order": [
     "direct_conclusion",
     "recovery",
