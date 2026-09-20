@@ -1,20 +1,20 @@
 # Daily Coach Report
 
-- Generated: 2026-09-19T11:11:48.296603+10:00
+- Generated: 2026-09-21T09:31:43.265819+10:00
 - Conclusion: 恢复一般，今天更适合轻松有氧或降强度。
 - Today suggestion: 避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。
 
 ## Data Status
-- today_date: 2026-09-19
-- recovery_date: 2026-09-19
-- training_state_date: 2026-09-19
+- today_date: 2026-09-21
+- recovery_date: 2026-09-21
+- training_state_date: 2026-09-21
 - recovery_is_fresh: True
 - training_state_is_fresh: True
 
 ## Recovery
-- date: 2026-09-19 00:00:00
+- date: 2026-09-21 00:00:00
 - weight: None
-- resting_hr: 45.0
+- resting_hr: 43.0
 - hrv: None
 - hrv_sdnn: None
 - readiness: None
@@ -32,27 +32,27 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-09-13
-- window_end: 2026-09-19
+- window_start: 2026-09-15
+- window_end: 2026-09-21
 - days_with_recovery_data: 7
-- avg_sleep_hours: 7.7
-- min_sleep_hours: 6.58
-- avg_sleep_score: 85.2
+- avg_sleep_hours: 8.15
+- min_sleep_hours: 6.63
+- avg_sleep_score: 89.8
 - avg_hrv: 83.6
-- avg_resting_hr: 43.71
+- avg_resting_hr: 43.57
 - avg_sleeping_hr: None
-- low_sleep_score_days: 1
+- low_sleep_score_days: 0
 
 ## Training State
-- date: 2026-09-19 00:00:00
-- ctl: 24.511602
-- atl: 12.300106
-- ramp_rate: -3.4093456
+- date: 2026-09-21 00:00:00
+- ctl: 23.371738
+- atl: 9.243251
+- ramp_rate: -3.250801
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 0.5
+- atl_ctl_ratio: 0.4
 
 ## Yesterday Primary Activity
 - id: i186824515
@@ -79,12 +79,12 @@
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-09-18', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
+- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-09-20', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
 - classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.727, 'reason': '整体更像常规有氧，而不是恢复跑', 'distance_km': 10.0, 'duration_min': 60.2}
 
 ## 7-Day Activity Trend
-- window_start: 2026-09-13
-- window_end: 2026-09-19
+- window_start: 2026-09-15
+- window_end: 2026-09-21
 - activity_count: 1
 - total_training_load: 41.0
 - avg_training_load: 41.0
