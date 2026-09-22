@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-22T11:36:51.675013+10:00",
+  "generated_at": "2026-09-23T04:47:34.404604+10:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
-    "today_date": "2026-09-22",
+    "today_date": "2026-09-23",
     "recovery_date": "2026-09-22",
-    "training_state_date": "2026-09-22",
-    "recovery_is_fresh": true,
+    "training_state_date": "2026-09-23",
+    "recovery_is_fresh": false,
     "training_state_is_fresh": true
   },
   "conclusion": "恢复偏弱，今天不适合高强度，优先恢复。",
@@ -33,27 +33,27 @@
     "injury": null
   },
   "recovery_trend_7d": {
-    "window_start": "2026-09-16",
-    "window_end": "2026-09-22",
-    "days_with_recovery_data": 7,
-    "avg_sleep_hours": 7.57,
+    "window_start": "2026-09-17",
+    "window_end": "2026-09-23",
+    "days_with_recovery_data": 6,
+    "avg_sleep_hours": 7.43,
     "min_sleep_hours": 4.9,
-    "avg_sleep_score": 81.17,
-    "avg_hrv": 80.5,
-    "avg_resting_hr": 43.71,
+    "avg_sleep_score": 78.6,
+    "avg_hrv": 79.6,
+    "avg_resting_hr": 44.33,
     "avg_sleeping_hr": null,
     "low_sleep_score_days": 2
   },
   "training_state": {
-    "date": "2026-09-22 00:00:00",
-    "ctl": 22.82184,
-    "atl": 8.01277,
-    "ramp_rate": -4.138977,
+    "date": "2026-09-23 00:00:00",
+    "ctl": 22.284882,
+    "atl": 6.946093,
+    "ramp_rate": -4.0415936,
     "ctl_load": 0.0,
     "atl_load": 0.0,
     "ride_eftp": null,
     "run_eftp": null,
-    "atl_ctl_ratio": 0.35
+    "atl_ctl_ratio": 0.31
   },
   "yesterday_activity": {
     "id": "i186824515",
@@ -83,7 +83,7 @@
     "selection_meta": {
       "selection_mode": "latest_activity_fallback",
       "candidate_count": 1,
-      "target_date": "2026-09-21",
+      "target_date": "2026-09-22",
       "selection_rule": "昨天没有活动，回退到最近一条活动。"
     },
     "classification": {
@@ -96,6 +96,7 @@
   },
   "activity_trend_7d": {},
   "health_signals_to_watch": [
+    "今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据",
     "昨晚睡眠时长偏短，优先按恢复不足处理",
     "昨晚睡眠明显低于近7天均值"
   ],
