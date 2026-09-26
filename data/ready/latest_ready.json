@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-25T11:32:24.127121+10:00",
+  "generated_at": "2026-09-26T10:24:31.985341+10:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
-    "today_date": "2026-09-25",
-    "recovery_date": "2026-09-25",
-    "training_state_date": "2026-09-25",
+    "today_date": "2026-09-26",
+    "recovery_date": "2026-09-26",
+    "training_state_date": "2026-09-26",
     "recovery_is_fresh": true,
     "training_state_is_fresh": true
   },
@@ -13,9 +13,9 @@
   "today_training_suggestion": "避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。",
   "internal_score": 0,
   "recovery": {
-    "date": "2026-09-25 00:00:00",
+    "date": "2026-09-26 00:00:00",
     "weight": null,
-    "resting_hr": 43.0,
+    "resting_hr": 40.0,
     "hrv": null,
     "hrv_sdnn": null,
     "readiness": null,
@@ -33,27 +33,27 @@
     "injury": null
   },
   "recovery_trend_7d": {
-    "window_start": "2026-09-19",
-    "window_end": "2026-09-25",
+    "window_start": "2026-09-20",
+    "window_end": "2026-09-26",
     "days_with_recovery_data": 7,
-    "avg_sleep_hours": 7.84,
+    "avg_sleep_hours": 7.51,
     "min_sleep_hours": 4.9,
-    "avg_sleep_score": 81.0,
-    "avg_hrv": 75.67,
-    "avg_resting_hr": 42.29,
+    "avg_sleep_score": 79.67,
+    "avg_hrv": 74.33,
+    "avg_resting_hr": 42.0,
     "avg_sleeping_hr": null,
     "low_sleep_score_days": 2
   },
   "training_state": {
-    "date": "2026-09-25 00:00:00",
-    "ctl": 21.248566,
-    "atl": 5.2198315,
-    "ramp_rate": -3.8536491,
+    "date": "2026-09-26 00:00:00",
+    "ctl": 20.748623,
+    "atl": 4.5249567,
+    "ramp_rate": -3.7629795,
     "ctl_load": 0.0,
     "atl_load": 0.0,
     "ride_eftp": null,
     "run_eftp": null,
-    "atl_ctl_ratio": 0.25
+    "atl_ctl_ratio": 0.22
   },
   "yesterday_activity": {
     "id": "i186824515",
@@ -83,7 +83,7 @@
     "selection_meta": {
       "selection_mode": "latest_activity_fallback",
       "candidate_count": 1,
-      "target_date": "2026-09-24",
+      "target_date": "2026-09-25",
       "selection_rule": "昨天没有活动，回退到最近一条活动。"
     },
     "classification": {
