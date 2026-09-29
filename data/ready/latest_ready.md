@@ -1,18 +1,18 @@
 # Daily Coach Report
 
-- Generated: 2026-09-28T11:41:18.389554+10:00
+- Generated: 2026-09-30T04:28:53.803871+10:00
 - Conclusion: 恢复一般，今天更适合轻松有氧或降强度。
 - Today suggestion: 避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。
 
 ## Data Status
-- today_date: 2026-09-28
-- recovery_date: 2026-09-28
-- training_state_date: 2026-09-28
+- today_date: 2026-09-30
+- recovery_date: 2026-09-30
+- training_state_date: 2026-09-30
 - recovery_is_fresh: True
 - training_state_is_fresh: True
 
 ## Recovery
-- date: 2026-09-28 00:00:00
+- date: 2026-09-30 00:00:00
 - weight: None
 - resting_hr: 45.0
 - hrv: None
@@ -32,27 +32,27 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-09-22
-- window_end: 2026-09-28
+- window_start: 2026-09-24
+- window_end: 2026-09-30
 - days_with_recovery_data: 7
-- avg_sleep_hours: 7.45
-- min_sleep_hours: 4.9
-- avg_sleep_score: 86.0
-- avg_hrv: 75.83
-- avg_resting_hr: 41.86
+- avg_sleep_hours: 8.25
+- min_sleep_hours: 7.03
+- avg_sleep_score: 85.6
+- avg_hrv: 74.4
+- avg_resting_hr: 45.29
 - avg_sleeping_hr: None
-- low_sleep_score_days: 1
+- low_sleep_score_days: 0
 
 ## Training State
-- date: 2026-09-28 00:00:00
-- ctl: 19.783749
-- atl: 3.4004023
-- ramp_rate: -3.5879898
+- date: 2026-09-30 00:00:00
+- ctl: 18.863743
+- atl: 2.555325
+- ramp_rate: -3.4211388
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 0.17
+- atl_ctl_ratio: 0.14
 
 ## Yesterday Primary Activity
 - id: i186824515
@@ -79,10 +79,10 @@
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-09-27', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
+- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-09-29', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
 - classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.727, 'reason': '整体更像常规有氧，而不是恢复跑', 'distance_km': 10.0, 'duration_min': 60.2}
 
 ## 7-Day Activity Trend
 
 ## Signals To Watch
-- 静息心率高于近7天均值，需留意疲劳或压力
+- No strong warning signal from the available data.
