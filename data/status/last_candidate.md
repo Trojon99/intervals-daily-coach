@@ -1,14 +1,14 @@
 # Daily Coach Report
 
-- Generated: 2026-10-02T12:17:13.933185+10:00
+- Generated: 2026-10-03T05:29:41.972881+10:00
 - Conclusion: 恢复较好，今天可以正常训练；是否加码仍要看主观感觉和当天安排。
 - Today suggestion: 优先做正常训练。若中午有重腿力量，下午跑步保持轻松；若下午想做质量跑，中午力量只做上肢或核心。
 
 ## Data Status
-- today_date: 2026-10-02
+- today_date: 2026-10-03
 - recovery_date: 2026-10-02
-- training_state_date: 2026-10-02
-- recovery_is_fresh: True
+- training_state_date: 2026-10-03
+- recovery_is_fresh: False
 - training_state_is_fresh: True
 
 ## Recovery
@@ -32,27 +32,27 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-09-26
-- window_end: 2026-10-02
-- days_with_recovery_data: 7
-- avg_sleep_hours: 8.44
+- window_start: 2026-09-27
+- window_end: 2026-10-03
+- days_with_recovery_data: 6
+- avg_sleep_hours: 8.58
 - min_sleep_hours: 7.27
-- avg_sleep_score: 89.0
-- avg_hrv: 77.0
-- avg_resting_hr: 44.29
+- avg_sleep_score: 88.0
+- avg_hrv: 77.4
+- avg_resting_hr: 45.0
 - avg_sleeping_hr: None
 - low_sleep_score_days: 0
 
 ## Training State
-- date: 2026-10-02 00:00:00
-- ctl: 17.98652
-- atl: 1.9202688
-- ramp_rate: -3.262045
+- date: 2026-10-03 00:00:00
+- ctl: 17.563328
+- atl: 1.6646385
+- ramp_rate: -3.185295
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 0.11
+- atl_ctl_ratio: 0.09
 
 ## Yesterday Primary Activity
 - id: i186824515
@@ -79,10 +79,10 @@
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-10-01', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
+- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-10-02', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
 - classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.727, 'reason': '整体更像常规有氧，而不是恢复跑', 'distance_km': 10.0, 'duration_min': 60.2}
 
 ## 7-Day Activity Trend
 
 ## Signals To Watch
-- No strong warning signal from the available data.
+- 今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据

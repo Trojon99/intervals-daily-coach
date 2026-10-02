@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-02T12:17:13.933185+10:00",
+  "generated_at": "2026-10-03T05:29:41.972881+10:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
-    "today_date": "2026-10-02",
+    "today_date": "2026-10-03",
     "recovery_date": "2026-10-02",
-    "training_state_date": "2026-10-02",
-    "recovery_is_fresh": true,
+    "training_state_date": "2026-10-03",
+    "recovery_is_fresh": false,
     "training_state_is_fresh": true
   },
   "conclusion": "恢复较好，今天可以正常训练；是否加码仍要看主观感觉和当天安排。",
@@ -33,27 +33,27 @@
     "injury": null
   },
   "recovery_trend_7d": {
-    "window_start": "2026-09-26",
-    "window_end": "2026-10-02",
-    "days_with_recovery_data": 7,
-    "avg_sleep_hours": 8.44,
+    "window_start": "2026-09-27",
+    "window_end": "2026-10-03",
+    "days_with_recovery_data": 6,
+    "avg_sleep_hours": 8.58,
     "min_sleep_hours": 7.27,
-    "avg_sleep_score": 89.0,
-    "avg_hrv": 77.0,
-    "avg_resting_hr": 44.29,
+    "avg_sleep_score": 88.0,
+    "avg_hrv": 77.4,
+    "avg_resting_hr": 45.0,
     "avg_sleeping_hr": null,
     "low_sleep_score_days": 0
   },
   "training_state": {
-    "date": "2026-10-02 00:00:00",
-    "ctl": 17.98652,
-    "atl": 1.9202688,
-    "ramp_rate": -3.262045,
+    "date": "2026-10-03 00:00:00",
+    "ctl": 17.563328,
+    "atl": 1.6646385,
+    "ramp_rate": -3.185295,
     "ctl_load": 0.0,
     "atl_load": 0.0,
     "ride_eftp": null,
     "run_eftp": null,
-    "atl_ctl_ratio": 0.11
+    "atl_ctl_ratio": 0.09
   },
   "yesterday_activity": {
     "id": "i186824515",
@@ -83,7 +83,7 @@
     "selection_meta": {
       "selection_mode": "latest_activity_fallback",
       "candidate_count": 1,
-      "target_date": "2026-10-01",
+      "target_date": "2026-10-02",
       "selection_rule": "昨天没有活动，回退到最近一条活动。"
     },
     "classification": {
@@ -95,7 +95,9 @@
     }
   },
   "activity_trend_7d": {},
-  "health_signals_to_watch": [],
+  "health_signals_to_watch": [
+    "今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据"
+  ],
   "analysis_order": [
     "direct_conclusion",
     "recovery",
