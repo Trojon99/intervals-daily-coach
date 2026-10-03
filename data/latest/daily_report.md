@@ -1,8 +1,8 @@
 # Daily Coach Report
 
-- Generated: 2026-10-04T04:01:25.975110+11:00
-- Conclusion: 恢复一般，今天更适合轻松有氧或降强度。
-- Today suggestion: 避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。
+- Generated: 2026-10-04T10:19:40.669241+11:00
+- Conclusion: 恢复偏弱，今天不适合高强度，优先恢复。
+- Today suggestion: 更适合休息、走路、拉伸或非常轻的恢复活动。若有不适或疲劳延续，连续观察。
 
 ## Data Status
 - today_date: 2026-10-04
@@ -14,14 +14,14 @@
 ## Recovery
 - date: 2026-10-04 00:00:00
 - weight: None
-- resting_hr: 45.0
-- hrv: None
+- resting_hr: 41.0
+- hrv: 75.0
 - hrv_sdnn: None
 - readiness: None
-- sleep_secs: None
-- sleep_hours: None
-- sleep_score: None
-- sleep_quality: None
+- sleep_secs: 18581.0
+- sleep_hours: 5.16
+- sleep_score: 74.0
+- sleep_quality: 3.0
 - avg_sleeping_hr: None
 - spo2: None
 - fatigue: None
@@ -35,11 +35,11 @@
 - window_start: 2026-09-28
 - window_end: 2026-10-04
 - days_with_recovery_data: 7
-- avg_sleep_hours: 8.56
-- min_sleep_hours: 7.27
-- avg_sleep_score: 87.4
-- avg_hrv: 74.6
-- avg_resting_hr: 45.71
+- avg_sleep_hours: 8.0
+- min_sleep_hours: 5.16
+- avg_sleep_score: 85.17
+- avg_hrv: 74.67
+- avg_resting_hr: 45.14
 - avg_sleeping_hr: None
 - low_sleep_score_days: 0
 
@@ -85,4 +85,5 @@
 ## 7-Day Activity Trend
 
 ## Signals To Watch
-- No strong warning signal from the available data.
+- 昨晚睡眠时长偏短，优先按恢复不足处理
+- 昨晚睡眠明显低于近7天均值
