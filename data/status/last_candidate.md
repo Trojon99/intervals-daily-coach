@@ -1,20 +1,20 @@
 # Daily Coach Report
 
-- Generated: 2026-10-03T12:30:17.084795+10:00
+- Generated: 2026-10-04T04:01:25.975110+11:00
 - Conclusion: 恢复一般，今天更适合轻松有氧或降强度。
 - Today suggestion: 避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。
 
 ## Data Status
-- today_date: 2026-10-03
-- recovery_date: 2026-10-03
-- training_state_date: 2026-10-03
+- today_date: 2026-10-04
+- recovery_date: 2026-10-04
+- training_state_date: 2026-10-04
 - recovery_is_fresh: True
 - training_state_is_fresh: True
 
 ## Recovery
-- date: 2026-10-03 00:00:00
+- date: 2026-10-04 00:00:00
 - weight: None
-- resting_hr: 43.0
+- resting_hr: 45.0
 - hrv: None
 - hrv_sdnn: None
 - readiness: None
@@ -32,27 +32,27 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-09-27
-- window_end: 2026-10-03
+- window_start: 2026-09-28
+- window_end: 2026-10-04
 - days_with_recovery_data: 7
-- avg_sleep_hours: 8.58
+- avg_sleep_hours: 8.56
 - min_sleep_hours: 7.27
-- avg_sleep_score: 88.0
-- avg_hrv: 77.4
-- avg_resting_hr: 44.71
+- avg_sleep_score: 87.4
+- avg_hrv: 74.6
+- avg_resting_hr: 45.71
 - avg_sleeping_hr: None
 - low_sleep_score_days: 0
 
 ## Training State
-- date: 2026-10-03 00:00:00
-- ctl: 17.563328
-- atl: 1.6646385
-- ramp_rate: -3.185295
+- date: 2026-10-04 00:00:00
+- ctl: 17.150093
+- atl: 1.4430383
+- ramp_rate: -3.1103497
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 0.09
+- atl_ctl_ratio: 0.08
 
 ## Yesterday Primary Activity
 - id: i186824515
@@ -79,7 +79,7 @@
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-10-02', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
+- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-10-03', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
 - classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.727, 'reason': '整体更像常规有氧，而不是恢复跑', 'distance_km': 10.0, 'duration_min': 60.2}
 
 ## 7-Day Activity Trend
