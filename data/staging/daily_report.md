@@ -1,13 +1,13 @@
 # Daily Coach Report
 
-- Generated: 2026-10-11T13:16:34.111949+11:00
+- Generated: 2026-10-12T05:42:36.029422+11:00
 - Conclusion: 恢复较好，今天可以正常训练；是否加码仍要看主观感觉和当天安排。
 - Today suggestion: 优先做正常训练。若中午有重腿力量，下午跑步保持轻松；若下午想做质量跑，中午力量只做上肢或核心。
 
 ## Data Status
-- today_date: 2026-10-11
+- today_date: 2026-10-12
 - recovery_date: 2026-10-10
-- training_state_date: 2026-10-11
+- training_state_date: 2026-10-12
 - recovery_is_fresh: False
 - training_state_is_fresh: True
 
@@ -32,27 +32,27 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-10-05
-- window_end: 2026-10-11
-- days_with_recovery_data: 6
-- avg_sleep_hours: 8.76
+- window_start: 2026-10-06
+- window_end: 2026-10-12
+- days_with_recovery_data: 5
+- avg_sleep_hours: 8.56
 - min_sleep_hours: 6.71
-- avg_sleep_score: 81.83
-- avg_hrv: 75.5
-- avg_resting_hr: 41.83
+- avg_sleep_score: 82.2
+- avg_hrv: 76.0
+- avg_resting_hr: 41.6
 - avg_sleeping_hr: None
 - low_sleep_score_days: 1
 
 ## Training State
-- date: 2026-10-11 00:00:00
-- ctl: 16.447937
-- atl: 8.841079
-- ramp_rate: -0.70215607
+- date: 2026-10-12 00:00:00
+- ctl: 16.060946
+- atl: 7.664136
+- ramp_rate: -0.6856346
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 0.54
+- atl_ctl_ratio: 0.48
 
 ## Yesterday Primary Activity
 - id: i195658624
@@ -79,12 +79,12 @@
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'primary_activity_of_day', 'candidate_count': 1, 'candidate_types': ['Hike'], 'selected_type': 'Hike', 'selected_training_load': 44.0, 'selected_moving_time_sec': 7413.0, 'selection_rule': '先选主训练类型（Run/Workout/Ride），再优先 Run，之后按训练负荷、时长、开始时间排序。', 'target_date': '2026-10-10'}
+- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-10-11', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
 - classification: {'label': 'other_activity', 'speed_vs_threshold_ratio': None, 'reason': '非核心跑步类型，暂按其他活动处理', 'distance_km': 7.83, 'duration_min': 123.5}
 
 ## 7-Day Activity Trend
-- window_start: 2026-10-05
-- window_end: 2026-10-11
+- window_start: 2026-10-06
+- window_end: 2026-10-12
 - activity_count: 2
 - total_training_load: 87.0
 - avg_training_load: 43.5

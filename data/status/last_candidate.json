@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-11T13:16:34.111949+11:00",
+  "generated_at": "2026-10-12T05:42:36.029422+11:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
-    "today_date": "2026-10-11",
+    "today_date": "2026-10-12",
     "recovery_date": "2026-10-10",
-    "training_state_date": "2026-10-11",
+    "training_state_date": "2026-10-12",
     "recovery_is_fresh": false,
     "training_state_is_fresh": true
   },
@@ -33,27 +33,27 @@
     "injury": null
   },
   "recovery_trend_7d": {
-    "window_start": "2026-10-05",
-    "window_end": "2026-10-11",
-    "days_with_recovery_data": 6,
-    "avg_sleep_hours": 8.76,
+    "window_start": "2026-10-06",
+    "window_end": "2026-10-12",
+    "days_with_recovery_data": 5,
+    "avg_sleep_hours": 8.56,
     "min_sleep_hours": 6.71,
-    "avg_sleep_score": 81.83,
-    "avg_hrv": 75.5,
-    "avg_resting_hr": 41.83,
+    "avg_sleep_score": 82.2,
+    "avg_hrv": 76.0,
+    "avg_resting_hr": 41.6,
     "avg_sleeping_hr": null,
     "low_sleep_score_days": 1
   },
   "training_state": {
-    "date": "2026-10-11 00:00:00",
-    "ctl": 16.447937,
-    "atl": 8.841079,
-    "ramp_rate": -0.70215607,
+    "date": "2026-10-12 00:00:00",
+    "ctl": 16.060946,
+    "atl": 7.664136,
+    "ramp_rate": -0.6856346,
     "ctl_load": 0.0,
     "atl_load": 0.0,
     "ride_eftp": null,
     "run_eftp": null,
-    "atl_ctl_ratio": 0.54
+    "atl_ctl_ratio": 0.48
   },
   "yesterday_activity": {
     "id": "i195658624",
@@ -81,16 +81,10 @@
     "icu_average_watts": null,
     "icu_normalized_watts": null,
     "selection_meta": {
-      "selection_mode": "primary_activity_of_day",
+      "selection_mode": "latest_activity_fallback",
       "candidate_count": 1,
-      "candidate_types": [
-        "Hike"
-      ],
-      "selected_type": "Hike",
-      "selected_training_load": 44.0,
-      "selected_moving_time_sec": 7413.0,
-      "selection_rule": "先选主训练类型（Run/Workout/Ride），再优先 Run，之后按训练负荷、时长、开始时间排序。",
-      "target_date": "2026-10-10"
+      "target_date": "2026-10-11",
+      "selection_rule": "昨天没有活动，回退到最近一条活动。"
     },
     "classification": {
       "label": "other_activity",
@@ -101,8 +95,8 @@
     }
   },
   "activity_trend_7d": {
-    "window_start": "2026-10-05",
-    "window_end": "2026-10-11",
+    "window_start": "2026-10-06",
+    "window_end": "2026-10-12",
     "activity_count": 2,
     "total_training_load": 87.0,
     "avg_training_load": 43.5,
