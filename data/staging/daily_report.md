@@ -1,13 +1,13 @@
 # Daily Coach Report
 
-- Generated: 2026-10-12T13:35:55.030259+11:00
+- Generated: 2026-10-13T09:15:46.657342+11:00
 - Conclusion: 恢复较好，今天可以正常训练；是否加码仍要看主观感觉和当天安排。
 - Today suggestion: 优先做正常训练。若中午有重腿力量，下午跑步保持轻松；若下午想做质量跑，中午力量只做上肢或核心。
 
 ## Data Status
-- today_date: 2026-10-12
+- today_date: 2026-10-13
 - recovery_date: 2026-10-10
-- training_state_date: 2026-10-12
+- training_state_date: 2026-10-13
 - recovery_is_fresh: False
 - training_state_is_fresh: True
 
@@ -32,27 +32,27 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-10-06
-- window_end: 2026-10-12
-- days_with_recovery_data: 5
-- avg_sleep_hours: 8.56
+- window_start: 2026-10-07
+- window_end: 2026-10-13
+- days_with_recovery_data: 4
+- avg_sleep_hours: 8.82
 - min_sleep_hours: 6.71
-- avg_sleep_score: 82.2
-- avg_hrv: 76.0
-- avg_resting_hr: 41.6
+- avg_sleep_score: 81.25
+- avg_hrv: 78.5
+- avg_resting_hr: 41.25
 - avg_sleeping_hr: None
 - low_sleep_score_days: 1
 
 ## Training State
-- date: 2026-10-12 00:00:00
-- ctl: 16.060946
-- atl: 7.664136
-- ramp_rate: -0.6856346
+- date: 2026-10-13 00:00:00
+- ctl: 15.683059
+- atl: 6.64387
+- ramp_rate: -0.6695032
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 0.48
+- atl_ctl_ratio: 0.42
 
 ## Yesterday Primary Activity
 - id: i195658624
@@ -79,12 +79,12 @@
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-10-11', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
+- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-10-12', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
 - classification: {'label': 'other_activity', 'speed_vs_threshold_ratio': None, 'reason': '非核心跑步类型，暂按其他活动处理', 'distance_km': 7.83, 'duration_min': 123.5}
 
 ## 7-Day Activity Trend
-- window_start: 2026-10-06
-- window_end: 2026-10-12
+- window_start: 2026-10-07
+- window_end: 2026-10-13
 - activity_count: 2
 - total_training_load: 87.0
 - avg_training_load: 43.5
