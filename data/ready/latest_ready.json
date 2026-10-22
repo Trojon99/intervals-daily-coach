@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-10-22T11:41:58.446157+11:00",
+  "generated_at": "2026-10-23T03:46:38.604565+11:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
-    "today_date": "2026-10-22",
-    "recovery_date": "2026-10-22",
-    "training_state_date": "2026-10-22",
+    "today_date": "2026-10-23",
+    "recovery_date": "2026-10-23",
+    "training_state_date": "2026-10-23",
     "recovery_is_fresh": true,
     "training_state_is_fresh": true
   },
-  "conclusion": "恢复较好，今天可以正常训练；是否加码仍要看主观感觉和当天安排。",
-  "today_training_suggestion": "优先做正常训练。若中午有重腿力量，下午跑步保持轻松；若下午想做质量跑，中午力量只做上肢或核心。",
-  "internal_score": 5,
+  "conclusion": "恢复一般，今天更适合轻松有氧或降强度。",
+  "today_training_suggestion": "避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。",
+  "internal_score": -1,
   "recovery": {
-    "date": "2026-10-22 00:00:00",
+    "date": "2026-10-23 00:00:00",
     "weight": null,
-    "resting_hr": 39.0,
-    "hrv": 89.0,
+    "resting_hr": 46.0,
+    "hrv": null,
     "hrv_sdnn": null,
     "readiness": null,
-    "sleep_secs": 27600.0,
-    "sleep_hours": 7.67,
-    "sleep_score": 87.0,
-    "sleep_quality": 2.0,
+    "sleep_secs": null,
+    "sleep_hours": null,
+    "sleep_score": null,
+    "sleep_quality": null,
     "avg_sleeping_hr": null,
     "spo2": null,
     "fatigue": null,
@@ -33,27 +33,27 @@
     "injury": null
   },
   "recovery_trend_7d": {
-    "window_start": "2026-10-16",
-    "window_end": "2026-10-22",
+    "window_start": "2026-10-17",
+    "window_end": "2026-10-23",
     "days_with_recovery_data": 7,
-    "avg_sleep_hours": 7.32,
+    "avg_sleep_hours": 7.67,
     "min_sleep_hours": 4.31,
-    "avg_sleep_score": 79.43,
-    "avg_hrv": 72.71,
-    "avg_resting_hr": 42.0,
+    "avg_sleep_score": 82.0,
+    "avg_hrv": 73.33,
+    "avg_resting_hr": 42.29,
     "avg_sleeping_hr": null,
-    "low_sleep_score_days": 2
+    "low_sleep_score_days": 1
   },
   "training_state": {
-    "date": "2026-10-22 00:00:00",
-    "ctl": 16.998058,
-    "atl": 16.26421,
-    "ramp_rate": 1.3550673,
+    "date": "2026-10-23 00:00:00",
+    "ctl": 16.598124,
+    "atl": 14.099084,
+    "ramp_rate": 1.3231859,
     "ctl_load": 0.0,
     "atl_load": 0.0,
     "ride_eftp": null,
     "run_eftp": null,
-    "atl_ctl_ratio": 0.96
+    "atl_ctl_ratio": 0.85
   },
   "yesterday_activity": {
     "id": "i199376414",
@@ -83,7 +83,7 @@
     "selection_meta": {
       "selection_mode": "latest_activity_fallback",
       "candidate_count": 1,
-      "target_date": "2026-10-21",
+      "target_date": "2026-10-22",
       "selection_rule": "昨天没有活动，回退到最近一条活动。"
     },
     "classification": {
@@ -95,15 +95,17 @@
     }
   },
   "activity_trend_7d": {
-    "window_start": "2026-10-16",
-    "window_end": "2026-10-22",
+    "window_start": "2026-10-17",
+    "window_end": "2026-10-23",
     "activity_count": 5,
     "total_training_load": 176.0,
     "avg_training_load": 44.0,
     "run_count": 2,
     "run_distance_km": 20.0
   },
-  "health_signals_to_watch": [],
+  "health_signals_to_watch": [
+    "静息心率高于近7天均值，需留意疲劳或压力"
+  ],
   "analysis_order": [
     "direct_conclusion",
     "recovery",

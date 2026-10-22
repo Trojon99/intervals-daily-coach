@@ -1,27 +1,27 @@
 # Daily Coach Report
 
-- Generated: 2026-10-22T11:41:58.446157+11:00
-- Conclusion: 恢复较好，今天可以正常训练；是否加码仍要看主观感觉和当天安排。
-- Today suggestion: 优先做正常训练。若中午有重腿力量，下午跑步保持轻松；若下午想做质量跑，中午力量只做上肢或核心。
+- Generated: 2026-10-23T03:46:38.604565+11:00
+- Conclusion: 恢复一般，今天更适合轻松有氧或降强度。
+- Today suggestion: 避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。
 
 ## Data Status
-- today_date: 2026-10-22
-- recovery_date: 2026-10-22
-- training_state_date: 2026-10-22
+- today_date: 2026-10-23
+- recovery_date: 2026-10-23
+- training_state_date: 2026-10-23
 - recovery_is_fresh: True
 - training_state_is_fresh: True
 
 ## Recovery
-- date: 2026-10-22 00:00:00
+- date: 2026-10-23 00:00:00
 - weight: None
-- resting_hr: 39.0
-- hrv: 89.0
+- resting_hr: 46.0
+- hrv: None
 - hrv_sdnn: None
 - readiness: None
-- sleep_secs: 27600.0
-- sleep_hours: 7.67
-- sleep_score: 87.0
-- sleep_quality: 2.0
+- sleep_secs: None
+- sleep_hours: None
+- sleep_score: None
+- sleep_quality: None
 - avg_sleeping_hr: None
 - spo2: None
 - fatigue: None
@@ -32,27 +32,27 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-10-16
-- window_end: 2026-10-22
+- window_start: 2026-10-17
+- window_end: 2026-10-23
 - days_with_recovery_data: 7
-- avg_sleep_hours: 7.32
+- avg_sleep_hours: 7.67
 - min_sleep_hours: 4.31
-- avg_sleep_score: 79.43
-- avg_hrv: 72.71
-- avg_resting_hr: 42.0
+- avg_sleep_score: 82.0
+- avg_hrv: 73.33
+- avg_resting_hr: 42.29
 - avg_sleeping_hr: None
-- low_sleep_score_days: 2
+- low_sleep_score_days: 1
 
 ## Training State
-- date: 2026-10-22 00:00:00
-- ctl: 16.998058
-- atl: 16.26421
-- ramp_rate: 1.3550673
+- date: 2026-10-23 00:00:00
+- ctl: 16.598124
+- atl: 14.099084
+- ramp_rate: 1.3231859
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 0.96
+- atl_ctl_ratio: 0.85
 
 ## Yesterday Primary Activity
 - id: i199376414
@@ -79,12 +79,12 @@
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-10-21', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
+- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-10-22', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
 - classification: {'label': 'ride', 'speed_vs_threshold_ratio': None, 'reason': '骑行活动，按骑行负荷解释', 'distance_km': 10.01, 'duration_min': 31.4}
 
 ## 7-Day Activity Trend
-- window_start: 2026-10-16
-- window_end: 2026-10-22
+- window_start: 2026-10-17
+- window_end: 2026-10-23
 - activity_count: 5
 - total_training_load: 176.0
 - avg_training_load: 44.0
@@ -92,4 +92,4 @@
 - run_distance_km: 20.0
 
 ## Signals To Watch
-- No strong warning signal from the available data.
+- 静息心率高于近7天均值，需留意疲劳或压力
