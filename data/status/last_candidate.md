@@ -1,6 +1,6 @@
 # Daily Coach Report
 
-- Generated: 2026-10-24T10:30:13.694546+11:00
+- Generated: 2026-10-24T11:43:53.372865+11:00
 - Conclusion: 恢复偏弱，今天不适合高强度，优先恢复。
 - Today suggestion: 更适合休息、走路、拉伸或非常轻的恢复活动。若有不适或疲劳延续，连续观察。
 
