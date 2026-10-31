@@ -1,26 +1,26 @@
 # Daily Coach Report
 
-- Generated: 2026-11-01T05:11:42.276358+11:00
-- Conclusion: 恢复尚可，今天适合常规有氧或中等训练，不建议激进加码。
-- Today suggestion: 以轻松跑或常规有氧为主。只有在主观状态也不错时，才考虑中等质量训练。
+- Generated: 2026-11-01T10:44:52.442115+11:00
+- Conclusion: 恢复较好，今天可以正常训练；是否加码仍要看主观感觉和当天安排。
+- Today suggestion: 优先做正常训练。若中午有重腿力量，下午跑步保持轻松；若下午想做质量跑，中午力量只做上肢或核心。
 
 ## Data Status
 - today_date: 2026-11-01
-- recovery_date: 2026-10-31
+- recovery_date: 2026-11-01
 - training_state_date: 2026-11-01
-- recovery_is_fresh: False
+- recovery_is_fresh: True
 - training_state_is_fresh: True
 
 ## Recovery
-- date: 2026-10-31 00:00:00
+- date: 2026-11-01 00:00:00
 - weight: None
-- resting_hr: 47.0
-- hrv: 62.0
+- resting_hr: 45.0
+- hrv: None
 - hrv_sdnn: None
 - readiness: None
-- sleep_secs: 30240.0
-- sleep_hours: 8.4
-- sleep_score: 88.0
+- sleep_secs: 25980.0
+- sleep_hours: 7.22
+- sleep_score: 81.0
 - sleep_quality: 2.0
 - avg_sleeping_hr: None
 - spo2: None
@@ -34,12 +34,12 @@
 ## 7-Day Recovery Trend
 - window_start: 2026-10-26
 - window_end: 2026-11-01
-- days_with_recovery_data: 6
-- avg_sleep_hours: 8.34
-- min_sleep_hours: 7.23
-- avg_sleep_score: 88.0
+- days_with_recovery_data: 7
+- avg_sleep_hours: 8.18
+- min_sleep_hours: 7.22
+- avg_sleep_score: 87.0
 - avg_hrv: 71.33
-- avg_resting_hr: 44.5
+- avg_resting_hr: 44.57
 - avg_sleeping_hr: None
 - low_sleep_score_days: 0
 
@@ -85,5 +85,4 @@
 ## 7-Day Activity Trend
 
 ## Signals To Watch
-- 今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据
-- HRV 低于近7天均值，恢复可能偏弱
+- 昨晚睡眠明显低于近7天均值
