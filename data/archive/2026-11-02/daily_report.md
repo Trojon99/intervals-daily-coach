@@ -1,8 +1,8 @@
 # Daily Coach Report
 
-- Generated: 2026-11-02T10:54:13.469479+11:00
-- Conclusion: 恢复一般，今天更适合轻松有氧或降强度。
-- Today suggestion: 避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。
+- Generated: 2026-11-02T12:31:08.351928+11:00
+- Conclusion: 恢复偏弱，今天不适合高强度，优先恢复。
+- Today suggestion: 更适合休息、走路、拉伸或非常轻的恢复活动。若有不适或疲劳延续，连续观察。
 
 ## Data Status
 - today_date: 2026-11-02
@@ -15,13 +15,13 @@
 - date: 2026-11-02 00:00:00
 - weight: None
 - resting_hr: 49.0
-- hrv: None
+- hrv: 59.0
 - hrv_sdnn: None
 - readiness: None
-- sleep_secs: None
-- sleep_hours: None
-- sleep_score: None
-- sleep_quality: None
+- sleep_secs: 24060.0
+- sleep_hours: 6.68
+- sleep_score: 66.0
+- sleep_quality: 3.0
 - avg_sleeping_hr: None
 - spo2: None
 - fatigue: None
@@ -35,13 +35,13 @@
 - window_start: 2026-10-27
 - window_end: 2026-11-02
 - days_with_recovery_data: 7
-- avg_sleep_hours: 8.12
-- min_sleep_hours: 7.22
-- avg_sleep_score: 86.5
-- avg_hrv: 68.0
+- avg_sleep_hours: 7.92
+- min_sleep_hours: 6.68
+- avg_sleep_score: 83.57
+- avg_hrv: 66.71
 - avg_resting_hr: 45.71
 - avg_sleeping_hr: None
-- low_sleep_score_days: 0
+- low_sleep_score_days: 1
 
 ## Training State
 - date: 2026-11-02 00:00:00
@@ -85,4 +85,6 @@
 ## 7-Day Activity Trend
 
 ## Signals To Watch
+- 昨晚睡眠明显低于近7天均值
+- HRV 低于近7天均值，恢复可能偏弱
 - 静息心率高于近7天均值，需留意疲劳或压力
