@@ -1,14 +1,14 @@
 # Daily Coach Report
 
-- Generated: 2026-11-03T14:28:38.478370+11:00
+- Generated: 2026-11-04T07:27:42.613956+11:00
 - Conclusion: 恢复偏弱，今天不适合高强度，优先恢复。
 - Today suggestion: 更适合休息、走路、拉伸或非常轻的恢复活动。若有不适或疲劳延续，连续观察。
 
 ## Data Status
-- today_date: 2026-11-03
+- today_date: 2026-11-04
 - recovery_date: 2026-11-03
-- training_state_date: 2026-11-03
-- recovery_is_fresh: True
+- training_state_date: 2026-11-04
+- recovery_is_fresh: False
 - training_state_is_fresh: True
 
 ## Recovery
@@ -32,27 +32,27 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-10-28
-- window_end: 2026-11-03
-- days_with_recovery_data: 7
-- avg_sleep_hours: 7.68
+- window_start: 2026-10-29
+- window_end: 2026-11-04
+- days_with_recovery_data: 6
+- avg_sleep_hours: 7.52
 - min_sleep_hours: 6.68
-- avg_sleep_score: 79.29
-- avg_hrv: 61.86
-- avg_resting_hr: 46.71
+- avg_sleep_score: 76.67
+- avg_hrv: 59.0
+- avg_resting_hr: 47.5
 - avg_sleeping_hr: None
 - low_sleep_score_days: 2
 
 ## Training State
-- date: 2026-11-03 00:00:00
-- ctl: 14.060241
-- atl: 9.391494
-- ramp_rate: -1.0300503
+- date: 2026-11-04 00:00:00
+- ctl: 13.729427
+- atl: 8.141278
+- ramp_rate: -1.0058146
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 0.67
+- atl_ctl_ratio: 0.59
 
 ## Yesterday Primary Activity
 - id: i204686216
@@ -63,28 +63,28 @@
 - elapsed_time_sec: 8182
 - distance_m: 9108.68
 - distance_km: 9.11
-- average_heartrate: 118.0
-- max_heartrate: 149.0
+- average_heartrate: 118
+- max_heartrate: 149
 - average_speed: 1.113
 - max_speed: 4.078
 - total_elevation_gain: 175.0
-- calories: 745.0
+- calories: 745
 - average_cadence: 56.104492
 - pace: 1.3472385
 - threshold_pace: None
-- icu_training_load: 56.0
+- icu_training_load: 56
 - icu_intensity: 49.65028
 - icu_fitness: 14.399026
 - icu_fatigue: 10.833698
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'primary_activity_of_day', 'candidate_count': 1, 'candidate_types': ['Hike'], 'selected_type': 'Hike', 'selected_training_load': 56.0, 'selected_moving_time_sec': 6761.0, 'selection_rule': '先选主训练类型（Run/Workout/Ride），再优先 Run，之后按训练负荷、时长、开始时间排序。', 'target_date': '2026-11-02'}
+- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-11-03', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
 - classification: {'label': 'other_activity', 'speed_vs_threshold_ratio': None, 'reason': '非核心跑步类型，暂按其他活动处理', 'distance_km': 9.11, 'duration_min': 112.7}
 
 ## 7-Day Activity Trend
-- window_start: 2026-10-28
-- window_end: 2026-11-03
+- window_start: 2026-10-29
+- window_end: 2026-11-04
 - activity_count: 1
 - total_training_load: 56.0
 - avg_training_load: 56.0
@@ -92,6 +92,5 @@
 - run_distance_km: 0.0
 
 ## Signals To Watch
-- 昨晚睡眠明显低于近7天均值
+- 今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据
 - HRV 低于近7天均值，恢复可能偏弱
-- 静息心率高于近7天均值，需留意疲劳或压力
