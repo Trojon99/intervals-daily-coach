@@ -1,13 +1,13 @@
 # Daily Coach Report
 
-- Generated: 2026-11-06T14:43:38.457928+11:00
+- Generated: 2026-11-07T07:14:31.050174+11:00
 - Conclusion: 恢复偏弱，今天不适合高强度，优先恢复。
 - Today suggestion: 更适合休息、走路、拉伸或非常轻的恢复活动。若有不适或疲劳延续，连续观察。
 
 ## Data Status
-- today_date: 2026-11-06
+- today_date: 2026-11-07
 - recovery_date: 2026-11-03
-- training_state_date: 2026-11-06
+- training_state_date: 2026-11-07
 - recovery_is_fresh: False
 - training_state_is_fresh: True
 
@@ -32,27 +32,27 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-10-31
-- window_end: 2026-11-06
-- days_with_recovery_data: 4
-- avg_sleep_hours: 7.28
+- window_start: 2026-11-01
+- window_end: 2026-11-07
+- days_with_recovery_data: 3
+- avg_sleep_hours: 6.91
 - min_sleep_hours: 6.68
-- avg_sleep_score: 74.0
-- avg_hrv: 57.5
-- avg_resting_hr: 47.75
+- avg_sleep_score: 69.33
+- avg_hrv: 56.0
+- avg_resting_hr: 48.0
 - avg_sleeping_hr: None
 - low_sleep_score_days: 2
 
 ## Training State
-- date: 2026-11-06 00:00:00
-- ctl: 13.090967
-- atl: 6.1179857
-- ramp_rate: -0.9590416
+- date: 2026-11-07 00:00:00
+- ctl: 12.782959
+- atl: 5.3035464
+- ramp_rate: -0.9364767
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 0.47
+- atl_ctl_ratio: 0.41
 
 ## Yesterday Primary Activity
 - id: i204686216
@@ -79,12 +79,12 @@
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-11-05', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
+- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-11-06', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
 - classification: {'label': 'other_activity', 'speed_vs_threshold_ratio': None, 'reason': '非核心跑步类型，暂按其他活动处理', 'distance_km': 9.11, 'duration_min': 112.7}
 
 ## 7-Day Activity Trend
-- window_start: 2026-10-31
-- window_end: 2026-11-06
+- window_start: 2026-11-01
+- window_end: 2026-11-07
 - activity_count: 1
 - total_training_load: 56.0
 - avg_training_load: 56.0
