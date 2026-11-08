@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T10:58:19.557302+11:00",
+  "generated_at": "2026-11-08T12:27:27.169785+11:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
@@ -9,20 +9,20 @@
     "recovery_is_fresh": true,
     "training_state_is_fresh": true
   },
-  "conclusion": "恢复偏弱，今天不适合高强度，优先恢复。",
-  "today_training_suggestion": "更适合休息、走路、拉伸或非常轻的恢复活动。若有不适或疲劳延续，连续观察。",
-  "internal_score": -2,
+  "conclusion": "恢复尚可，今天适合常规有氧或中等训练，不建议激进加码。",
+  "today_training_suggestion": "以轻松跑或常规有氧为主。只有在主观状态也不错时，才考虑中等质量训练。",
+  "internal_score": 2,
   "recovery": {
     "date": "2026-11-08 00:00:00",
     "weight": null,
-    "resting_hr": 63.0,
-    "hrv": null,
+    "resting_hr": 55.0,
+    "hrv": 50.0,
     "hrv_sdnn": null,
     "readiness": null,
-    "sleep_secs": null,
-    "sleep_hours": null,
-    "sleep_score": null,
-    "sleep_quality": null,
+    "sleep_secs": 27840.0,
+    "sleep_hours": 7.73,
+    "sleep_score": 83.0,
+    "sleep_quality": 2.0,
     "avg_sleeping_hr": null,
     "spo2": null,
     "fatigue": null,
@@ -36,11 +36,11 @@
     "window_start": "2026-11-02",
     "window_end": "2026-11-08",
     "days_with_recovery_data": 7,
-    "avg_sleep_hours": 5.56,
+    "avg_sleep_hours": 5.87,
     "min_sleep_hours": 4.02,
-    "avg_sleep_score": 49.33,
-    "avg_hrv": 47.33,
-    "avg_resting_hr": 54.14,
+    "avg_sleep_score": 54.14,
+    "avg_hrv": 47.71,
+    "avg_resting_hr": 53.0,
     "avg_sleeping_hr": null,
     "low_sleep_score_days": 6
   },
@@ -109,9 +109,7 @@
     "run_count": 0,
     "run_distance_km": 0.0
   },
-  "health_signals_to_watch": [
-    "静息心率高于近7天均值，需留意疲劳或压力"
-  ],
+  "health_signals_to_watch": [],
   "analysis_order": [
     "direct_conclusion",
     "recovery",
