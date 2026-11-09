@@ -1,6 +1,6 @@
 # Daily Coach Report
 
-- Generated: 2026-11-09T04:43:07.614142+11:00
+- Generated: 2026-11-09T11:01:24.608723+11:00
 - Conclusion: 恢复一般，今天更适合轻松有氧或降强度。
 - Today suggestion: 避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。
 
@@ -14,7 +14,7 @@
 ## Recovery
 - date: 2026-11-09 00:00:00
 - weight: None
-- resting_hr: 58.0
+- resting_hr: 56.0
 - hrv: None
 - hrv_sdnn: None
 - readiness: None
@@ -39,7 +39,7 @@
 - min_sleep_hours: 4.02
 - avg_sleep_score: 52.17
 - avg_hrv: 45.83
-- avg_resting_hr: 54.29
+- avg_resting_hr: 54.0
 - avg_sleeping_hr: None
 - low_sleep_score_days: 5
 
@@ -92,4 +92,4 @@
 - run_distance_km: 0.0
 
 ## Signals To Watch
-- 静息心率高于近7天均值，需留意疲劳或压力
+- No strong warning signal from the available data.
