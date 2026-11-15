@@ -1,27 +1,27 @@
 # Daily Coach Report
 
-- Generated: 2026-11-15T12:56:55.113503+11:00
-- Conclusion: 恢复较好，今天可以正常训练；是否加码仍要看主观感觉和当天安排。
-- Today suggestion: 优先做正常训练。若中午有重腿力量，下午跑步保持轻松；若下午想做质量跑，中午力量只做上肢或核心。
+- Generated: 2026-11-16T05:34:19.000287+11:00
+- Conclusion: 恢复一般，今天更适合轻松有氧或降强度。
+- Today suggestion: 避免双强度，同一天只保留一个主要刺激；更稳的是轻松跑、上肢力量或低负荷日。
 
 ## Data Status
-- today_date: 2026-11-15
-- recovery_date: 2026-11-15
-- training_state_date: 2026-11-15
+- today_date: 2026-11-16
+- recovery_date: 2026-11-16
+- training_state_date: 2026-11-16
 - recovery_is_fresh: True
 - training_state_is_fresh: True
 
 ## Recovery
-- date: 2026-11-15 00:00:00
+- date: 2026-11-16 00:00:00
 - weight: None
-- resting_hr: 44.0
-- hrv: 70.0
+- resting_hr: 56.0
+- hrv: None
 - hrv_sdnn: None
 - readiness: None
-- sleep_secs: 35160.0
-- sleep_hours: 9.77
-- sleep_score: 96.0
-- sleep_quality: 1.0
+- sleep_secs: None
+- sleep_hours: None
+- sleep_score: None
+- sleep_quality: None
 - avg_sleeping_hr: None
 - spo2: None
 - fatigue: None
@@ -32,8 +32,8 @@
 - injury: None
 
 ## 7-Day Recovery Trend
-- window_start: 2026-11-09
-- window_end: 2026-11-15
+- window_start: 2026-11-10
+- window_end: 2026-11-16
 - days_with_recovery_data: 4
 - avg_sleep_hours: 9.25
 - min_sleep_hours: 8.73
@@ -44,45 +44,52 @@
 - low_sleep_score_days: 0
 
 ## Training State
-- date: 2026-11-15 00:00:00
-- ctl: 12.821884
-- atl: 6.6159425
-- ramp_rate: -2.3253822
+- date: 2026-11-16 00:00:00
+- ctl: 13.209449
+- atl: 9.197232
+- ramp_rate: -1.5814276
 - ctl_load: 0.0
 - atl_load: 0.0
 - ride_eftp: None
 - run_eftp: None
-- atl_ctl_ratio: 0.52
+- atl_ctl_ratio: 0.7
 
 ## Yesterday Primary Activity
-- id: i206848346
-- start_date_local: 2026-11-07 11:15:07
-- name: 阿坝藏族羌族自治州 徒步
-- type: Hike
-- moving_time_sec: 4272
-- elapsed_time_sec: 7609
-- distance_m: 4082.92
-- distance_km: 4.08
-- average_heartrate: 131
-- max_heartrate: 151
-- average_speed: 0.537
-- max_speed: 1.68
-- total_elevation_gain: 14.0
-- calories: 853
-- average_cadence: 57.1052
-- pace: 0.9557397
-- threshold_pace: None
-- icu_training_load: 46
-- icu_intensity: 46.676125
-- icu_fitness: 15.512243
-- icu_fatigue: 20.74571
+- id: i210182690
+- start_date_local: 2026-11-15 16:06:03
+- name: 跑步机
+- type: VirtualRun
+- moving_time_sec: 1914
+- elapsed_time_sec: 1917
+- distance_m: 5000.0
+- distance_km: 5.0
+- average_heartrate: 152
+- max_heartrate: 167
+- average_speed: 2.608
+- max_speed: 2.911
+- total_elevation_gain: None
+- calories: 371
+- average_cadence: 80.11175
+- pace: 2.6123302
+- threshold_pace: 3.8022814
+- icu_training_load: 30
+- icu_intensity: 75.07825
+- icu_fitness: 13.527734
+- icu_fatigue: 10.609605
 - icu_eftp: None
 - icu_average_watts: None
 - icu_normalized_watts: None
-- selection_meta: {'selection_mode': 'latest_activity_fallback', 'candidate_count': 1, 'target_date': '2026-11-14', 'selection_rule': '昨天没有活动，回退到最近一条活动。'}
-- classification: {'label': 'other_activity', 'speed_vs_threshold_ratio': None, 'reason': '非核心跑步类型，暂按其他活动处理', 'distance_km': 4.08, 'duration_min': 71.2}
+- selection_meta: {'selection_mode': 'primary_activity_of_day', 'candidate_count': 1, 'candidate_types': ['VirtualRun'], 'selected_type': 'VirtualRun', 'selected_training_load': 30.0, 'selected_moving_time_sec': 1914.0, 'selection_rule': '先选主训练类型（Run/Workout/Ride），再优先 Run，之后按训练负荷、时长、开始时间排序。', 'target_date': '2026-11-15'}
+- classification: {'label': 'easy_aerobic_run', 'speed_vs_threshold_ratio': 0.686, 'reason': '整体更像常规有氧，而不是恢复跑', 'distance_km': 5.0, 'duration_min': 31.9}
 
 ## 7-Day Activity Trend
+- window_start: 2026-11-10
+- window_end: 2026-11-16
+- activity_count: 1
+- total_training_load: 30.0
+- avg_training_load: 30.0
+- run_count: 1
+- run_distance_km: 5.0
 
 ## Signals To Watch
-- No strong warning signal from the available data.
+- 静息心率高于近7天均值，需留意疲劳或压力
