@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-28T14:54:37.138902+11:00",
+  "generated_at": "2026-11-29T07:54:08.159897+11:00",
   "timezone": "Australia/Sydney",
   "source": "Intervals.icu API",
   "data_status": {
-    "today_date": "2026-11-28",
+    "today_date": "2026-11-29",
     "recovery_date": "2026-11-28",
-    "training_state_date": "2026-11-28",
-    "recovery_is_fresh": true,
+    "training_state_date": "2026-11-29",
+    "recovery_is_fresh": false,
     "training_state_is_fresh": true
   },
   "conclusion": "恢复较好，今天可以正常训练；是否加码仍要看主观感觉和当天安排。",
@@ -33,27 +33,27 @@
     "injury": null
   },
   "recovery_trend_7d": {
-    "window_start": "2026-11-22",
-    "window_end": "2026-11-28",
-    "days_with_recovery_data": 7,
-    "avg_sleep_hours": 8.04,
+    "window_start": "2026-11-23",
+    "window_end": "2026-11-29",
+    "days_with_recovery_data": 6,
+    "avg_sleep_hours": 7.96,
     "min_sleep_hours": 5.59,
-    "avg_sleep_score": 87.86,
-    "avg_hrv": 69.14,
-    "avg_resting_hr": 44.0,
+    "avg_sleep_score": 89.33,
+    "avg_hrv": 71.0,
+    "avg_resting_hr": 43.5,
     "avg_sleeping_hr": null,
     "low_sleep_score_days": 0
   },
   "training_state": {
-    "date": "2026-11-28 00:00:00",
-    "ctl": 12.822154,
-    "atl": 8.6494255,
-    "ramp_rate": -0.9098873,
+    "date": "2026-11-29 00:00:00",
+    "ctl": 12.520471,
+    "atl": 7.497996,
+    "ramp_rate": -0.88847923,
     "ctl_load": 0.0,
     "atl_load": 0.0,
     "ride_eftp": null,
     "run_eftp": null,
-    "atl_ctl_ratio": 0.67
+    "atl_ctl_ratio": 0.6
   },
   "yesterday_activity": {
     "id": "i214411488",
@@ -83,7 +83,7 @@
     "selection_meta": {
       "selection_mode": "latest_activity_fallback",
       "candidate_count": 1,
-      "target_date": "2026-11-27",
+      "target_date": "2026-11-28",
       "selection_rule": "昨天没有活动，回退到最近一条活动。"
     },
     "classification": {
@@ -95,15 +95,17 @@
     }
   },
   "activity_trend_7d": {
-    "window_start": "2026-11-22",
-    "window_end": "2026-11-28",
+    "window_start": "2026-11-23",
+    "window_end": "2026-11-29",
     "activity_count": 2,
     "total_training_load": 56.0,
     "avg_training_load": 28.0,
     "run_count": 2,
     "run_distance_km": 11.0
   },
-  "health_signals_to_watch": [],
+  "health_signals_to_watch": [
+    "今天晨间恢复数据可能还未同步完成，当前恢复判断可能仍沿用前一日数据"
+  ],
   "analysis_order": [
     "direct_conclusion",
     "recovery",
